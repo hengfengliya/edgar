@@ -704,3 +704,117 @@ const getReportDescription = (form) => {
 4. **开发效率**: 从手动运维到自动化DevOps流程
 
 **这是一个完整的现代化Web应用开发最佳实践案例**，展示了如何将传统项目升级为生产就绪的Serverless应用。
+
+## 🔧 Vercel部署空白页面问题修复记录 (2025-09-20)
+
+### 🎯 问题诊断与解决全程
+
+#### 🚨 初始问题现象
+- **问题**: Vercel部署成功，但访问网站显示空白页面
+- **错误信息**: `Failed to load module script: Expected a JavaScript module script but the server responded with a MIME type of "text/html"`
+- **根本原因**: Vercel路由配置错误，所有静态资源请求都被重定向到 `index.html`
+
+#### 🔍 问题分析过程
+
+**第一轮排查** - 环境变量和依赖问题：
+- ❌ **假设**: 缺少环境变量或API依赖导致应用崩溃
+- ✅ **修复**: 添加 `SEC_USER_AGENT` 环境变量和axios依赖
+- 📊 **结果**: 问题仍然存在，空白页面未解决
+
+**第二轮排查** - React错误边界：
+- ❌ **假设**: JavaScript错误导致React应用崩溃
+- ✅ **修复**: 添加ErrorBoundary组件和诊断工具
+- 📊 **结果**: 问题仍然存在，根本原因未找到
+
+**第三轮排查** - 路由配置根本问题：
+- ✅ **发现**: 静态资源（JS/CSS）被错误地返回HTML内容
+- ✅ **根因**: vercel.json路由配置将所有请求都fallback到 `index.html`
+- ✅ **解决**: 重新设计路由优先级和匹配规则
+
+#### 🛠️ 最终解决方案
+
+**关键修复 - vercel.json路由重构**：
+
+```json
+{
+  "routes": [
+    // 🔥 关键：静态资源路由必须放在最前面
+    {
+      "src": "/(.*\\.(js|mjs|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|map|json))",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/assets/$1"
+    },
+    // API路由
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/edgar"
+    },
+    // 🚨 重要：SPA fallback必须放在最后
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
+```
+
+**修复要点**：
+1. **路由优先级**: 静态资源路由必须在SPA fallback之前
+2. **文件类型扩展**: 添加 `.mjs`, `.map`, `.json` 支持
+3. **缓存优化**: 为静态资源添加长期缓存头
+4. **MIME类型**: 确保JS文件返回正确的 `application/javascript` 类型
+
+#### 📈 修复验证步骤
+
+**验证方法**：
+1. **浏览器开发者工具检查**:
+   - Network面板确认JS/CSS文件状态码为200
+   - 响应内容为实际的JavaScript代码而非HTML
+   - Console面板无MIME类型错误
+
+2. **功能测试**:
+   - React应用正常加载和渲染
+   - API端点正常响应
+   - 搜索功能正常工作
+
+#### 🎓 经验总结
+
+**⚠️ Vercel部署关键注意事项**：
+
+1. **静态资源路由优先级至关重要**
+   - 静态文件匹配必须在SPA fallback之前
+   - 错误的路由顺序会导致静态资源返回HTML内容
+
+2. **SPA应用的路由配置模式**：
+   ```json
+   [
+     "静态资源路由",
+     "API路由",
+     "SPA fallback路由"  // 必须最后
+   ]
+   ```
+
+3. **MIME类型严格检查**：
+   - 现代浏览器对ES模块有严格的MIME类型检查
+   - 错误的Content-Type会导致模块加载失败
+
+4. **调试工具的重要性**：
+   - 创建诊断页面帮助快速定位问题
+   - 浏览器开发者工具Network面板是关键信息来源
+
+**✅ 成功标志**：
+- 网站正常显示React应用界面
+- 无JavaScript模块加载错误
+- 所有静态资源正确加载
+- API功能正常工作
+
+**🚀 部署状态**: ✅ 已完全解决，网站正常运行
