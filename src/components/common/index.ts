@@ -1,2 +1,3 @@
-export { EmptyState } from './EmptyState';
-export { InfoBanner } from './InfoBanner';
+export { default as EmptyState } from './EmptyState';
+export { default as InfoBanner } from './InfoBanner';
+export { default as ErrorBoundary } from './ErrorBoundary';
