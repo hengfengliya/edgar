@@ -29,5 +29,8 @@
   ],
   "buildCommand": "npx vite build",
   "outputDirectory": "dist",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "env": {
+    "SEC_USER_AGENT": "SEC EDGAR Research Tool tellmeheifengli@gmail.com"
+  }
 }
