@@ -1,22 +1,14 @@
 /**
- * Vercel Serverless函数 - SEC EDGAR API代理 (简化版)
+ * Vercel Serverless函数 - SEC EDGAR API代理
  */
 
 const axios = require('axios');
+// 引用共享的公司数据文件
+const { WELL_KNOWN_COMPANIES, getCompanyCount } = require('../data/companies.cjs');
 
 // SEC EDGAR API配置
 const SEC_DATA_URL = 'https://data.sec.gov';
 const USER_AGENT = process.env.SEC_USER_AGENT || 'SEC EDGAR Research Tool tellmeheifengli@gmail.com';
-
-// 常见公司的CIK映射表 (简化版)
-const WELL_KNOWN_COMPANIES = {
-    'AAPL': { cik: '320193', name: 'Apple Inc.' },
-    'APPLE': { cik: '320193', name: 'Apple Inc.' },
-    'TSLA': { cik: '1318605', name: 'Tesla, Inc.' },
-    'TESLA': { cik: '1318605', name: 'Tesla, Inc.' },
-    'MSFT': { cik: '789019', name: 'Microsoft Corporation' },
-    'MICROSOFT': { cik: '789019', name: 'Microsoft Corporation' }
-};
 
 /**
  * 搜索公司

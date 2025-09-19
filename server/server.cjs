@@ -9,6 +9,9 @@ const axios = require('axios');
 const path = require('path');
 require('dotenv').config();
 
+// 引用共享的公司数据文件
+const { WELL_KNOWN_COMPANIES, getCompanyCount } = require('../data/companies.cjs');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -128,55 +131,6 @@ app.get('/api/companies/tickers', rateLimitMiddleware, async (req, res) => {
         message: '根据SEC官方文档，没有公司ticker列表API。请直接使用CIK搜索公司申报文件。'
     });
 });
-
-// 常见公司的CIK映射表 - 根据SEC公开信息
-const WELL_KNOWN_COMPANIES = {
-    // 科技公司
-    'AAPL': { cik: '320193', name: 'Apple Inc.' },
-    'APPLE': { cik: '320193', name: 'Apple Inc.' },
-    'MSFT': { cik: '789019', name: 'Microsoft Corporation' },
-    'MICROSOFT': { cik: '789019', name: 'Microsoft Corporation' },
-    'GOOGL': { cik: '1652044', name: 'Alphabet Inc.' },
-    'GOOG': { cik: '1652044', name: 'Alphabet Inc.' },
-    'ALPHABET': { cik: '1652044', name: 'Alphabet Inc.' },
-    'GOOGLE': { cik: '1652044', name: 'Alphabet Inc.' },
-    'AMZN': { cik: '1018724', name: 'Amazon.com, Inc.' },
-    'AMAZON': { cik: '1018724', name: 'Amazon.com, Inc.' },
-    'META': { cik: '1326801', name: 'Meta Platforms, Inc.' },
-    'FACEBOOK': { cik: '1326801', name: 'Meta Platforms, Inc.' },
-    'TSLA': { cik: '1318605', name: 'Tesla, Inc.' },
-    'TESLA': { cik: '1318605', name: 'Tesla, Inc.' },
-    'NVDA': { cik: '1045810', name: 'NVIDIA Corporation' },
-    'NVIDIA': { cik: '1045810', name: 'NVIDIA Corporation' },
-    'NFLX': { cik: '1065280', name: 'Netflix, Inc.' },
-    'NETFLIX': { cik: '1065280', name: 'Netflix, Inc.' },
-
-    // 中概股
-    'BABA': { cik: '1577552', name: 'Alibaba Group Holding Limited' },
-    'ALIBABA': { cik: '1577552', name: 'Alibaba Group Holding Limited' },
-    'JD': { cik: '1549802', name: 'JD.com, Inc.' },
-    'BIDU': { cik: '1329099', name: 'Baidu, Inc.' },
-    'BAIDU': { cik: '1329099', name: 'Baidu, Inc.' },
-    'PDD': { cik: '1737806', name: 'PDD Holdings Inc.' },
-    'PINDUODUO': { cik: '1737806', name: 'PDD Holdings Inc.' },
-
-    // 金融公司
-    'JPM': { cik: '19617', name: 'JPMorgan Chase & Co.' },
-    'JPMORGAN': { cik: '19617', name: 'JPMorgan Chase & Co.' },
-    'BAC': { cik: '70858', name: 'Bank of America Corporation' },
-    'GS': { cik: '886982', name: 'The Goldman Sachs Group, Inc.' },
-    'GOLDMAN': { cik: '886982', name: 'The Goldman Sachs Group, Inc.' },
-
-    // 其他知名公司
-    'WMT': { cik: '104169', name: 'Walmart Inc.' },
-    'WALMART': { cik: '104169', name: 'Walmart Inc.' },
-    'DIS': { cik: '1744489', name: 'The Walt Disney Company' },
-    'DISNEY': { cik: '1744489', name: 'The Walt Disney Company' },
-    'KO': { cik: '21344', name: 'The Coca-Cola Company' },
-    'COCACOLA': { cik: '21344', name: 'The Coca-Cola Company' },
-    'PFE': { cik: '78003', name: 'Pfizer Inc.' },
-    'PFIZER': { cik: '78003', name: 'Pfizer Inc.' }
-};
 
 /**
  * 搜索公司 - 基于预定义的CIK映射
