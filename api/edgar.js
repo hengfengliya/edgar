@@ -80,13 +80,15 @@ const getCompanyFilings = async (cik) => {
 
         return {
             success: true,
-            data: filings,
-            company: {
-                name: data.name,
-                cik: data.cik,
-                sic: data.sic,
-                sicDescription: data.sicDescription,
-                fiscalYearEnd: data.fiscalYearEnd
+            data: {
+                filings: filings,
+                company: {
+                    name: data.name,
+                    cik: data.cik,
+                    sic: data.sic,
+                    sicDescription: data.sicDescription,
+                    fiscalYearEnd: data.fiscalYearEnd
+                }
             },
             message: `获取到 ${filings.length} 条申报文件`
         };
