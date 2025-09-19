@@ -13,7 +13,7 @@ interface InfoBannerProps {
  * 信息横幅组件
  * 用于显示重要信息或使用说明
  */
-export const InfoBanner: React.FC<InfoBannerProps> = ({
+const InfoBanner: React.FC<InfoBannerProps> = ({
   title,
   children,
   type = 'info',
@@ -52,3 +52,5 @@ export const InfoBanner: React.FC<InfoBannerProps> = ({
     </div>
   );
 };
+
+export default InfoBanner;

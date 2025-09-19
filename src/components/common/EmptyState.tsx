@@ -12,7 +12,7 @@ interface EmptyStateProps {
  * 空状态组件
  * 用于显示没有数据时的占位内容
  */
-export const EmptyState: React.FC<EmptyStateProps> = ({
+const EmptyState: React.FC<EmptyStateProps> = ({
   icon = 'fas fa-search',
   title,
   description,
@@ -34,3 +34,5 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
     </div>
   );
 };
+
+export default EmptyState;
