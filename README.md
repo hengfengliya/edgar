@@ -92,8 +92,24 @@ vm_sec-report/
 - Node.js 14.0+
 - npm 6.0+
 - 现代浏览器（Chrome、Firefox、Safari、Edge）
+- **有效的邮箱地址**（SEC API要求）
 
-### 2. 安装依赖
+#### 2. 邮箱配置（重要）
+1. 复制环境变量模板：
+   ```bash
+   cp .env.example .env
+   ```
+
+2. 编辑 `.env` 文件，**将邮箱地址替换为你的真实邮箱**：
+   ```env
+   SEC_USER_AGENT=SEC EDGAR Research Tool your.email@example.com
+   PORT=3000
+   REQUEST_DELAY=100
+   ```
+
+   ⚠️ **注意**：SEC API严格要求真实的联系邮箱，否则会被拒绝访问！
+
+### 3. 安装依赖
 ```bash
 npm install
 ```

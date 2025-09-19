@@ -18,10 +18,31 @@
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
 
-### 4. 环境变量配置
+### 4. 环境变量配置（重要）
 在Vercel项目设置中添加环境变量：
+
+1. **进入项目设置**：
+   - 在Vercel项目页面点击 "Settings"
+   - 选择 "Environment Variables"
+
+2. **添加必需的环境变量**：
+   ```
+   Key: SEC_USER_AGENT
+   Value: SEC EDGAR Research Tool your.email@example.com
+   ```
+
+   ⚠️ **重要提醒**：
+   - **必须使用你的真实邮箱地址替换 `your.email@example.com`**
+   - SEC API严格要求有效的联系邮箱，否则会返回403错误
+   - 邮箱地址将作为User-Agent发送给SEC服务器
+
+3. **保存配置**：
+   - 点击 "Add" 保存环境变量
+   - 触发重新部署应用
+
+**示例配置**：
 ```
-SEC_USER_AGENT = SEC EDGAR Research Tool tellmeheifengli@gmail.com
+SEC_USER_AGENT = SEC EDGAR Research Tool john.doe@company.com
 ```
 
 ### 5. 部署
