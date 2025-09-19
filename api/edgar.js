@@ -39,6 +39,78 @@ const searchCompanies = (query) => {
 };
 
 /**
+ * 获取公司申报文件
+ */
+const getCompanyFilings = async (cik) => {
+    try {
+        // 确保CIK格式正确（10位数字，前面补0）
+        const formattedCik = cik.padStart(10, '0');
+        const url = `${SEC_DATA_URL}/submissions/CIK${formattedCik}.json`;
+
+        console.log('获取申报文件:', url);
+
+        const response = await axios.get(url, {
+            headers: {
+                'User-Agent': USER_AGENT,
+                'Accept': 'application/json'
+            }
+        });
+
+        const data = response.data;
+
+        // 处理申报文件数据
+        const filings = [];
+        if (data.filings && data.filings.recent) {
+            const recent = data.filings.recent;
+            const count = Math.min(recent.form.length, 50); // 限制返回50条最新数据
+
+            for (let i = 0; i < count; i++) {
+                filings.push({
+                    form: recent.form[i],
+                    filingDate: recent.filingDate[i],
+                    reportDate: recent.reportDate[i] || '',
+                    accessionNumber: recent.accessionNumber[i],
+                    fileNumber: recent.fileNumber[i] || '',
+                    filmNumber: recent.filmNumber[i] || '',
+                    description: recent.primaryDocument[i] || '',
+                    size: recent.size[i] || 0
+                });
+            }
+        }
+
+        return {
+            success: true,
+            data: filings,
+            company: {
+                name: data.name,
+                cik: data.cik,
+                sic: data.sic,
+                sicDescription: data.sicDescription,
+                fiscalYearEnd: data.fiscalYearEnd
+            },
+            message: `获取到 ${filings.length} 条申报文件`
+        };
+
+    } catch (error) {
+        console.error('获取申报文件失败:', error.message);
+
+        if (error.response?.status === 404) {
+            return {
+                success: false,
+                error: '未找到该公司的申报文件',
+                message: '请检查CIK是否正确'
+            };
+        }
+
+        return {
+            success: false,
+            error: '获取申报文件失败: ' + error.message,
+            message: '请稍后重试或检查网络连接'
+        };
+    }
+};
+
+/**
  * Serverless函数主入口
  */
 module.exports = async (req, res) => {
@@ -82,12 +154,28 @@ module.exports = async (req, res) => {
             });
         }
 
+        // 申报文件获取 - 匹配 /companies/{cik}/filings 路径
+        const filingMatch = pathname.match(/\/companies\/(\d+)\/filings/);
+        if (filingMatch) {
+            const cik = filingMatch[1];
+            console.log('获取申报文件, CIK:', cik);
+
+            const result = await getCompanyFilings(cik);
+
+            if (result.success) {
+                return res.status(200).json(result);
+            } else {
+                return res.status(400).json(result);
+            }
+        }
+
         // 默认响应
         return res.status(200).json({
             success: true,
             message: 'SEC EDGAR API代理服务正在运行',
             available_endpoints: [
                 '/api/companies/search?q=公司名称',
+                '/api/companies/{cik}/filings'
             ],
             timestamp: new Date().toISOString()
         });
