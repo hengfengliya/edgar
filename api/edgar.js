@@ -82,7 +82,7 @@ const getCompanyFilings = async (cik) => {
             success: true,
             data: {
                 filings: filings,
-                company: {
+                companyInfo: {
                     name: data.name,
                     cik: data.cik,
                     sic: data.sic,
