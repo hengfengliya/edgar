@@ -1,0 +1,39 @@
+# 依赖文件
+node_modules/
+package-lock.json
+
+# 构建输出
+dist/
+build/
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# Vite缓存
+.vite/
+
+# TypeScript输出
+*.tsbuildinfo
+
+# 临时文件
+*.tmp
+*.temp
