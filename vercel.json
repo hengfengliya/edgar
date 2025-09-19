@@ -7,6 +7,20 @@
   },
   "routes": [
     {
+      "src": "/(.*\\.(js|mjs|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|map|json))",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/assets/$1"
+    },
+    {
       "src": "/api/companies/search",
       "dest": "/api/edgar"
     },
@@ -21,14 +35,6 @@
     {
       "src": "/api/(.*)",
       "dest": "/api/edgar"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    },
-    {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
-      "dest": "/$1"
     },
     {
       "src": "/(.*)",
