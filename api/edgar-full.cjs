@@ -178,13 +178,8 @@ function processFilingsData(recentFilings, filters) {
  * 判断申报文件是否符合筛选条件
  */
 function shouldIncludeFiling(filing, filters) {
-    console.log(`检查申报文件: ${filing.form} (${filing.filingDate})，筛选条件:`, filters);
-
     // 表单类型筛选
     if (filters.formType && filing.form !== filters.formType) {
-        console.log(`表单类型不匹配: "${filing.form}" !== "${filters.formType}"`);
-        console.log(`表单类型长度对比: ${filing.form.length} vs ${filters.formType.length}`);
-        console.log(`表单类型字符对比:`, filing.form.split('').map(c => c.charCodeAt(0)), 'vs', filters.formType.split('').map(c => c.charCodeAt(0)));
         return false;
     }
 
@@ -193,12 +188,10 @@ function shouldIncludeFiling(filing, filters) {
         const filingDate = new Date(filing.filingDate);
 
         if (filters.startDate && filingDate < new Date(filters.startDate)) {
-            console.log(`文件日期过早: ${filing.filingDate} < ${filters.startDate}`);
             return false;
         }
 
         if (filters.endDate && filingDate > new Date(filters.endDate)) {
-            console.log(`文件日期过晚: ${filing.filingDate} > ${filters.endDate}`);
             return false;
         }
     }
@@ -210,12 +203,10 @@ function shouldIncludeFiling(filing, filters) {
         cutoffDate.setDate(cutoffDate.getDate() - days);
 
         if (new Date(filing.filingDate) < cutoffDate) {
-            console.log(`文件日期超出范围: ${filing.filingDate} < ${cutoffDate.toISOString().split('T')[0]}`);
             return false;
         }
     }
 
-    console.log(`文件通过筛选: ${filing.form}`);
     return true;
 }
 
