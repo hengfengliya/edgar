@@ -121,7 +121,28 @@ const getFilingDetails = async (cik, accessionNumber) => {
                 const cells = [...row.matchAll(cellRegex)];
 
                 if (cells.length >= 4) {
-                    const filename = cells[1][1].replace(/<[^>]*>/g, '').trim();
+                    // 提取文件名 - 需要从链接href中获取实际文件名
+                    const filenameCell = cells[1][1];
+                    let filename = '';
+
+                    // 尝试从链接href中提取文件名
+                    const linkMatch = filenameCell.match(/<a[^>]+href="([^"]+)"[^>]*>([^<]+)<\/a>/i);
+                    if (linkMatch) {
+                        const href = linkMatch[1];
+                        const linkText = linkMatch[2].trim();
+
+                        // 如果href是相对路径，使用href作为文件名
+                        if (href && !href.startsWith('http')) {
+                            filename = href;
+                        } else {
+                            // 否则使用链接文本
+                            filename = linkText;
+                        }
+                    } else {
+                        // 如果没有链接，使用单元格文本
+                        filename = filenameCell.replace(/<[^>]*>/g, '').trim();
+                    }
+
                     const type = cells[2][1].replace(/<[^>]*>/g, '').trim();
                     const size = parseInt(cells[3][1].replace(/<[^>]*>/g, '').replace(/,/g, '')) || 0;
 
@@ -297,8 +318,11 @@ module.exports = async (req, res) => {
         // 文件下载代理 - 匹配 /download/* 路径
         const downloadMatch = pathname.match(/\/download\/(.+)/);
         if (downloadMatch) {
-            const filePath = downloadMatch[1];
+            let filePath = downloadMatch[1];
             console.log('下载文件请求:', filePath);
+
+            // URL解码文件路径
+            filePath = decodeURIComponent(filePath);
 
             // 直接重定向到原始SEC URL，更简单可靠
             let secUrl;
