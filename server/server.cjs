@@ -474,7 +474,9 @@ function shouldIncludeFiling(filing, filters) {
 
     // 表单类型筛选
     if (filters.formType && filing.form !== filters.formType) {
-        console.log(`表单类型不匹配: ${filing.form} !== ${filters.formType}`);
+        console.log(`表单类型不匹配: "${filing.form}" !== "${filters.formType}"`);
+        console.log(`表单类型长度对比: ${filing.form.length} vs ${filters.formType.length}`);
+        console.log(`表单类型字符对比:`, filing.form.split('').map(c => c.charCodeAt(0)), 'vs', filters.formType.split('').map(c => c.charCodeAt(0)));
         return false;
     }
 

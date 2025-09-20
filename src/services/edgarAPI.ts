@@ -77,6 +77,7 @@ export class EdgarAPIService {
    */
   async getCompanyFilings(cik: string, filters?: FilingFilters): Promise<FilingDataResponse> {
     try {
+      console.log('📡 API调用 - 获取公司申报文件:', { cik, filters });
       const response = await apiClient.get<APIResponse<FilingDataResponse>>(`/companies/${cik}/filings`, {
         params: filters
       });

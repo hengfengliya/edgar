@@ -3,7 +3,7 @@ import { Header, Layout } from './components/layout';
 import { SearchForm } from './components/search';
 import { FilingTable, FilingDetailsModal } from './components/results';
 import { useEdgarAPI } from './hooks/useEdgarAPI';
-import { SearchFormData } from './types/api';
+import { SearchFormData, FilingFilters } from './types/api';
 import { DateUtils } from './utils/dateUtils';
 import { FileUtils } from './utils/fileUtils';
 
@@ -62,16 +62,21 @@ function App() {
       const selectedCompany = companies[0];
 
       // 构建筛选条件
-      const filters: any = {};
+      const filters: FilingFilters = {};
       if (formData.formType) {
         filters.formType = formData.formType;
+        console.log('🔍 设置表单类型筛选:', formData.formType);
       }
       if (formData.dateRange === 'custom') {
         if (formData.startDate) filters.startDate = formData.startDate;
         if (formData.endDate) filters.endDate = formData.endDate;
+        console.log('📅 设置自定义日期筛选:', { startDate: formData.startDate, endDate: formData.endDate });
       } else if (formData.dateRange) {
         filters.dateRange = formData.dateRange;
+        console.log('📅 设置日期范围筛选:', formData.dateRange, '天');
       }
+      
+      console.log('📋 完整筛选条件:', filters);
 
       // 获取申报文件
       await getCompanyFilings(selectedCompany.cik, filters);
