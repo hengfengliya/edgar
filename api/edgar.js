@@ -200,7 +200,7 @@ const getCompanyFilings = async (cik) => {
         const filings = [];
         if (data.filings && data.filings.recent) {
             const recent = data.filings.recent;
-            const count = Math.min(recent.form.length, 50); // 限制返回50条最新数据
+            const count = recent.form.length; // 返回所有可用数据，不设限制
 
             for (let i = 0; i < count; i++) {
                 filings.push({

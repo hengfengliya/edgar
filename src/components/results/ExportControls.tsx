@@ -2,6 +2,7 @@ import React from 'react';
 import { Filing, CompanyInfo } from '../../types/api';
 import { Button } from '../ui';
 import { DateUtils } from '../../utils/dateUtils';
+import { getFormDescription } from '../../utils/secFormTypes';
 
 interface ExportControlsProps {
   filings: Filing[];
@@ -44,12 +45,7 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
         : '';
 
       return [
-        `${filing.form} - ${filing.form === '10-K' ? '年度报告' :
-          filing.form === '10-Q' ? '季度报告' :
-          filing.form === '8-K' ? '重大事件报告' :
-          filing.form === 'DEF 14A' ? '代理声明书' :
-          filing.form === '13F-HR' ? '机构持股报告' :
-          '其他申报文件'}`,
+        `${filing.form} - ${getFormDescription(filing.form)}`,
         DateUtils.formatDate(filing.filingDate),
         companyInfo.name,
         filing.reportDate ? DateUtils.formatDate(filing.reportDate) : '',

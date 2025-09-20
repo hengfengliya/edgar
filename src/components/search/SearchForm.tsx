@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { Card, Button } from '../ui';
 import { SearchFormData } from '../../types/api';
 import { ValidationUtils } from '../../utils/validationUtils';
+import { getAllFormTypes } from '../../utils/secFormTypes';
 
 interface SearchFormProps {
   onSearch: (formData: SearchFormData) => void;
@@ -18,6 +19,11 @@ export const SearchForm: React.FC<SearchFormProps> = ({
   loading = false,
   className = ''
 }) => {
+  // 获取所有表单类型
+  const formTypes = getAllFormTypes();
+  // 只显示主要的表单类型
+  const majorFormTypes = formTypes.slice(0, 20);
+
   // 表单状态
   const [formData, setFormData] = useState<SearchFormData>({
     companyInput: '',
@@ -133,13 +139,11 @@ export const SearchForm: React.FC<SearchFormProps> = ({
               disabled={loading}
             >
               <option value="">全部类型</option>
-              <option value="10-K">10-K (年报-美企)</option>
-              <option value="20-F">20-F (年报-外企)</option>
-              <option value="10-Q">10-Q (季报-美企)</option>
-              <option value="6-K">6-K (报告-外企)</option>
-              <option value="8-K">8-K (临时报告)</option>
-              <option value="S-1">S-1 (注册声明)</option>
-              <option value="DEF 14A">DEF 14A (代理声明)</option>
+              {majorFormTypes.map(({ code, description }) => (
+                <option key={code} value={code}>
+                  {code} ({description})
+                </option>
+              ))}
             </select>
           </div>
 
