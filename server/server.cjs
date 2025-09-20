@@ -280,25 +280,22 @@ app.get('/api/filings/:cik/:accessionNumber', rateLimitMiddleware, async (req, r
 
         const paddedCik = cik.padStart(10, '0');
         const cleanAccessionNumber = accessionNumber.replace(/-/g, '');
-        const url = `${SEC_ARCHIVE_URL}/Archives/edgar/data/${paddedCik}/${cleanAccessionNumber}/index.json`;
+        // 修复：使用HTML索引页面而不是JSON
+        const url = `${SEC_ARCHIVE_URL}/Archives/edgar/data/${paddedCik}/${cleanAccessionNumber}/${accessionNumber}-index.html`;
 
-        const indexData = await makeSecRequest(url);
+        const response = await axios.get(url, {
+            headers: {
+                'User-Agent': USER_AGENT,
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            },
+            timeout: 10000
+        });
 
-        if (!indexData || !indexData.directory) {
-            return res.status(404).json({
-                success: false,
-                error: '无法获取文件索引信息'
-            });
-        }
+        const htmlContent = response.data;
+        console.log('成功获取文件索引页面');
 
-        // 处理文件列表
-        const files = indexData.directory.item.map(item => ({
-            name: item.name,
-            type: getFileType(item.name),
-            size: item.size || 0,
-            lastModified: item['last-modified'] || '',
-            downloadUrl: `${SEC_ARCHIVE_URL}/Archives/edgar/data/${paddedCik}/${cleanAccessionNumber}/${item.name}`
-        }));
+        // 解析HTML内容提取文件信息
+        const files = parseFileTable(htmlContent, paddedCik, cleanAccessionNumber);
 
         // 识别主要文档
         const primaryDocument = files.find(file =>
@@ -333,9 +330,23 @@ app.get('/api/filings/:cik/:accessionNumber', rateLimitMiddleware, async (req, r
  */
 app.get('/api/download/*', rateLimitMiddleware, async (req, res) => {
     try {
-        // 从路径中提取SEC文件URL
-        const secUrl = req.path.replace('/api/download/', SEC_ARCHIVE_URL + '/');
-        console.log(`代理下载文件: ${secUrl}`);
+        // 从路径中提取SEC文件URL - 修复URL构建逻辑
+        const filePath = req.path.replace('/api/download/', '');
+
+        // 确保正确构建SEC URL
+        let secUrl;
+        if (filePath.startsWith('Archives/')) {
+            // 标准的Archives路径
+            secUrl = `${SEC_ARCHIVE_URL}/${filePath}`;
+        } else if (filePath.startsWith('data/')) {
+            // data.sec.gov路径
+            secUrl = `${SEC_DATA_URL}/${filePath}`;
+        } else {
+            // 其他情况，假设是完整的相对路径
+            secUrl = `${SEC_ARCHIVE_URL}/${filePath}`;
+        }
+
+        console.log(`代理下载文件: ${filePath} -> ${secUrl}`);
 
         const response = await axios({
             method: 'GET',
@@ -368,6 +379,49 @@ app.get('/api/download/*', rateLimitMiddleware, async (req, res) => {
         });
     }
 });
+
+/**
+ * 解析SEC HTML索引页面的文件表格
+ */
+function parseFileTable(htmlContent, paddedCik, cleanAccessionNumber) {
+    const files = [];
+
+    try {
+        // 匹配文件表格中的行 - SEC使用标准HTML表格格式
+        const tableRowRegex = /<tr[^>]*>[\s\S]*?<\/tr>/gi;
+        const matches = htmlContent.match(tableRowRegex) || [];
+
+        for (const row of matches) {
+            // 提取文件名链接
+            const fileMatch = row.match(/<a[^>]+href="([^"]+)"[^>]*>([^<]+)<\/a>/i);
+            if (!fileMatch) continue;
+
+            const filename = fileMatch[2].trim();
+            if (!filename || filename === 'Filename') continue; // 跳过表头
+
+            // 提取文件大小
+            const sizeMatch = row.match(/<td[^>]*>\s*(\d+)\s*<\/td>/i);
+            const size = sizeMatch ? parseInt(sizeMatch[1]) : 0;
+
+            // 构建完整的下载URL
+            const downloadUrl = `${SEC_ARCHIVE_URL}/Archives/edgar/data/${paddedCik}/${cleanAccessionNumber}/${filename}`;
+
+            files.push({
+                name: filename,
+                type: getFileType(filename),
+                size: size,
+                downloadUrl: downloadUrl
+            });
+        }
+
+        console.log(`解析到 ${files.length} 个文件`);
+        return files;
+
+    } catch (error) {
+        console.error('解析HTML文件表格失败:', error.message);
+        return [];
+    }
+}
 
 // 工具函数
 

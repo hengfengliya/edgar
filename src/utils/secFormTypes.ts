@@ -163,17 +163,30 @@ export const getFormDescription = (formType: string): string => {
     return SEC_FORM_TYPES[cleanFormType];
   }
 
-  // 模糊匹配 - 处理一些变体
+  // 处理修正版本 (/A 后缀)
+  if (cleanFormType.endsWith('/A')) {
+    const baseForm = cleanFormType.replace('/A', '');
+    if (SEC_FORM_TYPES[baseForm]) {
+      return SEC_FORM_TYPES[baseForm] + '修正';
+    }
+  }
+
+  // 更精确的模糊匹配 - 只匹配以已知类型开头的表单
   for (const [key, value] of Object.entries(SEC_FORM_TYPES)) {
-    if (cleanFormType.includes(key) || key.includes(cleanFormType)) {
+    // 避免过度匹配，只有当表单类型是已知类型的明确变体时才匹配
+    if (cleanFormType.startsWith(key + '-') ||
+        cleanFormType.startsWith(key + '/') ||
+        (cleanFormType.startsWith(key) && /\d+$/.test(cleanFormType.substring(key.length)))) {
       return value;
     }
   }
 
-  // 根据表单前缀推断类型
-  if (cleanFormType.startsWith('10-')) return '定期报告';
-  if (cleanFormType.startsWith('8-')) return '重大事件报告';
-  if (cleanFormType.startsWith('20-') || cleanFormType.startsWith('6-')) return '外国公司报告';
+  // 根据表单前缀推断类型 - 更精确的匹配
+  if (cleanFormType.startsWith('10-K')) return '年度报告';
+  if (cleanFormType.startsWith('10-Q')) return '季度报告';
+  if (cleanFormType.startsWith('8-K')) return '重大事件报告';
+  if (cleanFormType.startsWith('20-F')) return '外国公司年度报告';
+  if (cleanFormType.startsWith('6-K')) return '外国公司中期报告';
   if (cleanFormType.startsWith('DEF')) return '代理材料';
   if (cleanFormType.startsWith('SC')) return '股权披露';
   if (cleanFormType.startsWith('S-')) return '证券注册';

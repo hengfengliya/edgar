@@ -42,7 +42,7 @@ const downloadFile = async (filePath) => {
             secUrl = `https://data.sec.gov/${filePath}`;
         } else {
             // Archives文件
-            secUrl = `https://www.sec.gov/Archives/edgar/${filePath}`;
+            secUrl = `https://www.sec.gov/${filePath}`;
         }
 
         console.log('代理下载文件:', secUrl);
@@ -298,28 +298,25 @@ module.exports = async (req, res) => {
         const downloadMatch = pathname.match(/\/download\/(.+)/);
         if (downloadMatch) {
             const filePath = downloadMatch[1];
-            console.log('下载文件:', filePath);
+            console.log('下载文件请求:', filePath);
 
-            const result = await downloadFile(filePath);
-
-            if (result.success) {
-                // 设置响应头
-                res.setHeader('Content-Type', result.headers['content-type'] || 'application/octet-stream');
-                res.setHeader('Content-Length', result.headers['content-length'] || '');
-
-                // 设置文件名
-                const filename = filePath.split('/').pop();
-                res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
-
-                // 流式传输文件
-                result.stream.pipe(res);
-                return;
+            // 直接重定向到原始SEC URL，更简单可靠
+            let secUrl;
+            if (filePath.startsWith('data/')) {
+                // 数据API文件 - data.sec.gov
+                secUrl = `https://data.sec.gov/${filePath}`;
+            } else if (filePath.startsWith('Archives/')) {
+                // Archives文件 - www.sec.gov
+                secUrl = `https://www.sec.gov/${filePath}`;
             } else {
-                return res.status(result.status || 500).json({
-                    success: false,
-                    error: result.error
-                });
+                // 默认使用www.sec.gov
+                secUrl = `https://www.sec.gov/${filePath}`;
             }
+
+            console.log('重定向到SEC URL:', secUrl);
+
+            // 302重定向到原始URL
+            return res.redirect(302, secUrl);
         }
 
         // 文件详情获取 - 匹配 /filings/{cik}/{accessionNumber} 路径

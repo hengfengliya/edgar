@@ -130,12 +130,14 @@ export class EdgarAPIService {
     try {
       // 将SEC URL转换为代理URL - 修复URL构建逻辑
       let proxyUrl;
-      if (url.startsWith('https://www.sec.gov/Archives/')) {
-        // SEC Archives URL转换为代理URL
-        proxyUrl = url.replace('https://www.sec.gov/Archives/', '/api/download/');
+      if (url.startsWith('https://www.sec.gov/')) {
+        // SEC www域名 - 移除域名，保留完整路径
+        const path = url.replace('https://www.sec.gov/', '');
+        proxyUrl = `/api/download/${path}`;
       } else if (url.startsWith('https://data.sec.gov/')) {
-        // SEC Data URL转换为代理URL
-        proxyUrl = url.replace('https://data.sec.gov/', '/api/download/data/');
+        // SEC data域名 - 添加data前缀标识
+        const path = url.replace('https://data.sec.gov/', '');
+        proxyUrl = `/api/download/data/${path}`;
       } else {
         // 相对URL，直接添加代理前缀
         proxyUrl = `/api/download/${url}`;

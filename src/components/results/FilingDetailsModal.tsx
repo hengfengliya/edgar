@@ -113,8 +113,8 @@ export const FilingDetailsModal: React.FC<FilingDetailsModalProps> = ({
                               fontSize: 'var(--font-size-sm)'
                             }}
                           >
-                            {file.name.length > 30
-                              ? `${file.name.substring(0, 30)}...`
+                            {file.name.length > 50
+                              ? `${file.name.substring(0, 50)}...`
                               : file.name
                             }
                           </span>
