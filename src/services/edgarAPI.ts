@@ -128,16 +128,31 @@ export class EdgarAPIService {
    */
   async downloadFile(url: string, filename: string): Promise<void> {
     try {
-      // 解码URL中的编码字符
-      const decodedUrl = decodeURIComponent(url);
-
       console.log(`开始下载文件: ${filename}`);
       console.log(`原始URL: ${url}`);
-      console.log(`解码后URL: ${decodedUrl}`);
+
+      // 构建代理下载URL - 通过我们的服务器代理来确保正确的下载响应头
+      let proxyUrl: string;
+      
+      if (url.startsWith('https://www.sec.gov/')) {
+        // 移除SEC域名，只保留路径部分
+        const path = url.replace('https://www.sec.gov/', '');
+        proxyUrl = `/api/download/${path}`;
+      } else if (url.startsWith('https://data.sec.gov/')) {
+        // 移除data.sec.gov域名，只保留路径部分
+        const path = url.replace('https://data.sec.gov/', '');
+        proxyUrl = `/api/download/data/${path}`;
+      } else {
+        // 如果URL格式不符合预期，直接使用原URL
+        console.warn('URL格式不符合预期，直接使用原URL:', url);
+        proxyUrl = url;
+      }
+
+      console.log(`代理下载URL: ${proxyUrl}`);
 
       // 创建下载链接并触发下载
       const link = document.createElement('a');
-      link.href = decodedUrl;
+      link.href = proxyUrl;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
       

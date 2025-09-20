@@ -330,7 +330,7 @@ module.exports = async (req, res) => {
             // URL解码文件路径
             filePath = decodeURIComponent(filePath);
 
-            // 直接重定向到原始SEC URL，更简单可靠
+            // 代理下载文件，设置正确的下载响应头
             let secUrl;
             if (filePath.startsWith('data/')) {
                 // 数据API文件 - data.sec.gov
@@ -343,10 +343,40 @@ module.exports = async (req, res) => {
                 secUrl = `https://www.sec.gov/${filePath}`;
             }
 
-            console.log('重定向到SEC URL:', secUrl);
+            console.log('代理下载文件:', secUrl);
 
-            // 302重定向到原始URL
-            return res.redirect(302, secUrl);
+            try {
+                const response = await axios({
+                    method: 'GET',
+                    url: secUrl,
+                    headers: {
+                        'User-Agent': USER_AGENT,
+                        'Accept': '*/*',
+                    },
+                    responseType: 'stream',
+                    timeout: 60000
+                });
+
+                // 设置响应头 - 强制下载到本地
+                const filename = secUrl.split('/').pop() || 'download';
+                res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+                res.setHeader('Content-Type', response.headers['content-type'] || 'application/octet-stream');
+
+                if (response.headers['content-length']) {
+                    res.setHeader('Content-Length', response.headers['content-length']);
+                }
+
+                // 管道数据流
+                response.data.pipe(res);
+                return;
+
+            } catch (error) {
+                console.error('代理下载失败:', error.message);
+                return res.status(500).json({
+                    success: false,
+                    error: '文件下载失败: ' + error.message
+                });
+            }
         }
 
         // 文件详情获取 - 匹配 /filings/{cik}/{accessionNumber} 路径
