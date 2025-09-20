@@ -128,10 +128,20 @@ export class EdgarAPIService {
    */
   async downloadFile(url: string, filename: string): Promise<void> {
     try {
-      // 将SEC URL转换为代理URL
-      const proxyUrl = url.replace('https://data.sec.gov/', '/api/download/');
+      // 将SEC URL转换为代理URL - 修复URL构建逻辑
+      let proxyUrl;
+      if (url.startsWith('https://www.sec.gov/Archives/')) {
+        // SEC Archives URL转换为代理URL
+        proxyUrl = url.replace('https://www.sec.gov/Archives/', '/api/download/');
+      } else if (url.startsWith('https://data.sec.gov/')) {
+        // SEC Data URL转换为代理URL
+        proxyUrl = url.replace('https://data.sec.gov/', '/api/download/data/');
+      } else {
+        // 相对URL，直接添加代理前缀
+        proxyUrl = `/api/download/${url}`;
+      }
 
-      console.log(`下载文件: ${filename} (${proxyUrl})`);
+      console.log(`下载文件: ${filename} (原始URL: ${url}) (代理URL: ${proxyUrl})`);
 
       // 创建下载链接
       const link = document.createElement('a');

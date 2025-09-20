@@ -31,8 +31,55 @@ const searchCompanies = (query) => {
 };
 
 /**
- * 获取申报文件详情
+ * 文件下载代理
  */
+const downloadFile = async (filePath) => {
+    try {
+        // 重建原始SEC URL
+        let secUrl;
+        if (filePath.startsWith('data/')) {
+            // 数据API文件
+            secUrl = `https://data.sec.gov/${filePath}`;
+        } else {
+            // Archives文件
+            secUrl = `https://www.sec.gov/Archives/edgar/${filePath}`;
+        }
+
+        console.log('代理下载文件:', secUrl);
+
+        const response = await axios.get(secUrl, {
+            headers: {
+                'User-Agent': USER_AGENT,
+                'Accept': '*/*'
+            },
+            responseType: 'stream',
+            timeout: 30000
+        });
+
+        return {
+            success: true,
+            stream: response.data,
+            headers: response.headers
+        };
+
+    } catch (error) {
+        console.error('下载文件失败:', error.message);
+
+        if (error.response?.status === 404) {
+            return {
+                success: false,
+                error: '文件未找到',
+                status: 404
+            };
+        }
+
+        return {
+            success: false,
+            error: '下载文件失败: ' + error.message,
+            status: 500
+        };
+    }
+};
 const getFilingDetails = async (cik, accessionNumber) => {
     try {
         // 确保CIK格式正确（10位数字，前面补0）
@@ -245,6 +292,34 @@ module.exports = async (req, res) => {
                 data: companies,
                 message: `找到 ${companies.length} 个匹配的公司`
             });
+        }
+
+        // 文件下载代理 - 匹配 /download/* 路径
+        const downloadMatch = pathname.match(/\/download\/(.+)/);
+        if (downloadMatch) {
+            const filePath = downloadMatch[1];
+            console.log('下载文件:', filePath);
+
+            const result = await downloadFile(filePath);
+
+            if (result.success) {
+                // 设置响应头
+                res.setHeader('Content-Type', result.headers['content-type'] || 'application/octet-stream');
+                res.setHeader('Content-Length', result.headers['content-length'] || '');
+
+                // 设置文件名
+                const filename = filePath.split('/').pop();
+                res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+
+                // 流式传输文件
+                result.stream.pipe(res);
+                return;
+            } else {
+                return res.status(result.status || 500).json({
+                    success: false,
+                    error: result.error
+                });
+            }
         }
 
         // 文件详情获取 - 匹配 /filings/{cik}/{accessionNumber} 路径
