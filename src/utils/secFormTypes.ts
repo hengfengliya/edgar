@@ -238,21 +238,44 @@ export const isMajorForm = (formType: string): boolean => {
  * @returns 表单类型数组，按重要性排序
  */
 export const getAllFormTypes = (): Array<{code: string, description: string}> => {
-  const majorForms = [
-    '10-K', '10-Q', '8-K', '20-F', '6-K', 'DEF 14A', '13F-HR',
-    'SC 13D', 'SC 13G', '3', '4', '5', 'S-1', 'F-1'
+  // 按使用频率和重要性排序的表单类型
+  const priorityForms = [
+    // 最常见的定期报告
+    '10-K', '10-Q', '8-K', 
+    // 外国公司报告
+    '20-F', '6-K', 
+    // 代理材料
+    'DEF 14A', 'DEF 14C', 'PRE 14A', 'DEFA14A',
+    // 股权披露
+    'SC 13D', 'SC 13G', 'SC 13E3',
+    // 内部人交易
+    '3', '4', '5',
+    // 机构投资者报告
+    '13F-HR', '13F-NT',
+    // 注册声明
+    'S-1', 'S-3', 'S-4', 'S-8',
+    // 外国公司注册
+    'F-1', 'F-3', 'F-4', 'F-6', 'F-10',
+    // 招股说明书
+    '424B1', '424B2', '424B3', '424B4', '424B5', '425',
+    // 投资公司
+    'N-1A', 'N-CSR', 'N-CSRS', 'N-Q',
+    // 其他常见表单
+    '11-K', '40-F', 'SD', 'NT 10-K', 'NT 10-Q', 'CERT', 'CORRESP'
   ];
 
-  const result = majorForms.map(code => ({
+  const result = priorityForms.map(code => ({
     code,
-    description: SEC_FORM_TYPES[code] || '未知'
+    description: SEC_FORM_TYPES[code] || code
   }));
 
-  // 添加其他表单类型
-  Object.entries(SEC_FORM_TYPES).forEach(([code, description]) => {
-    if (!majorForms.includes(code)) {
-      result.push({ code, description });
-    }
+  // 添加剩余的表单类型（按字母顺序）
+  const remainingForms = Object.entries(SEC_FORM_TYPES)
+    .filter(([code]) => !priorityForms.includes(code))
+    .sort(([a], [b]) => a.localeCompare(b));
+
+  remainingForms.forEach(([code, description]) => {
+    result.push({ code, description });
   });
 
   return result;

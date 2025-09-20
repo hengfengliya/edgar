@@ -20,8 +20,8 @@ export const SearchForm: React.FC<SearchFormProps> = ({
 }) => {
   // 获取所有表单类型
   const formTypes = getAllFormTypes();
-  // 只显示主要的表单类型
-  const majorFormTypes = formTypes.slice(0, 20);
+  // 显示所有表单类型
+  const allFormTypes = formTypes;
 
   // 表单状态
   const [formData, setFormData] = useState<SearchFormData>({
@@ -143,7 +143,7 @@ export const SearchForm: React.FC<SearchFormProps> = ({
             disabled={loading}
           >
             <option value="">全部类型</option>
-            {majorFormTypes.map(({ code, description }) => (
+            {allFormTypes.map(({ code, description }) => (
               <option key={code} value={code}>
                 {description}
               </option>
