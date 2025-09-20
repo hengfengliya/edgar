@@ -122,7 +122,7 @@ export class EdgarAPIService {
   }
 
   /**
-   * 下载文件
+   * 下载文件到本地
    * @param url 文件URL
    * @param filename 文件名
    */
@@ -135,13 +135,13 @@ export class EdgarAPIService {
       console.log(`原始URL: ${url}`);
       console.log(`解码后URL: ${decodedUrl}`);
 
-      // 直接在新窗口打开SEC原始URL，更可靠
+      // 创建下载链接并触发下载
       const link = document.createElement('a');
       link.href = decodedUrl;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-
-      // 设置下载属性
+      
+      // 设置下载属性，强制下载到本地
       link.download = filename;
 
       // 添加到DOM并点击
@@ -151,15 +151,50 @@ export class EdgarAPIService {
 
       console.log(`文件下载已开始: ${filename}`);
 
-      // 可选：显示提示信息
-      if (window.confirm) {
-        setTimeout(() => {
-          alert(`文件将在新窗口中从SEC官网下载：${filename}`);
-        }, 100);
-      }
     } catch (error: any) {
       console.error('下载文件失败:', error);
       throw new Error(error.message || '下载文件失败');
+    }
+  }
+
+  /**
+   * 打开文件 - 在新窗口中直接查看SEC报告
+   * @param url 文件URL
+   * @param filename 文件名
+   */
+  async openFile(url: string, filename: string): Promise<void> {
+    try {
+      // 解码URL中的编码字符
+      const decodedUrl = decodeURIComponent(url);
+
+      console.log(`开始打开文件: ${filename}`);
+      console.log(`原始URL: ${url}`);
+      console.log(`解码后URL: ${decodedUrl}`);
+
+      // 直接在新窗口打开SEC原始URL进行查看
+      const newWindow = window.open(decodedUrl, '_blank', 'noopener,noreferrer');
+      
+      if (!newWindow) {
+        // 如果弹窗被阻止，提示用户
+        alert('请允许弹窗以打开SEC报告，或者将以下链接复制到新标签页中打开：\n' + decodedUrl);
+        
+        // 备用方案：使用link点击但不设置download属性
+        const link = document.createElement('a');
+        link.href = decodedUrl;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        // 不设置download属性，这样就会在浏览器中打开而不是下载
+        
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+      console.log(`文件已在新窗口打开: ${filename}`);
+      
+    } catch (error: any) {
+      console.error('打开文件失败:', error);
+      throw new Error(error.message || '打开文件失败');
     }
   }
 

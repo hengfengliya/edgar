@@ -30,6 +30,7 @@ export interface UseEdgarAPIActions {
   getCompanyFilings: (cik: string, filters?: FilingFilters) => Promise<FilingDataResponse>;
   getFilingDetails: (cik: string, accessionNumber: string) => Promise<FilingDetails>;
   downloadFile: (url: string, filename: string) => Promise<void>;
+  openFile: (url: string, filename: string) => Promise<void>;
   exportToCSV: (filings: any[], companyInfo: any) => string;
 
   // 状态操作
@@ -177,6 +178,29 @@ export function useEdgarAPI(): UseEdgarAPIState & UseEdgarAPIActions {
     }
   }, [updateState]);
 
+  // 打开文件
+  const openFile = useCallback(async (url: string, filename: string): Promise<void> => {
+    try {
+      updateState({
+        isLoading: true,
+        error: null
+      });
+
+      await edgarAPI.openFile(url, filename);
+
+      updateState({
+        isLoading: false
+      });
+    } catch (error: any) {
+      const errorMessage = error.message || '打开文件失败';
+      updateState({
+        error: errorMessage,
+        isLoading: false
+      });
+      throw error;
+    }
+  }, [updateState]);
+
   // 导出CSV
   const exportToCSV = useCallback((filings: any[], companyInfo: any): string => {
     try {
@@ -243,6 +267,7 @@ export function useEdgarAPI(): UseEdgarAPIState & UseEdgarAPIActions {
     getCompanyFilings,
     getFilingDetails,
     downloadFile,
+    openFile,
     exportToCSV,
     clearError,
     clearSearchResults,

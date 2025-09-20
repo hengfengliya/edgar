@@ -27,6 +27,7 @@ function App() {
     getCompanyFilings,
     getFilingDetails,
     downloadFile,
+    openFile,
     exportToCSV,
     clearError,
     reset
@@ -115,6 +116,15 @@ function App() {
       console.error('下载文件失败:', error);
     }
   }, [downloadFile]);
+
+  // 处理文件打开查看
+  const handleOpenFile = useCallback(async (url: string, filename: string) => {
+    try {
+      await openFile(url, filename);
+    } catch (error) {
+      console.error('打开文件失败:', error);
+    }
+  }, [openFile]);
 
   // 处理导出
   const handleExport = useCallback(() => {
@@ -310,6 +320,7 @@ function App() {
           isOpen={isModalOpen}
           onClose={handleCloseModal}
           onDownloadFile={handleDownloadFile}
+          onOpenFile={handleOpenFile}
           loading={isLoadingDetails}
         />
       </Layout>

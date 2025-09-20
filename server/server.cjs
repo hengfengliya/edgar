@@ -359,7 +359,7 @@ app.get('/api/download/*', rateLimitMiddleware, async (req, res) => {
             timeout: 60000
         });
 
-        // 设置响应头
+        // 设置响应头 - 强制下载到本地
         const filename = secUrl.split('/').pop() || 'download';
         res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
         res.setHeader('Content-Type', response.headers['content-type'] || 'application/octet-stream');

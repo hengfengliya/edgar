@@ -7,6 +7,7 @@ interface FilingDetailsModalProps {
   isOpen: boolean;
   onClose: () => void;
   onDownloadFile: (url: string, filename: string) => void;
+  onOpenFile: (url: string, filename: string) => void;
   loading?: boolean;
 }
 
@@ -19,6 +20,7 @@ export const FilingDetailsModal: React.FC<FilingDetailsModalProps> = ({
   isOpen,
   onClose,
   onDownloadFile,
+  onOpenFile,
   loading = false
 }) => {
   if (!isOpen || !details) {
@@ -33,6 +35,10 @@ export const FilingDetailsModal: React.FC<FilingDetailsModalProps> = ({
 
   const handleDownloadFile = (url: string, filename: string) => {
     onDownloadFile(url, filename);
+  };
+
+  const handleOpenFile = (url: string, filename: string) => {
+    onOpenFile(url, filename);
   };
 
   const handleCopyLink = (url: string) => {
@@ -148,6 +154,15 @@ export const FilingDetailsModal: React.FC<FilingDetailsModalProps> = ({
                         <div className="flex gap-2">
                           <button
                             className="btn btn-outline btn-sm"
+                            onClick={() => handleOpenFile(file.downloadUrl, file.name)}
+                            disabled={loading}
+                            title={`打开查看 ${file.name}`}
+                          >
+                            <i className="fas fa-external-link-alt"></i>
+                            查看
+                          </button>
+                          <button
+                            className="btn btn-outline btn-sm"
                             onClick={() => handleDownloadFile(file.downloadUrl, file.name)}
                             disabled={loading}
                             title={`下载 ${file.name}`}
@@ -195,26 +210,48 @@ export const FilingDetailsModal: React.FC<FilingDetailsModalProps> = ({
             关闭
           </button>
           {details.primaryDocument && (
-            <button
-              className="btn btn-primary"
-              onClick={() => handleDownloadFile(
-                details.primaryDocument!.downloadUrl,
-                details.primaryDocument!.name
-              )}
-              disabled={loading}
-            >
-              {loading ? (
-                <>
-                  <div className="spinner" style={{ width: '16px', height: '16px', marginBottom: 0 }}></div>
-                  下载中...
-                </>
-              ) : (
-                <>
-                  <i className="fas fa-download"></i>
-                  下载主要文档
-                </>
-              )}
-            </button>
+            <div className="flex gap-2">
+              <button
+                className="btn btn-outline"
+                onClick={() => handleOpenFile(
+                  details.primaryDocument!.downloadUrl,
+                  details.primaryDocument!.name
+                )}
+                disabled={loading}
+              >
+                {loading ? (
+                  <>
+                    <div className="spinner" style={{ width: '16px', height: '16px', marginBottom: 0 }}></div>
+                    打开中...
+                  </>
+                ) : (
+                  <>
+                    <i className="fas fa-external-link-alt"></i>
+                    查看主要文档
+                  </>
+                )}
+              </button>
+              <button
+                className="btn btn-primary"
+                onClick={() => handleDownloadFile(
+                  details.primaryDocument!.downloadUrl,
+                  details.primaryDocument!.name
+                )}
+                disabled={loading}
+              >
+                {loading ? (
+                  <>
+                    <div className="spinner" style={{ width: '16px', height: '16px', marginBottom: 0 }}></div>
+                    下载中...
+                  </>
+                ) : (
+                  <>
+                    <i className="fas fa-download"></i>
+                    下载主要文档
+                  </>
+                )}
+              </button>
+            </div>
           )}
         </div>
       </div>
