@@ -323,7 +323,12 @@ module.exports = async (req, res) => {
         } else if (pathname.match(/^\/api\/companies\/(\d+)\/filings$/)) {
             // 获取公司申报文件
             const cik = pathname.match(/^\/api\/companies\/(\d+)\/filings$/)[1];
-            const { formType, startDate, endDate, dateRange } = req.query;
+            
+            // 从URL查询参数中获取筛选条件
+            const formType = searchParams.get('formType');
+            const startDate = searchParams.get('startDate');
+            const endDate = searchParams.get('endDate');
+            const dateRange = searchParams.get('dateRange');
 
             console.log(`获取公司申报文件: CIK ${cik}`);
             console.log('筛选条件:', { formType, startDate, endDate, dateRange });
