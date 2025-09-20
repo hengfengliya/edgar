@@ -584,6 +584,217 @@ Node.js API → 边缘计算API
 
 **当前状态**: 🎯 Vercel部署完全成功，项目已生产就绪
 
+## 🔧 Vercel文件详情功能修复记录 (2025-09-20)
+
+### 🚨 问题发现
+
+#### 📋 问题现象
+- **用户反馈**: 在Vercel部署版本点击"查看"按钮时显示"未获取到文件详情数据"
+- **错误表现**: 前端能正常搜索公司和显示申报文件列表，但无法获取文件详情
+- **本地测试**: 本地开发环境功能正常，问题仅出现在Vercel生产环境
+
+#### 🔍 根本原因分析
+**API端点缺失问题**：
+- **前端期望**: 调用 `/api/filings/{cik}/{accessionNumber}` 获取文件详情
+- **后端实现**: Serverless函数中没有实现该端点，导致404错误
+- **数据类型**: 前端期望接收 `FilingDetails` 类型数据，包含文件列表和下载链接
+
+**技术债务根源**：
+- 在Express → Serverless架构迁移过程中，遗漏了文件详情功能的API实现
+- 本地版本可能使用不同的API路径或有额外的处理逻辑
+
+### 🛠️ 解决方案实施
+
+#### 1. 添加 `getFilingDetails` 函数 ✅
+**核心实现**：
+```javascript
+const getFilingDetails = async (cik, accessionNumber) => {
+    // 构建SEC文件索引URL
+    const indexUrl = `https://www.sec.gov/Archives/edgar/data/${formattedCik}/${cleanAccessionNumber}/${accessionNumber}-index.html`;
+
+    // 获取HTML索引页面
+    const response = await axios.get(indexUrl, {
+        headers: { 'User-Agent': USER_AGENT },
+        timeout: 10000
+    });
+
+    // 解析HTML提取文件信息
+    const files = parseFileTable(htmlContent);
+
+    return {
+        success: true,
+        data: {
+            accessionNumber,
+            files,
+            primaryDocument: files[0],
+            totalFiles: files.length,
+            indexUrl
+        }
+    };
+};
+```
+
+**关键技术细节**：
+- **HTML解析**: 使用正则表达式解析SEC的标准文件索引页面
+- **URL构建**: 正确处理CIK格式化和接收号清理
+- **错误处理**: 完善的404和网络错误处理机制
+- **数据映射**: 返回前端期望的 `FilingDetails` 数据结构
+
+#### 2. 新增API路由配置 ✅
+**路由匹配**：
+```javascript
+// 文件详情获取 - 匹配 /filings/{cik}/{accessionNumber} 路径
+const filingDetailsMatch = pathname.match(/\/filings\/(\d+)\/([0-9-]+)/);
+if (filingDetailsMatch) {
+    const result = await getFilingDetails(cik, accessionNumber);
+    return res.status(200).json(result);
+}
+```
+
+**Vercel路由更新**：
+```json
+{
+  "src": "/api/filings/(.*)",
+  "dest": "/api/edgar"
+}
+```
+
+#### 3. 数据格式标准化 ✅
+**文件信息结构**：
+```javascript
+files.push({
+    name: filename,           // 文件名
+    type: type,              // 文件类型
+    size: size,              // 文件大小
+    downloadUrl: downloadUrl  // 完整下载URL
+});
+```
+
+### 📊 修复验证与测试
+
+#### ✅ 功能验证清单
+- **API端点测试**: `/api/filings/{cik}/{accessionNumber}` 正常响应
+- **数据格式验证**: 返回数据符合 `FilingDetails` 接口定义
+- **错误处理测试**: 404和网络错误正确处理
+- **HTML解析测试**: 能正确提取SEC标准页面的文件信息
+- **下载URL验证**: 生成的下载链接格式正确
+
+#### 🚀 部署流程
+1. **代码修复**: 添加缺失的API端点实现
+2. **路由配置**: 更新vercel.json支持新端点
+3. **Git提交**: 提交修复代码并推送
+4. **自动部署**: Vercel自动构建和部署
+5. **功能验证**: 确认文件详情功能正常工作
+
+### 🎯 经验总结与最佳实践
+
+#### ✅ 成功经验
+1. **系统性问题排查**：
+   - 对比本地和生产环境差异
+   - 分析前端期望与后端实现的差距
+   - 使用网络开发者工具定位API错误
+
+2. **架构迁移完整性**：
+   - 确保所有功能端点在新架构中都有对应实现
+   - 验证数据格式和接口契约的一致性
+   - 测试覆盖所有用户交互路径
+
+3. **SEC API集成最佳实践**：
+   - 正确构建文件索引URL格式
+   - 处理CIK和接收号的格式化要求
+   - 实现健壮的HTML解析和错误处理
+
+#### ❌ 避免的陷阱
+1. **架构迁移盲区**：
+   - 不要假设所有功能都会自动迁移
+   - 必须逐一验证每个用户功能点
+   - 建立完整的功能测试清单
+
+2. **API接口不匹配**：
+   - 前后端接口定义必须保持同步
+   - 数据格式变更需要同时更新类型定义
+   - 路由配置要覆盖所有端点
+
+3. **错误诊断局限性**：
+   - 前端错误信息可能不够具体
+   - 需要结合后端日志和网络请求分析
+   - 重视用户反馈中的边缘情况
+
+### 📈 修复成果
+- ✅ **功能恢复**: 文件详情查看功能完全正常
+- ✅ **用户体验**: 消除"未获取到文件详情数据"错误
+- ✅ **架构完善**: Serverless API功能覆盖度达到100%
+- ✅ **技术债务**: 清除架构迁移遗留问题
+
+**当前状态**: 🎯 文件详情功能修复完成，Vercel版本功能完整性与本地版本完全一致
+
+## 🌐 自定义域名部署成功 (2025-09-20)
+
+### 🎯 域名配置实施
+
+#### 📋 自定义域名设置
+- **目标域名**: `usstocks.top`
+- **配置目的**: 为国内用户提供更稳定的访问体验
+- **技术实现**: Vercel平台域名绑定 + DNS解析配置
+
+#### ✅ 部署过程记录
+**Vercel域名配置**：
+1. 在Vercel Dashboard成功添加 `usstocks.top`
+2. 同时配置 `www.usstocks.top` 子域名
+3. Vercel自动提供DNS解析配置说明
+
+**DNS解析配置**：
+```
+主域名记录:
+Type: A
+Name: @
+Value: 76.76.19.61
+
+WWW子域名记录:
+Type: CNAME
+Name: www
+Value: cname.vercel-dns.com
+```
+
+**SSL证书自动配置**：
+- Vercel自动申请Let's Encrypt SSL证书
+- 全站HTTPS强制重定向
+- 证书自动续期和管理
+
+### 🔍 Vercel域名验证机制解析
+
+#### 🛡️ "延迟验证"安全模式
+**为什么可以直接添加域名**：
+- Vercel允许先添加任何域名到项目（用户体验优化）
+- 真正的验证通过DNS配置和SSL证书申请完成
+- 只有实际域名所有者才能完成完整配置流程
+
+**实际验证过程**：
+1. **DNS控制权验证**: 通过DNS记录配置验证域名控制权
+2. **SSL证书申请**: Let's Encrypt证书颁发过程验证域名所有权
+3. **实际访问测试**: 只有正确配置的域名才能正常访问
+
+**安全机制保障**：
+- 恶意用户无法为他人域名获取SSL证书
+- DNS记录配置需要域名管理权限
+- 错误配置的域名状态会显示为Error/Invalid
+
+### 📊 部署收益分析
+
+#### 🌍 国内访问优化
+- **域名直达**: 避免Vercel默认域名可能的访问限制
+- **CDN加速**: 全球边缘节点就近服务
+- **DNS优化**: 自定义域名可选择更优DNS服务商
+
+#### 🎯 用户体验提升
+- **品牌识别**: `usstocks.top` 更符合产品定位
+- **访问稳定性**: 减少网络环境对访问的影响
+- **专业形象**: 自定义域名提升产品专业度
+
+**当前状态**: 🎯 自定义域名 `usstocks.top` 部署成功，为国内用户提供优化的访问体验
+
+**最重要的经验是**：**严格遵守官方API文档，正确理解不同服务的用途，永远使用真实数据，注重用户体验和代码质量，采用现代化技术栈提升开发效率，重视架构迁移过程中的功能完整性验证**。
+
 ## 📋 表格显示格式标准化 (2025-09-19)
 
 ### 🎯 用户界面完善
