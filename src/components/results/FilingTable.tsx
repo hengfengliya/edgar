@@ -103,10 +103,10 @@ const FilingTableRow: React.FC<FilingTableRowProps> = ({
       <td>
         <div>
           <span className="badge bg-primary mb-1 d-block">
-            {filing.form}
+            {getFormDescription(filing.form)}
           </span>
           <small className="text-muted">
-            {getFormDescription(filing.form)}
+            {filing.form}
           </small>
         </div>
       </td>

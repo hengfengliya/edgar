@@ -45,7 +45,7 @@ export const ExportControls: React.FC<ExportControlsProps> = ({
         : '';
 
       return [
-        `${filing.form} - ${getFormDescription(filing.form)}`,
+        `${getFormDescription(filing.form)} (${filing.form})`,
         DateUtils.formatDate(filing.filingDate),
         companyInfo.name,
         filing.reportDate ? DateUtils.formatDate(filing.reportDate) : '',
