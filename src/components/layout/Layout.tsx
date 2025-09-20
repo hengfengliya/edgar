@@ -5,15 +5,15 @@ interface LayoutProps {
 }
 
 /**
- * 主要布局组件
+ * 苹果质感主布局组件
  * 提供应用的整体结构和容器
  */
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-vh-100 bg-light">
-      <div className="container-fluid mt-4">
+    <div className="app-container">
+      <main className="main-content fade-in">
         {children}
-      </div>
+      </main>
     </div>
   );
 };

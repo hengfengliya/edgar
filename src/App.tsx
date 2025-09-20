@@ -1,9 +1,7 @@
-import { useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { Header, Layout } from './components/layout';
 import { SearchForm } from './components/search';
-import { FilingTable, Pagination, FilingDetailsModal } from './components/results';
-import { EmptyState, InfoBanner } from './components/common';
-import { Card, Button, LoadingSpinner, Alert } from './components/ui';
+import { FilingTable, FilingDetailsModal } from './components/results';
 import { useEdgarAPI } from './hooks/useEdgarAPI';
 import { SearchFormData } from './types/api';
 import { DateUtils } from './utils/dateUtils';
@@ -161,83 +159,69 @@ function App() {
     <div className="App">
       <Header />
       <Layout>
-        {/* 使用说明 */}
-        <div className="row mb-3">
-          <div className="col-12">
-            <InfoBanner title="使用说明">
-              请先运行后端服务器（<code>npm start</code>），然后搜索美股公司。<br />
-              <strong>支持的公司</strong>：AAPL, MSFT, GOOGL, AMZN, META, TSLA, NVDA, NFLX, BABA, JD, BIDU, PDD, JPM, BAC, WMT, DIS等知名公司
-            </InfoBanner>
-          </div>
-        </div>
-
         {/* 搜索表单 */}
-        <div className="row mb-4">
-          <div className="col-12">
-            <SearchForm
-              onSearch={handleSearch}
-              loading={isSearching}
-            />
-          </div>
+        <div className="search-form">
+          <SearchForm
+            onSearch={handleSearch}
+            loading={isSearching}
+          />
         </div>
 
         {/* 错误提示 */}
         {error && (
-          <div className="row mb-3">
-            <div className="col-12">
-              <Alert
-                type="error"
-                message={error}
-                dismissible
-                onClose={clearError}
-              />
+          <div className="mb-6">
+            <div className="alert alert-error">
+              <i className="fas fa-exclamation-triangle"></i>
+              <span>{error}</span>
+              <button
+                className="btn btn-sm btn-outline"
+                onClick={clearError}
+                style={{ marginLeft: 'auto' }}
+              >
+                <i className="fas fa-times"></i>
+              </button>
             </div>
           </div>
         )}
 
         {/* 加载状态 */}
         {(isLoading || isSearching) && (
-          <div className="row mb-4">
-            <div className="col-12">
-              <LoadingSpinner
-                text="正在搜索SEC EDGAR数据库..."
-                className="my-5"
-              />
-            </div>
+          <div className="loading-container">
+            <div className="spinner"></div>
+            <div className="loading-text">正在搜索SEC EDGAR数据库...</div>
           </div>
         )}
 
         {/* 搜索结果 */}
         {filingData && !isLoading && !isSearching && (
-          <div id="results-section">
+          <div id="results-section" className="fade-in">
             {/* 结果统计 */}
-            <div className="row mb-3">
-              <div className="col-12">
-                <InfoBanner type="success">
+            <div className="mb-6">
+              <div className="alert alert-success">
+                <i className="fas fa-check-circle"></i>
+                <span>
                   找到 <strong>{totalItems}</strong> 条申报记录
                   {lastSearchQuery && ` (搜索: ${lastSearchQuery})`}
-                </InfoBanner>
+                </span>
               </div>
             </div>
 
             {/* 结果表格 */}
-            <div className="row">
-              <div className="col-12">
-                <Card
-                  title="申报文件列表"
-                  headerActions={
-                    <Button
-                      variant="outline-primary"
-                      size="sm"
-                      onClick={handleExport}
-                      icon="fas fa-download"
-                      disabled={!filingData?.filings?.length}
-                    >
-                      导出CSV
-                    </Button>
-                  }
+            <div className="card">
+              <div className="card-header">
+                <h3 className="card-title">申报文件列表</h3>
+                <button
+                  className="btn btn-outline btn-sm"
+                  onClick={handleExport}
+                  disabled={!filingData?.filings?.length}
                 >
-                  {currentFilings.length > 0 ? (
+                  <i className="fas fa-download"></i>
+                  导出CSV
+                </button>
+              </div>
+              <div className="card-body no-padding">
+                {currentFilings.length > 0 ? (
+                  <div className="table-container">
                     <FilingTable
                       filings={currentFilings}
                       companyInfo={filingData.companyInfo}
@@ -245,26 +229,58 @@ function App() {
                       onDownload={handleDownload}
                       loading={isLoadingDetails}
                     />
-                  ) : (
-                    <EmptyState
-                      title="暂无申报文件"
-                      description="请尝试调整搜索条件"
-                    />
-                  )}
-                </Card>
+                  </div>
+                ) : (
+                  <div className="empty-state">
+                    <div className="empty-icon">
+                      <i className="fas fa-file-alt"></i>
+                    </div>
+                    <h3 className="empty-title">暂无申报文件</h3>
+                    <p className="empty-description">请尝试调整搜索条件</p>
+                  </div>
+                )}
               </div>
             </div>
 
             {/* 分页器 */}
             {totalPages > 1 && (
-              <div className="row mt-3">
-                <div className="col-12">
-                  <Pagination
-                    currentPage={currentPage}
-                    totalPages={totalPages}
-                    onPageChange={handlePageChange}
-                  />
-                </div>
+              <div className="pagination">
+                <button
+                  className={`page-btn ${currentPage === 1 ? 'disabled' : ''}`}
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  disabled={currentPage === 1}
+                >
+                  <i className="fas fa-chevron-left"></i>
+                </button>
+
+                {Array.from({ length: totalPages }, (_, i) => i + 1)
+                  .filter(page =>
+                    page === 1 ||
+                    page === totalPages ||
+                    Math.abs(page - currentPage) <= 2
+                  )
+                  .map((page, index, array) => (
+                    <React.Fragment key={page}>
+                      {index > 0 && array[index - 1] !== page - 1 && (
+                        <span className="page-btn disabled">...</span>
+                      )}
+                      <button
+                        className={`page-btn ${currentPage === page ? 'active' : ''}`}
+                        onClick={() => handlePageChange(page)}
+                      >
+                        {page}
+                      </button>
+                    </React.Fragment>
+                  ))
+                }
+
+                <button
+                  className={`page-btn ${currentPage === totalPages ? 'disabled' : ''}`}
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                >
+                  <i className="fas fa-chevron-right"></i>
+                </button>
               </div>
             )}
           </div>
@@ -272,19 +288,20 @@ function App() {
 
         {/* 空状态 */}
         {!filingData && !isLoading && !isSearching && !error && (
-          <EmptyState
-            title="请输入公司名称或股票代码开始搜索"
-            description="支持搜索美股上市公司的各类SEC申报文件"
-            action={
-              <Button
-                variant="primary"
-                onClick={handleClear}
-                icon="fas fa-refresh"
-              >
-                重新开始
-              </Button>
-            }
-          />
+          <div className="empty-state">
+            <div className="empty-icon">
+              <i className="fas fa-search"></i>
+            </div>
+            <h3 className="empty-title">请输入公司名称或股票代码开始搜索</h3>
+            <p className="empty-description">支持搜索美股上市公司的各类SEC申报文件</p>
+            <button
+              className="btn btn-primary"
+              onClick={handleClear}
+            >
+              <i className="fas fa-refresh"></i>
+              重新开始
+            </button>
+          </div>
         )}
 
         {/* 文件详情模态框 */}

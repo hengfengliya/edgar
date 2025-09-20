@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { Card, Button } from '../ui';
 import { SearchFormData } from '../../types/api';
 import { ValidationUtils } from '../../utils/validationUtils';
 import { getAllFormTypes } from '../../utils/secFormTypes';
@@ -11,7 +10,7 @@ interface SearchFormProps {
 }
 
 /**
- * 搜索表单组件
+ * 苹果质感搜索表单组件
  * 提供公司搜索和筛选条件输入功能
  */
 export const SearchForm: React.FC<SearchFormProps> = ({
@@ -91,141 +90,151 @@ export const SearchForm: React.FC<SearchFormProps> = ({
   }, []);
 
   return (
-    <Card
-      title="搜索公司申报文件"
-      className={className}
-    >
-      <form onSubmit={handleSubmit}>
-        {/* 错误提示 */}
-        {errors.length > 0 && (
-          <div className="alert alert-danger">
-            <i className="fas fa-exclamation-triangle me-2"></i>
-            {errors.join('；')}
-          </div>
-        )}
+    <form onSubmit={handleSubmit} className={`slide-in ${className}`}>
+      {/* 错误提示 */}
+      {errors.length > 0 && (
+        <div className="alert alert-error mb-6">
+          <i className="fas fa-exclamation-triangle"></i>
+          <span>{errors.join('；')}</span>
+        </div>
+      )}
 
-        <div className="row">
-          {/* 公司搜索框 */}
-          <div className="col-md-6 mb-3">
-            <label htmlFor="companyInput" className="form-label">
-              公司名称或股票代码
-            </label>
-            <div className="input-group">
-              <span className="input-group-text">
-                <i className="fas fa-building"></i>
-              </span>
-              <input
-                type="text"
-                className="form-control"
-                id="companyInput"
-                placeholder="例如: TSLA, Apple, BABA, Microsoft"
-                value={formData.companyInput}
-                onChange={(e) => handleInputChange('companyInput', e.target.value)}
-                disabled={loading}
-              />
-            </div>
-          </div>
-
-          {/* 表单类型筛选 */}
-          <div className="col-md-3 mb-3">
-            <label htmlFor="formType" className="form-label">
-              表单类型
-            </label>
-            <select
-              className="form-select"
-              id="formType"
-              value={formData.formType}
-              onChange={(e) => handleInputChange('formType', e.target.value)}
+      <div className="grid grid-cols-2 gap-6 mb-6">
+        {/* 公司搜索框 */}
+        <div className="form-group">
+          <label htmlFor="companyInput" className="form-label">
+            公司名称或股票代码
+          </label>
+          <div style={{ position: 'relative' }}>
+            <input
+              type="text"
+              className="form-input"
+              id="companyInput"
+              placeholder="例如: TSLA, Apple, BABA, Microsoft"
+              value={formData.companyInput}
+              onChange={(e) => handleInputChange('companyInput', e.target.value)}
               disabled={loading}
-            >
-              <option value="">全部类型</option>
-              {majorFormTypes.map(({ code, description }) => (
-                <option key={code} value={code}>
-                  {description}
-                </option>
-              ))}
-            </select>
+              style={{ paddingLeft: '44px' }}
+            />
+            <i
+              className="fas fa-building"
+              style={{
+                position: 'absolute',
+                left: '16px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                color: 'var(--color-text-tertiary)',
+                fontSize: '14px'
+              }}
+            />
           </div>
+        </div>
 
-          {/* 时间范围 */}
-          <div className="col-md-3 mb-3">
-            <label htmlFor="dateRange" className="form-label">
-              时间范围
-            </label>
-            <select
-              className="form-select"
-              id="dateRange"
-              value={formData.dateRange}
-              onChange={(e) => handleDateRangeChange(e.target.value)}
-              disabled={loading}
-            >
-              <option value="">不限制</option>
-              <option value="30">最近30天</option>
-              <option value="90">最近3个月</option>
-              <option value="365">最近1年</option>
-              <option value="custom">自定义日期</option>
-            </select>
-          </div>
+        {/* 表单类型筛选 */}
+        <div className="form-group">
+          <label htmlFor="formType" className="form-label">
+            表单类型
+          </label>
+          <select
+            className="form-select"
+            id="formType"
+            value={formData.formType}
+            onChange={(e) => handleInputChange('formType', e.target.value)}
+            disabled={loading}
+          >
+            <option value="">全部类型</option>
+            {majorFormTypes.map(({ code, description }) => (
+              <option key={code} value={code}>
+                {description}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-3 gap-6 mb-6">
+        {/* 时间范围 */}
+        <div className="form-group">
+          <label htmlFor="dateRange" className="form-label">
+            时间范围
+          </label>
+          <select
+            className="form-select"
+            id="dateRange"
+            value={formData.dateRange}
+            onChange={(e) => handleDateRangeChange(e.target.value)}
+            disabled={loading}
+          >
+            <option value="">不限制</option>
+            <option value="30">最近30天</option>
+            <option value="90">最近3个月</option>
+            <option value="365">最近1年</option>
+            <option value="custom">自定义日期</option>
+          </select>
         </div>
 
         {/* 自定义日期范围 */}
         {formData.dateRange === 'custom' && (
-          <div className="row">
-            <div className="col-md-3 mb-3">
+          <>
+            <div className="form-group">
               <label htmlFor="startDate" className="form-label">
                 开始日期
               </label>
               <input
                 type="date"
-                className="form-control"
+                className="form-input"
                 id="startDate"
                 value={formData.startDate}
                 onChange={(e) => handleInputChange('startDate', e.target.value)}
                 disabled={loading}
               />
             </div>
-            <div className="col-md-3 mb-3">
+            <div className="form-group">
               <label htmlFor="endDate" className="form-label">
                 结束日期
               </label>
               <input
                 type="date"
-                className="form-control"
+                className="form-input"
                 id="endDate"
                 value={formData.endDate}
                 onChange={(e) => handleInputChange('endDate', e.target.value)}
                 disabled={loading}
               />
             </div>
-          </div>
+          </>
         )}
+      </div>
 
-        {/* 操作按钮 */}
-        <div className="row">
-          <div className="col-12">
-            <Button
-              type="submit"
-              variant="primary"
-              size="lg"
-              loading={loading}
-              icon="fas fa-search"
-              className="me-2"
-            >
+      {/* 操作按钮 */}
+      <div className="flex gap-4">
+        <button
+          type="submit"
+          className="btn btn-primary btn-lg"
+          disabled={loading}
+        >
+          {loading ? (
+            <>
+              <div className="spinner" style={{ width: '16px', height: '16px', marginBottom: 0 }}></div>
+              搜索中...
+            </>
+          ) : (
+            <>
+              <i className="fas fa-search"></i>
               搜索
-            </Button>
-            <Button
-              type="button"
-              variant="outline-secondary"
-              size="lg"
-              onClick={handleClear}
-              icon="fas fa-times"
-              disabled={loading}
-            >
-              清空
-            </Button>
-          </div>
-        </div>
-      </form>
-    </Card>
+            </>
+          )}
+        </button>
+        <button
+          type="button"
+          className="btn btn-secondary btn-lg"
+          onClick={handleClear}
+          disabled={loading}
+        >
+          <i className="fas fa-times"></i>
+          清空
+        </button>
+      </div>
+    </form>
   );
 };
