@@ -21,6 +21,10 @@
       "dest": "/assets/$1"
     },
     {
+      "src": "/api/filings/(.*)",
+      "dest": "/api/edgar"
+    },
+    {
       "src": "/api/companies/search",
       "dest": "/api/edgar"
     },

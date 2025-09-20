@@ -31,6 +31,105 @@ const searchCompanies = (query) => {
 };
 
 /**
+ * 获取申报文件详情
+ */
+const getFilingDetails = async (cik, accessionNumber) => {
+    try {
+        // 确保CIK格式正确（10位数字，前面补0）
+        const formattedCik = cik.padStart(10, '0');
+        // 移除接收号中的连字符
+        const cleanAccessionNumber = accessionNumber.replace(/-/g, '');
+
+        // 构建文件索引URL
+        const indexUrl = `https://www.sec.gov/Archives/edgar/data/${formattedCik}/${cleanAccessionNumber}/${accessionNumber}-index.html`;
+
+        console.log('获取文件详情:', indexUrl);
+
+        const response = await axios.get(indexUrl, {
+            headers: {
+                'User-Agent': USER_AGENT,
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+            },
+            timeout: 10000
+        });
+
+        // 解析HTML响应以提取文件信息
+        const htmlContent = response.data;
+        const files = [];
+
+        // 简单的HTML解析 - 查找文件表格
+        const tableRegex = /<table[^>]*class="tableFile"[^>]*>(.*?)<\/table>/is;
+        const tableMatch = htmlContent.match(tableRegex);
+
+        if (tableMatch) {
+            const tableContent = tableMatch[1];
+            // 查找表格行
+            const rowRegex = /<tr[^>]*>(.*?)<\/tr>/gis;
+            const rows = [...tableContent.matchAll(rowRegex)];
+
+            for (let i = 1; i < rows.length; i++) { // 跳过表头
+                const row = rows[i][1];
+                // 提取文件信息
+                const cellRegex = /<td[^>]*>(.*?)<\/td>/gis;
+                const cells = [...row.matchAll(cellRegex)];
+
+                if (cells.length >= 4) {
+                    const filename = cells[1][1].replace(/<[^>]*>/g, '').trim();
+                    const type = cells[2][1].replace(/<[^>]*>/g, '').trim();
+                    const size = parseInt(cells[3][1].replace(/<[^>]*>/g, '').replace(/,/g, '')) || 0;
+
+                    // 构建下载URL
+                    const downloadUrl = `https://www.sec.gov/Archives/edgar/data/${formattedCik}/${cleanAccessionNumber}/${filename}`;
+
+                    files.push({
+                        name: filename,
+                        type: type,
+                        size: size,
+                        downloadUrl: downloadUrl
+                    });
+                }
+            }
+        }
+
+        // 找到主要文档
+        let primaryDocument = null;
+        if (files.length > 0) {
+            // 通常第一个文件是主要文档
+            primaryDocument = files[0];
+        }
+
+        return {
+            success: true,
+            data: {
+                accessionNumber: accessionNumber,
+                files: files,
+                primaryDocument: primaryDocument,
+                totalFiles: files.length,
+                indexUrl: indexUrl
+            },
+            message: `获取到 ${files.length} 个文件`
+        };
+
+    } catch (error) {
+        console.error('获取文件详情失败:', error.message);
+
+        if (error.response?.status === 404) {
+            return {
+                success: false,
+                error: '未找到该申报文件的详情',
+                message: '请检查接收号是否正确'
+            };
+        }
+
+        return {
+            success: false,
+            error: '获取文件详情失败: ' + error.message,
+            message: '请稍后重试或检查网络连接'
+        };
+    }
+};
+
+/**
  * 获取公司申报文件
  */
 const getCompanyFilings = async (cik) => {
@@ -148,6 +247,22 @@ module.exports = async (req, res) => {
             });
         }
 
+        // 文件详情获取 - 匹配 /filings/{cik}/{accessionNumber} 路径
+        const filingDetailsMatch = pathname.match(/\/filings\/(\d+)\/([0-9-]+)/);
+        if (filingDetailsMatch) {
+            const cik = filingDetailsMatch[1];
+            const accessionNumber = filingDetailsMatch[2];
+            console.log('获取文件详情, CIK:', cik, 'AccessionNumber:', accessionNumber);
+
+            const result = await getFilingDetails(cik, accessionNumber);
+
+            if (result.success) {
+                return res.status(200).json(result);
+            } else {
+                return res.status(400).json(result);
+            }
+        }
+
         // 申报文件获取 - 匹配 /companies/{cik}/filings 路径
         const filingMatch = pathname.match(/\/companies\/(\d+)\/filings/);
         if (filingMatch) {
@@ -169,7 +284,8 @@ module.exports = async (req, res) => {
             message: 'SEC EDGAR API代理服务正在运行',
             available_endpoints: [
                 '/api/companies/search?q=公司名称',
-                '/api/companies/{cik}/filings'
+                '/api/companies/{cik}/filings',
+                '/api/filings/{cik}/{accessionNumber}'
             ],
             timestamp: new Date().toISOString()
         });
