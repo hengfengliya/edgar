@@ -95,7 +95,11 @@ const getFilingDetails = async (cik, accessionNumber) => {
         const response = await axios.get(indexUrl, {
             headers: {
                 'User-Agent': USER_AGENT,
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1'
             },
             timeout: 10000
         });
@@ -120,37 +124,39 @@ const getFilingDetails = async (cik, accessionNumber) => {
                 const cellRegex = /<td[^>]*>(.*?)<\/td>/gis;
                 const cells = [...row.matchAll(cellRegex)];
 
-                if (cells.length >= 4) {
-                    // 提取文件名 - 需要从链接href中获取实际文件名
-                    const filenameCell = cells[1][1];
-                    let filename = '';
+                if (cells.length >= 5) {
+                    // SEC文件索引页面结构：
+                    // 第1列：序号, 第2列：描述, 第3列：文档链接, 第4列：类型, 第5列：大小
 
-                    // 尝试从链接href中提取文件名
-                    const linkMatch = filenameCell.match(/<a[^>]+href="([^"]+)"[^>]*>([^<]+)<\/a>/i);
+                    const description = cells[1][1].replace(/<[^>]*>/g, '').trim();
+                    const documentCell = cells[2][1];
+                    const type = cells[3][1].replace(/<[^>]*>/g, '').trim();
+                    const size = parseInt(cells[4][1].replace(/<[^>]*>/g, '').replace(/,/g, '')) || 0;
+
+                    // 从文档链接中提取实际文件名
+                    let filename = '';
+                    const linkMatch = documentCell.match(/<a[^>]+href="([^"]+)"[^>]*>([^<]+)<\/a>/i);
                     if (linkMatch) {
                         const href = linkMatch[1];
                         const linkText = linkMatch[2].trim();
 
-                        // 如果href是相对路径，使用href作为文件名
-                        if (href && !href.startsWith('http')) {
-                            filename = href;
+                        // href通常是相对路径，提取文件名
+                        if (href) {
+                            filename = href.split('/').pop() || linkText;
                         } else {
-                            // 否则使用链接文本
                             filename = linkText;
                         }
                     } else {
-                        // 如果没有链接，使用单元格文本
-                        filename = filenameCell.replace(/<[^>]*>/g, '').trim();
+                        // 如果没有链接，使用描述
+                        filename = description;
                     }
-
-                    const type = cells[2][1].replace(/<[^>]*>/g, '').trim();
-                    const size = parseInt(cells[3][1].replace(/<[^>]*>/g, '').replace(/,/g, '')) || 0;
 
                     // 构建下载URL
                     const downloadUrl = `https://www.sec.gov/Archives/edgar/data/${formattedCik}/${cleanAccessionNumber}/${filename}`;
 
                     files.push({
                         name: filename,
+                        description: description,
                         type: type,
                         size: size,
                         downloadUrl: downloadUrl
