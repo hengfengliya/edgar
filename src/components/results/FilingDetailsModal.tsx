@@ -35,6 +35,14 @@ export const FilingDetailsModal: React.FC<FilingDetailsModalProps> = ({
     onDownloadFile(url, filename);
   };
 
+  const handleCopyLink = (url: string) => {
+    navigator.clipboard.writeText(url).then(() => {
+      alert('文件链接已复制到剪贴板');
+    }).catch(() => {
+      console.error('复制链接失败');
+    });
+  };
+
   return (
     <div className="modal-overlay" onClick={handleBackdropClick}>
       <div className="modal-content fade-in">
@@ -137,15 +145,25 @@ export const FilingDetailsModal: React.FC<FilingDetailsModalProps> = ({
                         </span>
                       </td>
                       <td>
-                        <button
-                          className="btn btn-outline btn-sm"
-                          onClick={() => handleDownloadFile(file.downloadUrl, file.name)}
-                          disabled={loading}
-                          title={`下载 ${file.name}`}
-                        >
-                          <i className="fas fa-download"></i>
-                          下载
-                        </button>
+                        <div className="flex gap-2">
+                          <button
+                            className="btn btn-outline btn-sm"
+                            onClick={() => handleDownloadFile(file.downloadUrl, file.name)}
+                            disabled={loading}
+                            title={`下载 ${file.name}`}
+                          >
+                            <i className="fas fa-download"></i>
+                            下载
+                          </button>
+                          <button
+                            className="btn btn-secondary btn-sm"
+                            onClick={() => handleCopyLink(file.downloadUrl)}
+                            title={`复制 ${file.name} 的链接`}
+                          >
+                            <i className="fas fa-link"></i>
+                            复制链接
+                          </button>
+                        </div>
                       </td>
                     </tr>
                   ))}

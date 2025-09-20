@@ -131,34 +131,32 @@ export class EdgarAPIService {
       // 解码URL中的编码字符
       const decodedUrl = decodeURIComponent(url);
 
-      // 将SEC URL转换为代理URL - 修复URL构建逻辑
-      let proxyUrl;
-      if (decodedUrl.startsWith('https://www.sec.gov/')) {
-        // SEC www域名 - 移除域名，保留完整路径
-        const path = decodedUrl.replace('https://www.sec.gov/', '');
-        proxyUrl = `/api/download/${path}`;
-      } else if (decodedUrl.startsWith('https://data.sec.gov/')) {
-        // SEC data域名 - 添加data前缀标识
-        const path = decodedUrl.replace('https://data.sec.gov/', '');
-        proxyUrl = `/api/download/data/${path}`;
-      } else {
-        // 相对URL，直接添加代理前缀
-        proxyUrl = `/api/download/${decodedUrl}`;
-      }
+      console.log(`开始下载文件: ${filename}`);
+      console.log(`原始URL: ${url}`);
+      console.log(`解码后URL: ${decodedUrl}`);
 
-      console.log(`下载文件: ${filename} (原始URL: ${url}) (代理URL: ${proxyUrl})`);
-
-      // 创建下载链接
+      // 直接在新窗口打开SEC原始URL，更可靠
       const link = document.createElement('a');
-      link.href = proxyUrl;
-      link.download = filename;
+      link.href = decodedUrl;
       link.target = '_blank';
+      link.rel = 'noopener noreferrer';
 
+      // 设置下载属性
+      link.download = filename;
+
+      // 添加到DOM并点击
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
 
       console.log(`文件下载已开始: ${filename}`);
+
+      // 可选：显示提示信息
+      if (window.confirm) {
+        setTimeout(() => {
+          alert(`文件将在新窗口中从SEC官网下载：${filename}`);
+        }, 100);
+      }
     } catch (error: any) {
       console.error('下载文件失败:', error);
       throw new Error(error.message || '下载文件失败');
