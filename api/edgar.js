@@ -11,23 +11,104 @@ const SEC_DATA_URL = 'https://data.sec.gov';
 const USER_AGENT = process.env.SEC_USER_AGENT || 'SEC EDGAR Research Tool tellmeheifengli@gmail.com';
 
 /**
- * 搜索公司
+ * 搜索公司 - 增强版智能搜索
  */
 const searchCompanies = (query) => {
-    const searchTerm = query.toUpperCase();
+    const searchTerm = query.toUpperCase().trim();
     const results = [];
+    const seen = new Set(); // 避免重复
 
+    if (!searchTerm) return results;
+
+    // 1. 精确匹配 - 最高优先级
     for (const [key, company] of Object.entries(WELL_KNOWN_COMPANIES)) {
-        if (key.includes(searchTerm) || company.name.toUpperCase().includes(searchTerm)) {
-            results.push({
-                cik: company.cik,
-                name: company.name,
-                ticker: key
-            });
+        if (key === searchTerm || company.name.toUpperCase() === searchTerm) {
+            const result = { cik: company.cik, name: company.name, ticker: key, score: 100 };
+            if (!seen.has(company.cik)) {
+                results.push(result);
+                seen.add(company.cik);
+            }
         }
     }
 
-    return results;
+    // 2. Ticker开头匹配 - 高优先级
+    for (const [key, company] of Object.entries(WELL_KNOWN_COMPANIES)) {
+        if (key.startsWith(searchTerm) && !seen.has(company.cik)) {
+            const result = { cik: company.cik, name: company.name, ticker: key, score: 90 };
+            results.push(result);
+            seen.add(company.cik);
+        }
+    }
+
+    // 3. 公司名称开头匹配 - 中高优先级
+    for (const [key, company] of Object.entries(WELL_KNOWN_COMPANIES)) {
+        if (company.name.toUpperCase().startsWith(searchTerm) && !seen.has(company.cik)) {
+            const result = { cik: company.cik, name: company.name, ticker: key, score: 80 };
+            results.push(result);
+            seen.add(company.cik);
+        }
+    }
+
+    // 4. Ticker包含匹配 - 中优先级
+    for (const [key, company] of Object.entries(WELL_KNOWN_COMPANIES)) {
+        if (key.includes(searchTerm) && !seen.has(company.cik)) {
+            const result = { cik: company.cik, name: company.name, ticker: key, score: 70 };
+            results.push(result);
+            seen.add(company.cik);
+        }
+    }
+
+    // 5. 公司名称包含匹配 - 低优先级
+    for (const [key, company] of Object.entries(WELL_KNOWN_COMPANIES)) {
+        if (company.name.toUpperCase().includes(searchTerm) && !seen.has(company.cik)) {
+            const result = { cik: company.cik, name: company.name, ticker: key, score: 60 };
+            results.push(result);
+            seen.add(company.cik);
+        }
+    }
+
+    // 6. 模糊匹配 - 处理常见输入变体
+    const fuzzyPatterns = {
+        'APPLE': ['AAPL'],
+        'MICROSOFT': ['MSFT'],
+        'GOOGLE': ['GOOGL', 'GOOG'],
+        'AMAZON': ['AMZN'],
+        'TESLA': ['TSLA'],
+        'FACEBOOK': ['META'],
+        'ALIBABA': ['BABA'],
+        'NETFLIX': ['NFLX'],
+        'NVIDIA': ['NVDA'],
+        'PAYPAL': ['PYPL'],
+        'ORACLE': ['ORCL'],
+        'WALMART': ['WMT'],
+        'COSTCO': ['COST'],
+        'STARBUCKS': ['SBUX'],
+        'MCDONALDS': ['MCD'],
+        'DISNEY': ['DIS'],
+        'BOEING': ['BA'],
+        'CATERPILLAR': ['CAT'],
+        'FORD': ['F']
+    };
+
+    if (fuzzyPatterns[searchTerm]) {
+        for (const ticker of fuzzyPatterns[searchTerm]) {
+            if (WELL_KNOWN_COMPANIES[ticker] && !seen.has(WELL_KNOWN_COMPANIES[ticker].cik)) {
+                const company = WELL_KNOWN_COMPANIES[ticker];
+                const result = { cik: company.cik, name: company.name, ticker: ticker, score: 85 };
+                results.push(result);
+                seen.add(company.cik);
+            }
+        }
+    }
+
+    // 按分数排序，然后按名称排序
+    return results
+        .sort((a, b) => {
+            if (b.score !== a.score) return b.score - a.score;
+            return a.name.localeCompare(b.name);
+        })
+        .map(result => ({ cik: result.cik, name: result.name, ticker: result.ticker })) // 移除score字段
+        .slice(0, 50); // 限制返回50个结果
 };
 
 /**
