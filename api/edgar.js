@@ -206,13 +206,14 @@ const getFilingDetails = async (cik, accessionNumber) => {
 /**
  * 获取公司申报文件
  */
-const getCompanyFilings = async (cik) => {
+const getCompanyFilings = async (cik, filters = {}) => {
     try {
         // 确保CIK格式正确（10位数字，前面补0）
         const formattedCik = cik.padStart(10, '0');
         const url = `${SEC_DATA_URL}/submissions/CIK${formattedCik}.json`;
 
         console.log('获取申报文件:', url);
+        console.log('筛选条件:', filters);
 
         const response = await axios.get(url, {
             headers: {
@@ -230,7 +231,7 @@ const getCompanyFilings = async (cik) => {
             const count = recent.form.length; // 返回所有可用数据，不设限制
 
             for (let i = 0; i < count; i++) {
-                filings.push({
+                const filing = {
                     form: recent.form[i],
                     filingDate: recent.filingDate[i],
                     reportDate: recent.reportDate[i] || '',
@@ -239,9 +240,17 @@ const getCompanyFilings = async (cik) => {
                     filmNumber: recent.filmNumber[i] || '',
                     description: recent.primaryDocument[i] || '',
                     size: recent.size[i] || 0
-                });
+                };
+
+                // 应用筛选条件
+                if (shouldIncludeFiling(filing, filters)) {
+                    filings.push(filing);
+                }
             }
         }
+
+        // 按提交日期倒序排列
+        filings.sort((a, b) => new Date(b.filingDate) - new Date(a.filingDate));
 
         return {
             success: true,
@@ -275,6 +284,42 @@ const getCompanyFilings = async (cik) => {
             message: '请稍后重试或检查网络连接'
         };
     }
+};
+
+/**
+ * 判断申报文件是否符合筛选条件
+ */
+const shouldIncludeFiling = (filing, filters) => {
+    // 表单类型筛选
+    if (filters.formType && filing.form !== filters.formType) {
+        return false;
+    }
+
+    // 日期范围筛选
+    if (filters.startDate || filters.endDate) {
+        const filingDate = new Date(filing.filingDate);
+
+        if (filters.startDate && filingDate < new Date(filters.startDate)) {
+            return false;
+        }
+
+        if (filters.endDate && filingDate > new Date(filters.endDate)) {
+            return false;
+        }
+    }
+
+    // 时间范围筛选（最近N天）
+    if (filters.dateRange && filters.dateRange !== 'custom') {
+        const days = parseInt(filters.dateRange);
+        const cutoffDate = new Date();
+        cutoffDate.setDate(cutoffDate.getDate() - days);
+
+        if (new Date(filing.filingDate) < cutoffDate) {
+            return false;
+        }
+    }
+
+    return true;
 };
 
 /**
@@ -399,9 +444,23 @@ module.exports = async (req, res) => {
         const filingMatch = pathname.match(/\/companies\/(\d+)\/filings/);
         if (filingMatch) {
             const cik = filingMatch[1];
-            console.log('获取申报文件, CIK:', cik);
 
-            const result = await getCompanyFilings(cik);
+            // 从URL查询参数中获取筛选条件
+            const formType = searchParams.get('formType');
+            const startDate = searchParams.get('startDate');
+            const endDate = searchParams.get('endDate');
+            const dateRange = searchParams.get('dateRange');
+
+            const filters = {
+                formType,
+                startDate,
+                endDate,
+                dateRange
+            };
+
+            console.log('获取申报文件, CIK:', cik, '筛选条件:', filters);
+
+            const result = await getCompanyFilings(cik, filters);
 
             if (result.success) {
                 return res.status(200).json(result);
