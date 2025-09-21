@@ -145,7 +145,7 @@ export const SearchForm: React.FC<SearchFormProps> = ({
             <option value="">全部类型</option>
             {allFormTypes.map(({ code, description }) => (
               <option key={code} value={code}>
-                {description}
+                {code} ({description})
               </option>
             ))}
           </select>

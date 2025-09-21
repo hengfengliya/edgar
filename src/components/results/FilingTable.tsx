@@ -102,20 +102,9 @@ const FilingTableRow: React.FC<FilingTableRowProps> = ({
     <tr className="slide-in">
       {/* Form & File */}
       <td>
-        <div>
-          <span className="badge badge-primary mb-2 block">
-            {getFormDescription(filing.form)}
-          </span>
-          <div
-            style={{
-              fontSize: 'var(--font-size-xs)',
-              color: 'var(--color-text-tertiary)',
-              fontFamily: 'ui-monospace, SFMono-Regular, Consolas, monospace'
-            }}
-          >
-            {filing.form}
-          </div>
-        </div>
+        <span className="badge badge-primary">
+          {getFormDescription(filing.form)}
+        </span>
       </td>
 
       {/* 提交日期 */}
