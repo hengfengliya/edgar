@@ -292,7 +292,6 @@ const getCompanyFilings = async (cik, filters = {}) => {
 const shouldIncludeFiling = (filing, filters) => {
     // 表单类型筛选
     if (filters.formType && filing.form !== filters.formType) {
-        console.log(`❌ 表单类型不匹配: "${filing.form}" !== "${filters.formType}"`);
         return false;
     }
 
@@ -301,12 +300,10 @@ const shouldIncludeFiling = (filing, filters) => {
         const filingDate = new Date(filing.filingDate);
 
         if (filters.startDate && filingDate < new Date(filters.startDate)) {
-            console.log(`❌ 文件日期太早: ${filing.filingDate} < ${filters.startDate}`);
             return false;
         }
 
         if (filters.endDate && filingDate > new Date(filters.endDate)) {
-            console.log(`❌ 文件日期太晚: ${filing.filingDate} > ${filters.endDate}`);
             return false;
         }
     }
@@ -318,12 +315,10 @@ const shouldIncludeFiling = (filing, filters) => {
         cutoffDate.setDate(cutoffDate.getDate() - days);
 
         if (new Date(filing.filingDate) < cutoffDate) {
-            console.log(`❌ 文件超出时间范围: ${filing.filingDate} < ${cutoffDate.toISOString().split('T')[0]} (最近${days}天)`);
             return false;
         }
     }
 
-    console.log(`✅ 文件通过筛选: ${filing.form} (${filing.filingDate})`);
     return true;
 };
 
@@ -463,9 +458,7 @@ module.exports = async (req, res) => {
                 dateRange
             };
 
-            console.log('🔍 API请求URL:', req.url);
-            console.log('📋 完整查询参数:', Object.fromEntries(searchParams.entries()));
-            console.log('🎯 解析的筛选条件:', filters);
+            console.log('获取申报文件, CIK:', cik);
 
             const result = await getCompanyFilings(cik, filters);
 
