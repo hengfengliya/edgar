@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
           <div className="header-icon">
             <i className="fas fa-chart-line"></i>
           </div>
-          <span>数据检索系统</span>
+          <span>虚空有物数据检索系统</span>
         </div>
       </div>
     </header>

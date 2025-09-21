@@ -99,7 +99,7 @@ export const SearchForm: React.FC<SearchFormProps> = ({
         </div>
       )}
 
-      <div className="grid grid-cols-2 gap-6 mb-6">
+      <div className="grid grid-cols-3 gap-6 mb-6">
         {/* 公司搜索框 */}
         <div className="form-group">
           <label htmlFor="companyInput" className="form-label">
@@ -150,9 +150,7 @@ export const SearchForm: React.FC<SearchFormProps> = ({
             ))}
           </select>
         </div>
-      </div>
 
-      <div className="grid grid-cols-3 gap-6 mb-6">
         {/* 时间范围 */}
         <div className="form-group">
           <label htmlFor="dateRange" className="form-label">
@@ -172,39 +170,39 @@ export const SearchForm: React.FC<SearchFormProps> = ({
             <option value="custom">自定义日期</option>
           </select>
         </div>
-
-        {/* 自定义日期范围 */}
-        {formData.dateRange === 'custom' && (
-          <>
-            <div className="form-group">
-              <label htmlFor="startDate" className="form-label">
-                开始日期
-              </label>
-              <input
-                type="date"
-                className="form-input"
-                id="startDate"
-                value={formData.startDate}
-                onChange={(e) => handleInputChange('startDate', e.target.value)}
-                disabled={loading}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="endDate" className="form-label">
-                结束日期
-              </label>
-              <input
-                type="date"
-                className="form-input"
-                id="endDate"
-                value={formData.endDate}
-                onChange={(e) => handleInputChange('endDate', e.target.value)}
-                disabled={loading}
-              />
-            </div>
-          </>
-        )}
       </div>
+
+      {/* 自定义日期范围 */}
+      {formData.dateRange === 'custom' && (
+        <div className="grid grid-cols-2 gap-6 mb-6">
+          <div className="form-group">
+            <label htmlFor="startDate" className="form-label">
+              开始日期
+            </label>
+            <input
+              type="date"
+              className="form-input"
+              id="startDate"
+              value={formData.startDate}
+              onChange={(e) => handleInputChange('startDate', e.target.value)}
+              disabled={loading}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="endDate" className="form-label">
+              结束日期
+            </label>
+            <input
+              type="date"
+              className="form-input"
+              id="endDate"
+              value={formData.endDate}
+              onChange={(e) => handleInputChange('endDate', e.target.value)}
+              disabled={loading}
+            />
+          </div>
+        </div>
+      )}
 
       {/* 操作按钮 */}
       <div className="flex gap-4">
