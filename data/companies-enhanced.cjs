@@ -16,20 +16,50 @@ class SECCompanyDatabase {
     }
 
     /**
-     * 延迟加载数据库 - 支持分片文件
+     * 延迟加载数据库 - 支持分片文件 (Vercel优化版)
      */
     loadDatabase() {
         if (this.isLoaded) return;
 
         try {
-            // 1. 优先尝试加载分片数据库
-            const searchIndexPath = path.join(__dirname, 'search-db-index.json');
-            const cikIndexPath = path.join(__dirname, 'cik-db-index.json');
+            console.log('🔍 开始数据库加载...', {
+                __dirname: __dirname,
+                cwd: process.cwd()
+            });
 
-            if (fs.existsSync(searchIndexPath) && fs.existsSync(cikIndexPath)) {
+            // 1. 优先尝试加载分片数据库 - 多种路径尝试
+            const possiblePaths = [
+                // Vercel部署环境路径
+                {
+                    search: path.resolve(process.cwd(), 'data', 'search-db-index.json'),
+                    cik: path.resolve(process.cwd(), 'data', 'cik-db-index.json')
+                },
+                // 本地开发环境路径
+                {
+                    search: path.join(__dirname, 'search-db-index.json'),
+                    cik: path.join(__dirname, 'cik-db-index.json')
+                },
+                // 相对于项目根目录
+                {
+                    search: path.resolve(__dirname, '..', 'data', 'search-db-index.json'),
+                    cik: path.resolve(__dirname, '..', 'data', 'cik-db-index.json')
+                }
+            ];
+
+            let foundPath = null;
+            for (const pathPair of possiblePaths) {
+                console.log('🔍 尝试路径:', pathPair.search);
+                if (fs.existsSync(pathPair.search) && fs.existsSync(pathPair.cik)) {
+                    foundPath = pathPair;
+                    console.log('✅ 找到分片数据库文件:', pathPair.search);
+                    break;
+                }
+            }
+
+            if (foundPath) {
                 console.log('📚 加载分片SEC数据库...');
-                this.searchDatabase = this.mergeChunks(searchIndexPath);
-                this.cikDatabase = this.mergeChunks(cikIndexPath);
+                this.searchDatabase = this.mergeChunks(foundPath.search);
+                this.cikDatabase = this.mergeChunks(foundPath.cik);
                 console.log(`✅ 分片数据库加载完成: ${Object.keys(this.searchDatabase).length} 个搜索条目`);
             }
             // 2. 尝试加载优化数据库
@@ -56,7 +86,7 @@ class SECCompanyDatabase {
                     }
                     // 4. 降级到基础数据库
                     else {
-                        console.log('⚠️ 完整数据库不存在，使用基础数据库');
+                        console.log('⚠️ 未找到任何完整数据库，使用基础数据库');
                         const basicCompanies = require('./companies.cjs').WELL_KNOWN_COMPANIES;
                         this.searchDatabase = basicCompanies;
                         this.cikDatabase = {};
@@ -69,16 +99,28 @@ class SECCompanyDatabase {
                                 priority: true
                             };
                         });
+                        console.log(`⚠️ 基础数据库加载: ${Object.keys(this.searchDatabase).length} 个搜索条目`);
                     }
                 }
             }
 
             this.isLoaded = true;
         } catch (error) {
-            console.error('❌ 数据库加载失败:', error.message);
+            console.error('❌ 数据库加载失败:', error.message, error.stack);
             // 降级到基础数据
             const basicCompanies = require('./companies.cjs').WELL_KNOWN_COMPANIES;
             this.searchDatabase = basicCompanies;
+            this.cikDatabase = {};
+
+            Object.entries(basicCompanies).forEach(([key, value]) => {
+                const paddedCik = value.cik.padStart(10, '0');
+                this.cikDatabase[paddedCik] = {
+                    name: value.name,
+                    ticker: key,
+                    priority: true
+                };
+            });
+            console.log(`❌ 错误降级到基础数据库: ${Object.keys(this.searchDatabase).length} 个搜索条目`);
             this.isLoaded = true;
         }
     }
