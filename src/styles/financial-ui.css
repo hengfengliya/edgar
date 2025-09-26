@@ -1,0 +1,410 @@
+/* =================================================================
+   专业级金融数据展示UI样式
+   借鉴Bloomberg Terminal和PitchBook平台设计
+   ================================================================= */
+
+/* 数据卡片组件样式 */
+.data-card {
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #e3e6f0);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.data-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary-color, #007bff);
+  transform: translateY(-2px);
+}
+
+.data-card--clickable {
+  cursor: pointer;
+}
+
+.data-card--clickable:hover .data-card__hover-indicator {
+  opacity: 1;
+}
+
+/* 卡片头部 */
+.data-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.data-card__icon {
+  font-size: 20px;
+  color: var(--icon-color, #6c757d);
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.data-card__title-group {
+  flex-grow: 1;
+}
+
+.data-card__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary, #1a1d29);
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.data-card__subtitle {
+  font-size: 12px;
+  color: var(--text-secondary, #6c757d);
+  margin: 0;
+  line-height: 1.2;
+  opacity: 0.8;
+}
+
+.data-card__trend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.data-card__trend-value {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary, #6c757d);
+}
+
+/* 数值展示区域 */
+.data-card__value-section {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.data-card__value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary, #1a1d29);
+  line-height: 1;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.data-card__unit {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary, #6c757d);
+  margin-left: 2px;
+}
+
+/* 悬停指示器 */
+.data-card__hover-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--primary-color, #007bff);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* 卡片尺寸变体 */
+.data-card--small {
+  padding: 16px;
+}
+
+.data-card--small .data-card__value {
+  font-size: 24px;
+}
+
+.data-card--small .data-card__title {
+  font-size: 13px;
+}
+
+.data-card--large {
+  padding: 24px;
+}
+
+.data-card--large .data-card__value {
+  font-size: 36px;
+}
+
+.data-card--large .data-card__title {
+  font-size: 16px;
+}
+
+/* 颜色主题变体 */
+.data-card--blue {
+  --icon-color: #007bff;
+  --primary-color: #007bff;
+}
+
+.data-card--blue:hover {
+  border-color: #007bff;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(0, 123, 255, 0.02) 100%);
+}
+
+.data-card--green {
+  --icon-color: #28a745;
+  --primary-color: #28a745;
+}
+
+.data-card--green:hover {
+  border-color: #28a745;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(40, 167, 69, 0.02) 100%);
+}
+
+.data-card--orange {
+  --icon-color: #fd7e14;
+  --primary-color: #fd7e14;
+}
+
+.data-card--orange:hover {
+  border-color: #fd7e14;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(253, 126, 20, 0.02) 100%);
+}
+
+.data-card--red {
+  --icon-color: #dc3545;
+  --primary-color: #dc3545;
+}
+
+.data-card--red:hover {
+  border-color: #dc3545;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(220, 53, 69, 0.02) 100%);
+}
+
+.data-card--purple {
+  --icon-color: #6f42c1;
+  --primary-color: #6f42c1;
+}
+
+.data-card--purple:hover {
+  border-color: #6f42c1;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(111, 66, 193, 0.02) 100%);
+}
+
+.data-card--gray {
+  --icon-color: #6c757d;
+  --primary-color: #6c757d;
+}
+
+.data-card--gray:hover {
+  border-color: #6c757d;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(108, 117, 125, 0.02) 100%);
+}
+
+/* 统计网格容器 */
+.stats-grid {
+  margin-bottom: 32px;
+}
+
+.stats-grid__header {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.stats-grid__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary, #1a1d29);
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.stats-grid__subtitle {
+  font-size: 16px;
+  color: var(--text-secondary, #6c757d);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.stats-grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .stats-grid__container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .data-card {
+    padding: 16px;
+  }
+
+  .data-card__value {
+    font-size: 24px;
+  }
+
+  .stats-grid__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-grid__container {
+    gap: 12px;
+  }
+
+  .data-card {
+    padding: 14px;
+  }
+
+  .data-card__header {
+    margin-bottom: 12px;
+  }
+
+  .data-card__value {
+    font-size: 22px;
+  }
+
+  .data-card__title {
+    font-size: 13px;
+  }
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .data-card {
+    --card-bg: #1e2139;
+    --border-color: #2a2d47;
+    --text-primary: #ffffff;
+    --text-secondary: #a6a9c8;
+    background: var(--card-bg);
+    border-color: var(--border-color);
+  }
+
+  .data-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .stats-grid__title {
+    color: var(--text-primary);
+  }
+
+  .stats-grid__subtitle {
+    color: var(--text-secondary);
+  }
+}
+
+/* Bloomberg风格的数据表格增强 */
+.filing-table {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e3e6f0;
+}
+
+.filing-table thead th {
+  background: #f8f9fb;
+  font-weight: 600;
+  font-size: 13px;
+  color: #1a1d29;
+  border-bottom: 2px solid #e3e6f0;
+  padding: 16px 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filing-table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.filing-table tbody tr:hover {
+  background: rgba(0, 123, 255, 0.02);
+}
+
+.filing-table tbody td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #f1f3f4;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* PitchBook风格的搜索增强 */
+.search-form {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e3e6f0;
+  overflow: hidden;
+}
+
+.search-form .form-control {
+  font-size: 16px;
+  padding: 16px 20px;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+}
+
+.search-form .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  background: rgba(0, 123, 255, 0.02);
+}
+
+.search-form .btn-primary {
+  padding: 16px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  transition: all 0.2s ease;
+}
+
+.search-form .btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* 专业级加载动画 */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 金融数据高亮 */
+.highlight-metric {
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.05) 0%, rgba(0, 123, 255, 0.02) 100%);
+  border-left: 4px solid #007bff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.highlight-metric .metric-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.highlight-metric .metric-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1d29;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+}

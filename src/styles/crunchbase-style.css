@@ -1,0 +1,203 @@
+/*
+Crunchbase风格首屏设计
+参考现代化简洁设计理念，突出搜索功能
+*/
+
+/* 首页Hero区块样式 - Crunchbase风格简洁设计 */
+.hero-section {
+  background: linear-gradient(135deg,
+    rgba(0, 122, 255, 0.02) 0%,
+    rgba(88, 86, 214, 0.02) 50%,
+    rgba(255, 45, 85, 0.02) 100%);
+  padding: 4rem 0 2rem;
+  margin: -2rem 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* 英雄区头部 */
+.hero-header {
+  margin-bottom: 4rem;
+}
+
+.hero-section .main-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1d1d1f;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero-section .subtitle {
+  font-size: 1.3rem;
+  color: #86868b;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* 搜索区域增强 - 突出显示 */
+.hero-section .search-container {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section .search-header {
+  margin-bottom: 2rem;
+}
+
+.hero-section .search-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1d29;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section .search-header p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 详细数据展示区域 - 改进UI效果和留白设计 */
+.hero-data-section {
+  background: linear-gradient(135deg,
+    rgba(248, 249, 250, 0.8) 0%,
+    rgba(255, 255, 255, 0.9) 100%);
+  border-radius: 0;
+  padding: 4rem 0;
+  margin: 4rem 0 0;
+  border-top: none;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.hero-metrics__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* 搜索提示优化 */
+.hero-section .search-hints {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-section .search-hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #6c757d;
+  background: rgba(0, 123, 255, 0.04);
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 123, 255, 0.08);
+}
+
+.hero-section .search-hint i {
+  color: #007bff;
+  font-size: 11px;
+}
+
+/* 搜索表单样式增强 */
+.hero-section .search-input-container {
+  box-shadow: 0 8px 32px rgba(0, 123, 255, 0.12);
+  border: 2px solid #e8f2ff;
+}
+
+.hero-section .search-input-container:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 12px 40px rgba(0, 123, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+/* 数据卡片样式优化 */
+.hero-data-section .data-card {
+  background: #ffffff;
+  border: 1px solid #f0f2f5;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.hero-data-section .data-card:hover {
+  border-color: #e6f3ff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.08);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .hero-section .main-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-section .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-content {
+    padding: 0 2rem;
+  }
+
+  .hero-metrics__grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+
+  .hero-data-section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 3rem 0 1rem;
+  }
+
+  .hero-section .main-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-section .subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    padding: 0 1.5rem;
+  }
+
+  .hero-data-section {
+    padding: 2rem 0;
+  }
+
+  .hero-metrics__grid {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+    gap: 1rem;
+  }
+
+  .hero-data-section .data-card {
+    padding: 1.5rem 1rem;
+  }
+}

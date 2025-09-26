@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import { HelmetProvider } from 'react-helmet-async';
+import AppRouter from './router';
 import { ErrorBoundary } from './components/common';
 import './styles/index.css';
+import './styles/crunchbase-style.css';
+import './styles/layout-system.css';
 
 // 创建React根节点并渲染应用
 const root = ReactDOM.createRoot(
@@ -11,8 +14,10 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
+    <HelmetProvider>
+      <ErrorBoundary>
+        <AppRouter />
+      </ErrorBoundary>
+    </HelmetProvider>
   </React.StrictMode>
 );

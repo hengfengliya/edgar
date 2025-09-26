@@ -1,6 +1,9 @@
 /* 导入Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
+/* 导入多页面架构样式 */
+@import './multipage.css';
+
 /* 苹果质感设计系统 */
 :root {
   /* 苹果标准颜色 */
