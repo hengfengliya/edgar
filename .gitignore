@@ -37,3 +37,19 @@ Thumbs.db
 # 临时文件
 *.tmp
 *.temp
+
+# 大数据库文件 (超过GitHub文件大小限制)
+complete-*.json
+optimized-*.json
+full-*.json
+
+# 测试覆盖率
+coverage/
+
+# 缓存目录
+.cache/
+.parcel-cache/
+
+# 备份文件
+*.bak
+*.backup

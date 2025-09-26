@@ -1,0 +1,7 @@
+# 大型数据库文件使用Git LFS
+complete-*.json filter=lfs diff=lfs merge=lfs -text
+optimized-*.json filter=lfs diff=lfs merge=lfs -text
+full-*.json filter=lfs diff=lfs merge=lfs -text
+
+# 其他可能的大文件
+*.json[5-9][0-9]MB filter=lfs diff=lfs merge=lfs -text
