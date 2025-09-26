@@ -38,10 +38,10 @@ Thumbs.db
 *.tmp
 *.temp
 
-# 大数据库文件 (超过GitHub文件大小限制)
-complete-*.json
-optimized-*.json
-full-*.json
+# 注释：保留大数据库文件以支持完整功能
+# complete-*.json
+# optimized-*.json
+# full-*.json
 
 # 测试覆盖率
 coverage/
