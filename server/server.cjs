@@ -9,8 +9,13 @@ const axios = require('axios');
 const path = require('path');
 require('dotenv').config();
 
-// 引用共享的公司数据文件
-const { WELL_KNOWN_COMPANIES, getCompanyCount } = require('../data/companies.cjs');
+// 引用完整SEC公司数据库
+const { SECCompanyDatabase } = require('../data/companies-enhanced.cjs');
+const { getCompanyCount } = require('../data/companies.cjs'); // 保留统计函数
+
+// 初始化完整数据库
+const companyDatabase = new SECCompanyDatabase();
+companyDatabase.loadDatabase();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -147,44 +152,33 @@ app.get('/api/companies/search', rateLimitMiddleware, async (req, res) => {
 
         console.log(`搜索公司: ${q}`);
 
-        const searchTerm = q.toUpperCase().trim();
-        const companies = [];
+        const searchTerm = q.trim();
 
-        // 在预定义的公司列表中搜索
-        for (const [key, company] of Object.entries(WELL_KNOWN_COMPANIES)) {
-            if (key.includes(searchTerm) || company.name.toUpperCase().includes(searchTerm)) {
-                companies.push({
-                    cik: company.cik.padStart(10, '0'),
-                    ticker: key.includes(searchTerm) ? key : '', // 如果匹配的是ticker则显示
-                    title: company.name
-                });
-            }
-        }
+        // 使用完整数据库搜索
+        const results = companyDatabase.searchCompanies(searchTerm, 10);
 
-        // 去重 - 同一个CIK可能有多个ticker
-        const uniqueCompanies = companies.reduce((acc, company) => {
-            const existing = acc.find(c => c.cik === company.cik);
-            if (!existing) {
-                acc.push(company);
-            }
-            return acc;
-        }, []);
+        // 转换为API期望的格式
+        const companies = results.map(company => ({
+            cik: company.cik.padStart(10, '0'),
+            ticker: company.ticker || '',
+            title: company.name
+        }));
 
-        console.log(`找到 ${uniqueCompanies.length} 个匹配的公司`);
+        console.log(`找到 ${companies.length} 个匹配的公司`);
 
-        if (uniqueCompanies.length === 0) {
+        if (companies.length === 0) {
             return res.json({
                 success: true,
                 data: [],
                 count: 0,
-                message: `未找到 "${q}" 的匹配公司。支持的公司包括：AAPL, MSFT, GOOGL, AMZN, META, TSLA, BABA等知名公司。`
+                message: `未找到 "${q}" 的匹配公司。数据库包含88万+家公司，请尝试其他关键词搜索。`
             });
         }
 
         res.json({
             success: true,
-            data: uniqueCompanies,
-            count: uniqueCompanies.length
+            data: companies,
+            count: companies.length
         });
 
     } catch (error) {
