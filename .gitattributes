@@ -1,0 +1,9 @@
+# Git LFS 配置 - 支持大型SEC数据库文件
+# SEC完整数据库文件使用Git LFS管理
+complete-*.json filter=lfs diff=lfs merge=lfs -text
+optimized-*.json filter=lfs diff=lfs merge=lfs -text
+full-*.json filter=lfs diff=lfs merge=lfs -text
+
+# 其他大文件类型
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.txt filter=lfs diff=lfs merge=lfs -text
