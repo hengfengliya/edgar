@@ -16,46 +16,60 @@ class SECCompanyDatabase {
     }
 
     /**
-     * 延迟加载数据库
+     * 延迟加载数据库 - 支持分片文件
      */
     loadDatabase() {
         if (this.isLoaded) return;
 
         try {
-            const searchPath = path.join(__dirname, '..', 'optimized-search-database.json');
-            const cikPath = path.join(__dirname, '..', 'optimized-cik-database.json');
+            // 1. 优先尝试加载分片数据库
+            const searchIndexPath = path.join(__dirname, 'search-db-index.json');
+            const cikIndexPath = path.join(__dirname, 'cik-db-index.json');
 
-            if (fs.existsSync(searchPath) && fs.existsSync(cikPath)) {
-                // 优化数据库已存在，加载
-                console.log('📚 加载优化SEC数据库...');
-                this.searchDatabase = JSON.parse(fs.readFileSync(searchPath, 'utf8'));
-                this.cikDatabase = JSON.parse(fs.readFileSync(cikPath, 'utf8'));
-                console.log(`✅ 优化数据库加载完成: ${Object.keys(this.searchDatabase).length} 个搜索条目`);
-            } else {
-                // 尝试加载完整数据库
-                const fullSearchPath = path.join(__dirname, '..', 'complete-search-database.json');
-                const fullCikPath = path.join(__dirname, '..', 'complete-cik-database.json');
+            if (fs.existsSync(searchIndexPath) && fs.existsSync(cikIndexPath)) {
+                console.log('📚 加载分片SEC数据库...');
+                this.searchDatabase = this.mergeChunks(searchIndexPath);
+                this.cikDatabase = this.mergeChunks(cikIndexPath);
+                console.log(`✅ 分片数据库加载完成: ${Object.keys(this.searchDatabase).length} 个搜索条目`);
+            }
+            // 2. 尝试加载优化数据库
+            else {
+                const searchPath = path.join(__dirname, '..', 'optimized-search-database.json');
+                const cikPath = path.join(__dirname, '..', 'optimized-cik-database.json');
 
-                if (fs.existsSync(fullSearchPath) && fs.existsSync(fullCikPath)) {
-                    console.log('📚 加载完整SEC数据库...');
-                    this.searchDatabase = JSON.parse(fs.readFileSync(fullSearchPath, 'utf8'));
-                    this.cikDatabase = JSON.parse(fs.readFileSync(fullCikPath, 'utf8'));
-                    console.log(`✅ 完整数据库加载完成: ${Object.keys(this.searchDatabase).length} 个搜索条目`);
-                } else {
-                    // 使用基础数据库
-                    console.log('⚠️ 完整数据库不存在，使用基础数据库');
-                    const basicCompanies = require('./companies.cjs').WELL_KNOWN_COMPANIES;
-                    this.searchDatabase = basicCompanies;
-                    this.cikDatabase = {};
+                if (fs.existsSync(searchPath) && fs.existsSync(cikPath)) {
+                    console.log('📚 加载优化SEC数据库...');
+                    this.searchDatabase = JSON.parse(fs.readFileSync(searchPath, 'utf8'));
+                    this.cikDatabase = JSON.parse(fs.readFileSync(cikPath, 'utf8'));
+                    console.log(`✅ 优化数据库加载完成: ${Object.keys(this.searchDatabase).length} 个搜索条目`);
+                }
+                // 3. 尝试加载完整数据库
+                else {
+                    const fullSearchPath = path.join(__dirname, '..', 'complete-search-database.json');
+                    const fullCikPath = path.join(__dirname, '..', 'complete-cik-database.json');
 
-                    Object.entries(basicCompanies).forEach(([key, value]) => {
-                        const paddedCik = value.cik.padStart(10, '0');
-                        this.cikDatabase[paddedCik] = {
-                            name: value.name,
-                            ticker: key,
-                            priority: true
-                        };
-                    });
+                    if (fs.existsSync(fullSearchPath) && fs.existsSync(fullCikPath)) {
+                        console.log('📚 加载完整SEC数据库...');
+                        this.searchDatabase = JSON.parse(fs.readFileSync(fullSearchPath, 'utf8'));
+                        this.cikDatabase = JSON.parse(fs.readFileSync(fullCikPath, 'utf8'));
+                        console.log(`✅ 完整数据库加载完成: ${Object.keys(this.searchDatabase).length} 个搜索条目`);
+                    }
+                    // 4. 降级到基础数据库
+                    else {
+                        console.log('⚠️ 完整数据库不存在，使用基础数据库');
+                        const basicCompanies = require('./companies.cjs').WELL_KNOWN_COMPANIES;
+                        this.searchDatabase = basicCompanies;
+                        this.cikDatabase = {};
+
+                        Object.entries(basicCompanies).forEach(([key, value]) => {
+                            const paddedCik = value.cik.padStart(10, '0');
+                            this.cikDatabase[paddedCik] = {
+                                name: value.name,
+                                ticker: key,
+                                priority: true
+                            };
+                        });
+                    }
                 }
             }
 
@@ -67,6 +81,24 @@ class SECCompanyDatabase {
             this.searchDatabase = basicCompanies;
             this.isLoaded = true;
         }
+    }
+
+    /**
+     * 合并分片文件
+     */
+    mergeChunks(indexPath) {
+        const indexDir = path.dirname(indexPath);
+        const indexData = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+
+        const mergedData = {};
+        for (const chunkInfo of indexData.chunks) {
+            const chunkPath = path.join(indexDir, chunkInfo.file);
+            if (fs.existsSync(chunkPath)) {
+                const chunkData = JSON.parse(fs.readFileSync(chunkPath, 'utf8'));
+                Object.assign(mergedData, chunkData);
+            }
+        }
+        return mergedData;
     }
 
     /**
