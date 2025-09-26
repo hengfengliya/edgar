@@ -3,23 +3,21 @@
  */
 
 const axios = require('axios');
-// 引用增强的公司数据文件 - 支持94万+公司
-const { searchCompanies: enhancedSearchCompanies, getDatabaseStats } = require('../data/companies-enhanced.cjs');
+// 引用压缩版公司数据文件 - 10.75MB核心数据库
+const { searchCompanies: compactSearchCompanies, getDatabaseStats } = require('../data/companies-compact.cjs');
 
 // SEC EDGAR API配置
 const SEC_DATA_URL = 'https://data.sec.gov';
 const USER_AGENT = process.env.SEC_USER_AGENT || 'SEC EDGAR Research Tool tellmeheifengli@gmail.com';
 
 /**
- * 搜索公司 - 使用增强版94万+公司数据库
+ * 搜索公司 - 使用压缩版15万+核心公司数据库
  */
 const searchCompanies = (query) => {
-    console.log('搜索公司 (增强版):', query);
+    console.log('搜索公司 (压缩版):', query);
 
-    const results = enhancedSearchCompanies(query, {
+    const results = compactSearchCompanies(query, {
         limit: 50,
-        includePartialMatch: true,
-        prioritizeWithTickers: true,
         minRelevance: 50
     });
 
@@ -486,7 +484,7 @@ module.exports = async (req, res) => {
         // 默认响应
         return res.status(200).json({
             success: true,
-            message: 'SEC EDGAR API代理服务正在运行 (增强版94万+公司)',
+            message: 'SEC EDGAR API代理服务正在运行 (压缩版15万+核心公司)',
             available_endpoints: [
                 '/api/companies/search?q=公司名称',
                 '/api/companies/stats',
