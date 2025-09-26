@@ -1,19 +1,19 @@
 {
   "version": "1.0",
-  "created": "2025-09-26T02:41:26.006Z",
+  "created": "2025-09-26T02:47:15.254Z",
   "originalFile": "complete-search-database.json",
   "totalEntries": 944919,
   "totalChunks": 2,
   "chunks": [
     {
       "file": "search-db-part00.json",
-      "entries": 705517,
-      "size": 53976315
+      "entries": 564414,
+      "size": 42964728
     },
     {
       "file": "search-db-part01.json",
-      "entries": 239402,
-      "size": 18212095
+      "entries": 380505,
+      "size": 29223682
     }
   ]
 }
