@@ -3,23 +3,24 @@
  */
 
 const axios = require('axios');
-// 引用压缩版公司数据文件 - 10.75MB核心数据库
-const { searchCompanies: compactSearchCompanies, getDatabaseStats } = require('../data/companies-compact.cjs');
+// 引用完整SEC公司数据库 - 与本地环境保持一致
+const { SECCompanyDatabase } = require('../data/companies-enhanced.cjs');
 
 // SEC EDGAR API配置
 const SEC_DATA_URL = 'https://data.sec.gov';
 const USER_AGENT = process.env.SEC_USER_AGENT || 'SEC EDGAR Research Tool tellmeheifengli@gmail.com';
 
+// 初始化完整数据库实例 - 与本地环境保持一致
+const companyDatabase = new SECCompanyDatabase();
+
 /**
- * 搜索公司 - 使用压缩版15万+核心公司数据库
+ * 搜索公司 - 使用完整88万+公司数据库
  */
 const searchCompanies = (query) => {
-    console.log('搜索公司 (压缩版):', query);
+    console.log('搜索公司 (完整版):', query);
 
-    const results = compactSearchCompanies(query, {
-        limit: 50,
-        minRelevance: 50
-    });
+    // 使用与本地服务器相同的调用方式
+    const results = companyDatabase.searchCompanies(query, 10);
 
     return results.map(result => ({
         cik: result.cik,
@@ -357,6 +358,17 @@ module.exports = async (req, res) => {
             console.log('搜索公司:', query);
             const companies = searchCompanies(query);
 
+            console.log(`找到 ${companies.length} 个匹配的公司`);
+
+            if (companies.length === 0) {
+                return res.status(200).json({
+                    success: true,
+                    data: [],
+                    count: 0,
+                    message: `未找到 "${query}" 的匹配公司。数据库包含88万+家公司，请尝试其他关键词搜索。`
+                });
+            }
+
             return res.status(200).json({
                 success: true,
                 data: companies,
@@ -368,7 +380,7 @@ module.exports = async (req, res) => {
         // 数据库统计信息
         if (pathname.includes('/companies/stats')) {
             console.log('获取数据库统计信息');
-            const stats = getDatabaseStats();
+            const stats = companyDatabase.getStats();
 
             return res.status(200).json({
                 success: true,
@@ -484,7 +496,7 @@ module.exports = async (req, res) => {
         // 默认响应
         return res.status(200).json({
             success: true,
-            message: 'SEC EDGAR API代理服务正在运行 (压缩版15万+核心公司)',
+            message: 'SEC EDGAR API代理服务正在运行 (完整版88万+公司)',
             available_endpoints: [
                 '/api/companies/search?q=公司名称',
                 '/api/companies/stats',
