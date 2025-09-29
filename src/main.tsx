@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HelmetProvider } from '@dr.pogodin/react-helmet';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import AppRouter from './router';
 import { ErrorBoundary } from './components/common';
 import './styles/index.css';
@@ -17,6 +18,7 @@ root.render(
     <HelmetProvider>
       <ErrorBoundary>
         <AppRouter />
+        <SpeedInsights />
       </ErrorBoundary>
     </HelmetProvider>
   </React.StrictMode>
