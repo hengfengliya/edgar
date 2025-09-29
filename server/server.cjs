@@ -516,11 +516,6 @@ function getFileType(filename) {
     return typeMap[extension] || '其他文件';
 }
 
-// 静态文件路由 - 主页
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'index.html'));
-});
-
 // 健康检查
 app.get('/api/health', (req, res) => {
     res.json({
@@ -529,6 +524,23 @@ app.get('/api/health', (req, res) => {
         timestamp: new Date().toISOString(),
         userAgent: USER_AGENT
     });
+});
+
+// 静态文件路由 - 主页
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'index.html'));
+});
+
+// SPA路由支持 - 为所有非API路径返回index.html
+app.get('*', (req, res, next) => {
+    // 如果请求的是API路径，继续到下一个中间件
+    if (req.path.startsWith('/api/')) {
+        return next();
+    }
+
+    // 对于所有其他路径（如/search, /about等），返回index.html
+    // 让React Router处理客户端路由
+    res.sendFile(path.join(__dirname, '..', 'index.html'));
 });
 
 // 错误处理中间件
@@ -540,8 +552,8 @@ app.use((error, req, res, next) => {
     });
 });
 
-// 404处理
-app.use((req, res) => {
+// 404处理 - 只处理API路径的404
+app.use('/api/*', (req, res) => {
     res.status(404).json({
         success: false,
         error: '接口不存在'
