@@ -303,6 +303,12 @@ node tools/database-compressor.cjs
 3. 全球CDN边缘缓存
 4. 自动域名和SSL配置
 
+**⚠️ 重要提醒：Vercel部署问题排查**：
+- 当Vercel部署失败或没有同步更新时，第一时间检查Vercel控制台的构建日志
+- 常见问题：依赖版本兼容性冲突（如React版本与第三方库不匹配）
+- 解决方案：检查package.json依赖版本，使用兼容的库版本
+- 已解决案例：react-helmet-async → @dr.pogodin/react-helmet (支持React 19)
+
 **环境变量配置**：
 ```bash
 SEC_USER_AGENT=SEC EDGAR Research Tool your-email@example.com
