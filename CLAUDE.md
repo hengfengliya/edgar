@@ -314,8 +314,11 @@ node tools/database-compressor.cjs
 **⚠️ 重要提醒：Vercel部署问题排查**：
 - 当Vercel部署失败或没有同步更新时，第一时间检查Vercel控制台的构建日志
 - 常见问题：依赖版本兼容性冲突（如React版本与第三方库不匹配）
-- 解决方案：检查package.json依赖版本，使用兼容的库版本
-- 已解决案例：react-helmet-async → @dr.pogodin/react-helmet (支持React 19)
+- **package-lock.json重要性**：必须包含在版本控制中，确保生产环境依赖版本一致性
+- 解决方案：检查package.json依赖版本，使用兼容的库版本，确保package-lock.json存在
+- 已解决案例：
+  - react-helmet-async → @dr.pogodin/react-helmet (支持React 19)
+  - 包含package-lock.json解决ETARGET版本冲突错误
 
 **环境变量配置**：
 ```bash
