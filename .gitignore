@@ -1,6 +1,6 @@
 # 依赖文件
 node_modules/
-package-lock.json
+# package-lock.json - 生产环境需要此文件确保版本一致性
 
 # 构建输出
 dist/
