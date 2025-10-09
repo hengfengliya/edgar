@@ -1,4 +1,4 @@
-# 虚空有物数据检索系统 - 项目开发文档
+﻿# 虚空有物数据检索系统 - 项目开发文档
 
 ## 项目概述
 
@@ -15,6 +15,13 @@
 - ✅ Google Search Console集成，完善SEO基础设施
 
 ## 🚀 重大功能更新 (2025-09-26)
+
+### Language Toggle & Runbook Update ⭐NEW⭐ (2025-10-09)
+**Highlights**
+1. Added a global LanguageProvider: default to English, header toggle switches to Chinese, and the choice persists via localStorage.
+2. Homepage hero, popular stocks, SEO content blocks, search result copy and About page now expose bilingual content.
+3. README documents the bilingual rollout plus the npm install -> npm run dev / npm run build workflow for local runs.
+4. Refined English SEO copy so external visitors see the updated keyword positioning.
 
 ### 多页面SEO重构 ⭐NEW⭐
 **完成功能**：

@@ -1,3 +1,10 @@
+﻿## Updates (2025-10-09)
+- Added bilingual UI: English is the default language with a header toggle for Chinese.
+- Homepage hero, popular stocks, SEO content, search messages and About page now provide English/Chinese copy.
+- Introduced a global LanguageProvider to persist language choice and sync the <html lang> attribute.
+- Refreshed homepage SEO copy to align with the latest keyword strategy.
+- Recommended workflow: run npm install once, then npm run dev for development or npm run build to generate dist/.
+
 # EDGAR - 美股数据检索平台
 
 <div align="center">
