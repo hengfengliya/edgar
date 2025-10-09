@@ -1,0 +1,7866 @@
+{
+  "NVDA": {
+    "cik": "1045810",
+    "name": "NVIDIA CORP"
+  },
+  "NVIDIA": {
+    "cik": "1045810",
+    "name": "NVIDIA CORP"
+  },
+  "MSFT": {
+    "cik": "789019",
+    "name": "MICROSOFT CORP"
+  },
+  "MICROSOFT": {
+    "cik": "789019",
+    "name": "MICROSOFT CORP"
+  },
+  "AAPL": {
+    "cik": "320193",
+    "name": "Apple Inc."
+  },
+  "APPLE": {
+    "cik": "320193",
+    "name": "Apple Inc."
+  },
+  "GOOGL": {
+    "cik": "1652044",
+    "name": "Alphabet Inc."
+  },
+  "ALPHABET": {
+    "cik": "1652044",
+    "name": "Alphabet Inc."
+  },
+  "AMZN": {
+    "cik": "1018724",
+    "name": "AMAZON COM INC"
+  },
+  "AMAZONCOM": {
+    "cik": "1018724",
+    "name": "AMAZON COM INC"
+  },
+  "META": {
+    "cik": "1326801",
+    "name": "Meta Platforms, Inc."
+  },
+  "METAPLATFORMS": {
+    "cik": "1326801",
+    "name": "Meta Platforms, Inc."
+  },
+  "AVGO": {
+    "cik": "1730168",
+    "name": "Broadcom Inc."
+  },
+  "BROADCOM": {
+    "cik": "1730168",
+    "name": "Broadcom Inc."
+  },
+  "TSLA": {
+    "cik": "1318605",
+    "name": "Tesla, Inc."
+  },
+  "TESLA": {
+    "cik": "1318605",
+    "name": "Tesla, Inc."
+  },
+  "BRK-B": {
+    "cik": "1067983",
+    "name": "BERKSHIRE HATHAWAY INC"
+  },
+  "BERKSHIREHATHAWAY": {
+    "cik": "1067983",
+    "name": "BERKSHIRE HATHAWAY INC"
+  },
+  "ORCL": {
+    "cik": "1341439",
+    "name": "ORACLE CORP"
+  },
+  "ORACLE": {
+    "cik": "1341439",
+    "name": "ORACLE CORP"
+  },
+  "JPM": {
+    "cik": "019617",
+    "name": "JPMORGAN CHASE & CO"
+  },
+  "JPMORGANCHASE&": {
+    "cik": "019617",
+    "name": "JPMORGAN CHASE & CO"
+  },
+  "WMT": {
+    "cik": "104169",
+    "name": "Walmart Inc."
+  },
+  "WALMART": {
+    "cik": "104169",
+    "name": "Walmart Inc."
+  },
+  "LLY": {
+    "cik": "059478",
+    "name": "ELI LILLY & Co"
+  },
+  "ELILILLY&": {
+    "cik": "059478",
+    "name": "ELI LILLY & Co"
+  },
+  "V": {
+    "cik": "1403161",
+    "name": "VISA INC."
+  },
+  "VISA": {
+    "cik": "1403161",
+    "name": "VISA INC."
+  },
+  "SPY": {
+    "cik": "884394",
+    "name": "SPDR S&P 500 ETF TRUST"
+  },
+  "SPDRS&P500ETFTRUST": {
+    "cik": "884394",
+    "name": "SPDR S&P 500 ETF TRUST"
+  },
+  "MA": {
+    "cik": "1141391",
+    "name": "Mastercard Inc"
+  },
+  "MASTERCARD": {
+    "cik": "1141391",
+    "name": "Mastercard Inc"
+  },
+  "NFLX": {
+    "cik": "1065280",
+    "name": "NETFLIX INC"
+  },
+  "NETFLIX": {
+    "cik": "1065280",
+    "name": "NETFLIX INC"
+  },
+  "XOM": {
+    "cik": "034088",
+    "name": "EXXON MOBIL CORP"
+  },
+  "EXXONMOBIL": {
+    "cik": "034088",
+    "name": "EXXON MOBIL CORP"
+  },
+  "JNJ": {
+    "cik": "200406",
+    "name": "JOHNSON & JOHNSON"
+  },
+  "JOHNSON&JOHNSON": {
+    "cik": "200406",
+    "name": "JOHNSON & JOHNSON"
+  },
+  "COST": {
+    "cik": "909832",
+    "name": "COSTCO WHOLESALE CORP /NEW"
+  },
+  "COSTCOWHOLESALE": {
+    "cik": "909832",
+    "name": "COSTCO WHOLESALE CORP /NEW"
+  },
+  "HD": {
+    "cik": "354950",
+    "name": "HOME DEPOT, INC."
+  },
+  "HOMEDEPOT": {
+    "cik": "354950",
+    "name": "HOME DEPOT, INC."
+  },
+  "PLTR": {
+    "cik": "1321655",
+    "name": "Palantir Technologies Inc."
+  },
+  "PALANTIRTECHNOLOGIES": {
+    "cik": "1321655",
+    "name": "Palantir Technologies Inc."
+  },
+  "BABA": {
+    "cik": "1577552",
+    "name": "Alibaba Group Holding Ltd"
+  },
+  "ALIBABAGROUPHOLDING": {
+    "cik": "1577552",
+    "name": "Alibaba Group Holding Ltd"
+  },
+  "ABBV": {
+    "cik": "1551152",
+    "name": "AbbVie Inc."
+  },
+  "ABBVIE": {
+    "cik": "1551152",
+    "name": "AbbVie Inc."
+  },
+  "BAC": {
+    "cik": "070858",
+    "name": "BANK OF AMERICA CORP /DE/"
+  },
+  "BANKOFAMERICA": {
+    "cik": "070858",
+    "name": "BANK OF AMERICA CORP /DE/"
+  },
+  "PG": {
+    "cik": "080424",
+    "name": "PROCTER & GAMBLE Co"
+  },
+  "PROCTER&GAMBLE": {
+    "cik": "080424",
+    "name": "PROCTER & GAMBLE Co"
+  },
+  "ASML": {
+    "cik": "937966",
+    "name": "ASML HOLDING NV"
+  },
+  "ASMLHOLDINGNV": {
+    "cik": "937966",
+    "name": "ASML HOLDING NV"
+  },
+  "CVX": {
+    "cik": "093410",
+    "name": "CHEVRON CORP"
+  },
+  "CHEVRON": {
+    "cik": "093410",
+    "name": "CHEVRON CORP"
+  },
+  "GE": {
+    "cik": "040545",
+    "name": "GENERAL ELECTRIC CO"
+  },
+  "GENERALELECTRIC": {
+    "cik": "040545",
+    "name": "GENERAL ELECTRIC CO"
+  },
+  "SAP": {
+    "cik": "1000184",
+    "name": "SAP SE"
+  },
+  "SAPSE": {
+    "cik": "1000184",
+    "name": "SAP SE"
+  },
+  "TMUS": {
+    "cik": "1283699",
+    "name": "T-Mobile US, Inc."
+  },
+  "T-MOBILEUS": {
+    "cik": "1283699",
+    "name": "T-Mobile US, Inc."
+  },
+  "KO": {
+    "cik": "021344",
+    "name": "COCA COLA CO"
+  },
+  "COCACOLA": {
+    "cik": "021344",
+    "name": "COCA COLA CO"
+  },
+  "UNH": {
+    "cik": "731766",
+    "name": "UNITEDHEALTH GROUP INC"
+  },
+  "UNITEDHEALTHGROUP": {
+    "cik": "731766",
+    "name": "UNITEDHEALTH GROUP INC"
+  },
+  "CSCO": {
+    "cik": "858877",
+    "name": "CISCO SYSTEMS, INC."
+  },
+  "CISCOSYSTEMS": {
+    "cik": "858877",
+    "name": "CISCO SYSTEMS, INC."
+  },
+  "WFC": {
+    "cik": "072971",
+    "name": "WELLS FARGO & COMPANY/MN"
+  },
+  "WELLSFARGO&COMPANY/MN": {
+    "cik": "072971",
+    "name": "WELLS FARGO & COMPANY/MN"
+  },
+  "AMD": {
+    "cik": "002488",
+    "name": "ADVANCED MICRO DEVICES INC"
+  },
+  "ADVANCEDMICRODEVICES": {
+    "cik": "002488",
+    "name": "ADVANCED MICRO DEVICES INC"
+  },
+  "NVO": {
+    "cik": "353278",
+    "name": "NOVO NORDISK A S"
+  },
+  "NOVONORDISKAS": {
+    "cik": "353278",
+    "name": "NOVO NORDISK A S"
+  },
+  "PM": {
+    "cik": "1413329",
+    "name": "Philip Morris International Inc."
+  },
+  "PHILIPMORRISINTERNATIONAL": {
+    "cik": "1413329",
+    "name": "Philip Morris International Inc."
+  },
+  "TM": {
+    "cik": "1094517",
+    "name": "TOYOTA MOTOR CORP/"
+  },
+  "TOYOTAMOTORCORP/": {
+    "cik": "1094517",
+    "name": "TOYOTA MOTOR CORP/"
+  },
+  "MS": {
+    "cik": "895421",
+    "name": "MORGAN STANLEY"
+  },
+  "MORGANSTANLEY": {
+    "cik": "895421",
+    "name": "MORGAN STANLEY"
+  },
+  "AZN": {
+    "cik": "901832",
+    "name": "ASTRAZENECA PLC"
+  },
+  "ASTRAZENECAPLC": {
+    "cik": "901832",
+    "name": "ASTRAZENECA PLC"
+  },
+  "IBM": {
+    "cik": "051143",
+    "name": "INTERNATIONAL BUSINESS MACHINES CORP"
+  },
+  "INTERNATIONALBUSINESSMACHINES": {
+    "cik": "051143",
+    "name": "INTERNATIONAL BUSINESS MACHINES CORP"
+  },
+  "HSBC": {
+    "cik": "1089113",
+    "name": "HSBC HOLDINGS PLC"
+  },
+  "HSBCHOLDINGSPLC": {
+    "cik": "1089113",
+    "name": "HSBC HOLDINGS PLC"
+  },
+  "GS": {
+    "cik": "886982",
+    "name": "GOLDMAN SACHS GROUP INC"
+  },
+  "GOLDMANSACHSGROUP": {
+    "cik": "886982",
+    "name": "GOLDMAN SACHS GROUP INC"
+  },
+  "NVS": {
+    "cik": "1114448",
+    "name": "NOVARTIS AG"
+  },
+  "NOVARTISAG": {
+    "cik": "1114448",
+    "name": "NOVARTIS AG"
+  },
+  "CYATY": {
+    "cik": "2070829",
+    "name": "Contemporary Amperex Technology Co., Limited/ADR"
+  },
+  "CONTEMPORARYAMPEREXTECHNOLOGYCOLIMITED/ADR": {
+    "cik": "2070829",
+    "name": "Contemporary Amperex Technology Co., Limited/ADR"
+  },
+  "ABT": {
+    "cik": "001800",
+    "name": "ABBOTT LABORATORIES"
+  },
+  "ABBOTTLABORATORIES": {
+    "cik": "001800",
+    "name": "ABBOTT LABORATORIES"
+  },
+  "QQQ": {
+    "cik": "1067839",
+    "name": "INVESCO QQQ TRUST, SERIES 1"
+  },
+  "INVESCOQQQTRUSTSERIES1": {
+    "cik": "1067839",
+    "name": "INVESCO QQQ TRUST, SERIES 1"
+  },
+  "CRM": {
+    "cik": "1108524",
+    "name": "Salesforce, Inc."
+  },
+  "SALESFORCE": {
+    "cik": "1108524",
+    "name": "Salesforce, Inc."
+  },
+  "AXP": {
+    "cik": "004962",
+    "name": "AMERICAN EXPRESS CO"
+  },
+  "AMERICANEXPRESS": {
+    "cik": "004962",
+    "name": "AMERICAN EXPRESS CO"
+  },
+  "BX": {
+    "cik": "1393818",
+    "name": "Blackstone Inc."
+  },
+  "BLACKSTONE": {
+    "cik": "1393818",
+    "name": "Blackstone Inc."
+  },
+  "LIN": {
+    "cik": "1707925",
+    "name": "LINDE PLC"
+  },
+  "LINDEPLC": {
+    "cik": "1707925",
+    "name": "LINDE PLC"
+  },
+  "MCD": {
+    "cik": "063908",
+    "name": "MCDONALDS CORP"
+  },
+  "MCDONALDS": {
+    "cik": "063908",
+    "name": "MCDONALDS CORP"
+  },
+  "SHEL": {
+    "cik": "1306965",
+    "name": "Shell plc"
+  },
+  "SHELLPLC": {
+    "cik": "1306965",
+    "name": "Shell plc"
+  },
+  "RTX": {
+    "cik": "101829",
+    "name": "RTX Corp"
+  },
+  "T": {
+    "cik": "732717",
+    "name": "AT&T INC."
+  },
+  "AT&T": {
+    "cik": "732717",
+    "name": "AT&T INC."
+  },
+  "DIS": {
+    "cik": "1744489",
+    "name": "Walt Disney Co"
+  },
+  "WALTDISNEY": {
+    "cik": "1744489",
+    "name": "Walt Disney Co"
+  },
+  "CAT": {
+    "cik": "018230",
+    "name": "CATERPILLAR INC"
+  },
+  "CATERPILLAR": {
+    "cik": "018230",
+    "name": "CATERPILLAR INC"
+  },
+  "APP": {
+    "cik": "1751008",
+    "name": "AppLovin Corp"
+  },
+  "APPLOVIN": {
+    "cik": "1751008",
+    "name": "AppLovin Corp"
+  },
+  "RY": {
+    "cik": "1000275",
+    "name": "ROYAL BANK OF CANADA"
+  },
+  "ROYALBANKOFCANADA": {
+    "cik": "1000275",
+    "name": "ROYAL BANK OF CANADA"
+  },
+  "MRK": {
+    "cik": "310158",
+    "name": "Merck & Co., Inc."
+  },
+  "MERCK&CO": {
+    "cik": "310158",
+    "name": "Merck & Co., Inc."
+  },
+  "UBER": {
+    "cik": "1543151",
+    "name": "Uber Technologies, Inc"
+  },
+  "UBERTECHNOLOGIES": {
+    "cik": "1543151",
+    "name": "Uber Technologies, Inc"
+  },
+  "NOW": {
+    "cik": "1373715",
+    "name": "ServiceNow, Inc."
+  },
+  "SERVICENOW": {
+    "cik": "1373715",
+    "name": "ServiceNow, Inc."
+  },
+  "PEP": {
+    "cik": "077476",
+    "name": "PEPSICO INC"
+  },
+  "PEPSICO": {
+    "cik": "077476",
+    "name": "PEPSICO INC"
+  },
+  "C": {
+    "cik": "831001",
+    "name": "CITIGROUP INC"
+  },
+  "CITIGROUP": {
+    "cik": "831001",
+    "name": "CITIGROUP INC"
+  },
+  "TMO": {
+    "cik": "097745",
+    "name": "THERMO FISHER SCIENTIFIC INC."
+  },
+  "THERMOFISHERSCIENTIFIC": {
+    "cik": "097745",
+    "name": "THERMO FISHER SCIENTIFIC INC."
+  },
+  "VZ": {
+    "cik": "732712",
+    "name": "VERIZON COMMUNICATIONS INC"
+  },
+  "VERIZONCOMMUNICATIONS": {
+    "cik": "732712",
+    "name": "VERIZON COMMUNICATIONS INC"
+  },
+  "PDD": {
+    "cik": "1737806",
+    "name": "PDD Holdings Inc."
+  },
+  "PDDHOLDINGS": {
+    "cik": "1737806",
+    "name": "PDD Holdings Inc."
+  },
+  "INTU": {
+    "cik": "896878",
+    "name": "INTUIT INC."
+  },
+  "INTUIT": {
+    "cik": "896878",
+    "name": "INTUIT INC."
+  },
+  "TXN": {
+    "cik": "097476",
+    "name": "TEXAS INSTRUMENTS INC"
+  },
+  "TEXASINSTRUMENTS": {
+    "cik": "097476",
+    "name": "TEXAS INSTRUMENTS INC"
+  },
+  "SHOP": {
+    "cik": "1594805",
+    "name": "SHOPIFY INC."
+  },
+  "SHOPIFY": {
+    "cik": "1594805",
+    "name": "SHOPIFY INC."
+  },
+  "HDB": {
+    "cik": "1144967",
+    "name": "HDFC BANK LTD"
+  },
+  "HDFCBANK": {
+    "cik": "1144967",
+    "name": "HDFC BANK LTD"
+  },
+  "ANET": {
+    "cik": "1596532",
+    "name": "Arista Networks, Inc."
+  },
+  "ARISTANETWORKS": {
+    "cik": "1596532",
+    "name": "Arista Networks, Inc."
+  },
+  "MU": {
+    "cik": "723125",
+    "name": "MICRON TECHNOLOGY INC"
+  },
+  "MICRONTECHNOLOGY": {
+    "cik": "723125",
+    "name": "MICRON TECHNOLOGY INC"
+  },
+  "BKNG": {
+    "cik": "1075531",
+    "name": "Booking Holdings Inc."
+  },
+  "BOOKINGHOLDINGS": {
+    "cik": "1075531",
+    "name": "Booking Holdings Inc."
+  },
+  "MUFG": {
+    "cik": "067088",
+    "name": "MITSUBISHI UFJ FINANCIAL GROUP INC"
+  },
+  "MITSUBISHIUFJFINANCIALGROUP": {
+    "cik": "067088",
+    "name": "MITSUBISHI UFJ FINANCIAL GROUP INC"
+  },
+  "QCOM": {
+    "cik": "804328",
+    "name": "QUALCOMM INC/DE"
+  },
+  "QUALCOMMINC/DE": {
+    "cik": "804328",
+    "name": "QUALCOMM INC/DE"
+  },
+  "BLK": {
+    "cik": "2012383",
+    "name": "BlackRock, Inc."
+  },
+  "BLACKROCK": {
+    "cik": "2012383",
+    "name": "BlackRock, Inc."
+  },
+  "DTEGY": {
+    "cik": "946770",
+    "name": "DEUTSCHE TELEKOM AG"
+  },
+  "DEUTSCHETELEKOMAG": {
+    "cik": "946770",
+    "name": "DEUTSCHE TELEKOM AG"
+  },
+  "SCHW": {
+    "cik": "316709",
+    "name": "SCHWAB CHARLES CORP"
+  },
+  "SCHWABCHARLES": {
+    "cik": "316709",
+    "name": "SCHWAB CHARLES CORP"
+  },
+  "GEV": {
+    "cik": "1996810",
+    "name": "GE Vernova Inc."
+  },
+  "GEVERNOVA": {
+    "cik": "1996810",
+    "name": "GE Vernova Inc."
+  },
+  "SPGI": {
+    "cik": "064040",
+    "name": "S&P Global Inc."
+  },
+  "S&PGLOBAL": {
+    "cik": "064040",
+    "name": "S&P Global Inc."
+  },
+  "ARM": {
+    "cik": "1973239",
+    "name": "ARM HOLDINGS PLC /UK"
+  },
+  "ARMHOLDINGSPLC/UK": {
+    "cik": "1973239",
+    "name": "ARM HOLDINGS PLC /UK"
+  },
+  "BA": {
+    "cik": "012927",
+    "name": "BOEING CO"
+  },
+  "BOEING": {
+    "cik": "012927",
+    "name": "BOEING CO"
+  },
+  "SONY": {
+    "cik": "313838",
+    "name": "Sony Group Corp"
+  },
+  "SONYGROUP": {
+    "cik": "313838",
+    "name": "Sony Group Corp"
+  },
+  "ISRG": {
+    "cik": "1035267",
+    "name": "INTUITIVE SURGICAL INC"
+  },
+  "INTUITIVESURGICAL": {
+    "cik": "1035267",
+    "name": "INTUITIVE SURGICAL INC"
+  },
+  "UL": {
+    "cik": "217410",
+    "name": "UNILEVER PLC"
+  },
+  "UNILEVERPLC": {
+    "cik": "217410",
+    "name": "UNILEVER PLC"
+  },
+  "TJX": {
+    "cik": "109198",
+    "name": "TJX COMPANIES INC /DE/"
+  },
+  "TJXCOMPANIES": {
+    "cik": "109198",
+    "name": "TJX COMPANIES INC /DE/"
+  },
+  "LRCX": {
+    "cik": "707549",
+    "name": "LAM RESEARCH CORP"
+  },
+  "LAMRESEARCH": {
+    "cik": "707549",
+    "name": "LAM RESEARCH CORP"
+  },
+  "LOW": {
+    "cik": "060667",
+    "name": "LOWES COMPANIES INC"
+  },
+  "LOWESCOMPANIES": {
+    "cik": "060667",
+    "name": "LOWES COMPANIES INC"
+  },
+  "ADBE": {
+    "cik": "796343",
+    "name": "ADOBE INC."
+  },
+  "ADOBE": {
+    "cik": "796343",
+    "name": "ADOBE INC."
+  },
+  "SAN": {
+    "cik": "891478",
+    "name": "Banco Santander, S.A."
+  },
+  "BANCOSANTANDERSA": {
+    "cik": "891478",
+    "name": "Banco Santander, S.A."
+  },
+  "SYK": {
+    "cik": "310764",
+    "name": "STRYKER CORP"
+  },
+  "STRYKER": {
+    "cik": "310764",
+    "name": "STRYKER CORP"
+  },
+  "ACN": {
+    "cik": "1467373",
+    "name": "Accenture plc"
+  },
+  "ACCENTUREPLC": {
+    "cik": "1467373",
+    "name": "Accenture plc"
+  },
+  "AMGN": {
+    "cik": "318154",
+    "name": "AMGEN INC"
+  },
+  "AMGEN": {
+    "cik": "318154",
+    "name": "AMGEN INC"
+  },
+  "BSX": {
+    "cik": "885725",
+    "name": "BOSTON SCIENTIFIC CORP"
+  },
+  "BOSTONSCIENTIFIC": {
+    "cik": "885725",
+    "name": "BOSTON SCIENTIFIC CORP"
+  },
+  "APH": {
+    "cik": "820313",
+    "name": "AMPHENOL CORP /DE/"
+  },
+  "AMPHENOL": {
+    "cik": "820313",
+    "name": "AMPHENOL CORP /DE/"
+  },
+  "ETN": {
+    "cik": "1551182",
+    "name": "Eaton Corp plc"
+  },
+  "EATON": {
+    "cik": "1551182",
+    "name": "Eaton Corp plc"
+  },
+  "NEE": {
+    "cik": "753308",
+    "name": "NEXTERA ENERGY INC"
+  },
+  "NEXTERAENERGY": {
+    "cik": "753308",
+    "name": "NEXTERA ENERGY INC"
+  },
+  "PGR": {
+    "cik": "080661",
+    "name": "PROGRESSIVE CORP/OH/"
+  },
+  "PROGRESSIVECORP/OH/": {
+    "cik": "080661",
+    "name": "PROGRESSIVE CORP/OH/"
+  },
+  "COF": {
+    "cik": "927628",
+    "name": "CAPITAL ONE FINANCIAL CORP"
+  },
+  "CAPITALONEFINANCIAL": {
+    "cik": "927628",
+    "name": "CAPITAL ONE FINANCIAL CORP"
+  },
+  "SPOT": {
+    "cik": "1639920",
+    "name": "Spotify Technology S.A."
+  },
+  "SPOTIFYTECHNOLOGYSA": {
+    "cik": "1639920",
+    "name": "Spotify Technology S.A."
+  },
+  "AMAT": {
+    "cik": "006951",
+    "name": "APPLIED MATERIALS INC /DE"
+  },
+  "APPLIEDMATERIALS": {
+    "cik": "006951",
+    "name": "APPLIED MATERIALS INC /DE"
+  },
+  "GILD": {
+    "cik": "882095",
+    "name": "GILEAD SCIENCES, INC."
+  },
+  "GILEADSCIENCES": {
+    "cik": "882095",
+    "name": "GILEAD SCIENCES, INC."
+  },
+  "BHP": {
+    "cik": "811809",
+    "name": "BHP Group Ltd"
+  },
+  "BHPGROUP": {
+    "cik": "811809",
+    "name": "BHP Group Ltd"
+  },
+  "TTE": {
+    "cik": "879764",
+    "name": "TotalEnergies SE"
+  },
+  "TOTALENERGIESSE": {
+    "cik": "879764",
+    "name": "TotalEnergies SE"
+  },
+  "DHR": {
+    "cik": "313616",
+    "name": "DANAHER CORP /DE/"
+  },
+  "DANAHER": {
+    "cik": "313616",
+    "name": "DANAHER CORP /DE/"
+  },
+  "PFE": {
+    "cik": "078003",
+    "name": "PFIZER INC"
+  },
+  "PFIZER": {
+    "cik": "078003",
+    "name": "PFIZER INC"
+  },
+  "PANW": {
+    "cik": "1327567",
+    "name": "Palo Alto Networks Inc"
+  },
+  "PALOALTONETWORKS": {
+    "cik": "1327567",
+    "name": "Palo Alto Networks Inc"
+  },
+  "HON": {
+    "cik": "773840",
+    "name": "HONEYWELL INTERNATIONAL INC"
+  },
+  "HONEYWELLINTERNATIONAL": {
+    "cik": "773840",
+    "name": "HONEYWELL INTERNATIONAL INC"
+  },
+  "KKR": {
+    "cik": "1404912",
+    "name": "KKR & Co. Inc."
+  },
+  "KKR&": {
+    "cik": "1404912",
+    "name": "KKR & Co. Inc."
+  },
+  "UNP": {
+    "cik": "100885",
+    "name": "UNION PACIFIC CORP"
+  },
+  "UNIONPACIFIC": {
+    "cik": "100885",
+    "name": "UNION PACIFIC CORP"
+  },
+  "KLAC": {
+    "cik": "319201",
+    "name": "KLA CORP"
+  },
+  "KLA": {
+    "cik": "319201",
+    "name": "KLA CORP"
+  },
+  "UTX": {
+    "cik": "2046954",
+    "name": "Ultratrex Inc."
+  },
+  "ULTRATREX": {
+    "cik": "2046954",
+    "name": "Ultratrex Inc."
+  },
+  "TD": {
+    "cik": "947263",
+    "name": "TORONTO DOMINION BANK"
+  },
+  "TORONTODOMINIONBANK": {
+    "cik": "947263",
+    "name": "TORONTO DOMINION BANK"
+  },
+  "DE": {
+    "cik": "315189",
+    "name": "DEERE & CO"
+  },
+  "DEERE&": {
+    "cik": "315189",
+    "name": "DEERE & CO"
+  },
+  "UBS": {
+    "cik": "1610520",
+    "name": "UBS Group AG"
+  },
+  "UBSGROUPAG": {
+    "cik": "1610520",
+    "name": "UBS Group AG"
+  },
+  "HTHIY": {
+    "cik": "047710",
+    "name": "HITACHI LTD"
+  },
+  "HITACHI": {
+    "cik": "047710",
+    "name": "HITACHI LTD"
+  },
+  "RTNTF": {
+    "cik": "887028",
+    "name": "RIO TINTO LTD"
+  },
+  "RIOTINTO": {
+    "cik": "887028",
+    "name": "RIO TINTO LTD"
+  },
+  "BTI": {
+    "cik": "1303523",
+    "name": "British American Tobacco p.l.c."
+  },
+  "BRITISHAMERICANTOBACCOPLC": {
+    "cik": "1303523",
+    "name": "British American Tobacco p.l.c."
+  },
+  "MELI": {
+    "cik": "1099590",
+    "name": "MERCADOLIBRE INC"
+  },
+  "MERCADOLIBRE": {
+    "cik": "1099590",
+    "name": "MERCADOLIBRE INC"
+  },
+  "MDT": {
+    "cik": "1613103",
+    "name": "Medtronic plc"
+  },
+  "MEDTRONICPLC": {
+    "cik": "1613103",
+    "name": "Medtronic plc"
+  },
+  "SNY": {
+    "cik": "1121404",
+    "name": "Sanofi"
+  },
+  "SANOFI": {
+    "cik": "1121404",
+    "name": "Sanofi"
+  },
+  "ADI": {
+    "cik": "006281",
+    "name": "ANALOG DEVICES INC"
+  },
+  "ANALOGDEVICES": {
+    "cik": "006281",
+    "name": "ANALOG DEVICES INC"
+  },
+  "CMCSA": {
+    "cik": "1166691",
+    "name": "COMCAST CORP"
+  },
+  "COMCAST": {
+    "cik": "1166691",
+    "name": "COMCAST CORP"
+  },
+  "COP": {
+    "cik": "1163165",
+    "name": "CONOCOPHILLIPS"
+  },
+  "CONOCOPHILLIPS": {
+    "cik": "1163165",
+    "name": "CONOCOPHILLIPS"
+  },
+  "INTC": {
+    "cik": "050863",
+    "name": "INTEL CORP"
+  },
+  "INTEL": {
+    "cik": "050863",
+    "name": "INTEL CORP"
+  },
+  "ADP": {
+    "cik": "008670",
+    "name": "AUTOMATIC DATA PROCESSING INC"
+  },
+  "AUTOMATICDATAPROCESSING": {
+    "cik": "008670",
+    "name": "AUTOMATIC DATA PROCESSING INC"
+  },
+  "IBN": {
+    "cik": "1103838",
+    "name": "ICICI BANK LTD"
+  },
+  "ICICIBANK": {
+    "cik": "1103838",
+    "name": "ICICI BANK LTD"
+  },
+  "BUD": {
+    "cik": "1668717",
+    "name": "Anheuser-Busch InBev SA/NV"
+  },
+  "ANHEUSER-BUSCHINBEVSA/NV": {
+    "cik": "1668717",
+    "name": "Anheuser-Busch InBev SA/NV"
+  },
+  "SE": {
+    "cik": "1703399",
+    "name": "Sea Ltd"
+  },
+  "SEA": {
+    "cik": "1703399",
+    "name": "Sea Ltd"
+  },
+  "DASH": {
+    "cik": "1792789",
+    "name": "DoorDash, Inc."
+  },
+  "DOORDASH": {
+    "cik": "1792789",
+    "name": "DoorDash, Inc."
+  },
+  "WELL": {
+    "cik": "766704",
+    "name": "WELLTOWER INC."
+  },
+  "WELLTOWER": {
+    "cik": "766704",
+    "name": "WELLTOWER INC."
+  },
+  "CRWD": {
+    "cik": "1535527",
+    "name": "CrowdStrike Holdings, Inc."
+  },
+  "CROWDSTRIKEHOLDINGS": {
+    "cik": "1535527",
+    "name": "CrowdStrike Holdings, Inc."
+  },
+  "LMT": {
+    "cik": "936468",
+    "name": "LOCKHEED MARTIN CORP"
+  },
+  "LOCKHEEDMARTIN": {
+    "cik": "936468",
+    "name": "LOCKHEED MARTIN CORP"
+  },
+  "BBVA": {
+    "cik": "842180",
+    "name": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A."
+  },
+  "BANCOBILBAOVIZCAYAARGENTARIASA": {
+    "cik": "842180",
+    "name": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A."
+  },
+  "SNPS": {
+    "cik": "883241",
+    "name": "SYNOPSYS INC"
+  },
+  "SYNOPSYS": {
+    "cik": "883241",
+    "name": "SYNOPSYS INC"
+  },
+  "MO": {
+    "cik": "764180",
+    "name": "ALTRIA GROUP, INC."
+  },
+  "ALTRIAGROUP": {
+    "cik": "764180",
+    "name": "ALTRIA GROUP, INC."
+  },
+  "CB": {
+    "cik": "896159",
+    "name": "Chubb Ltd"
+  },
+  "CHUBB": {
+    "cik": "896159",
+    "name": "Chubb Ltd"
+  },
+  "NKE": {
+    "cik": "320187",
+    "name": "NIKE, Inc."
+  },
+  "NIKE": {
+    "cik": "320187",
+    "name": "NIKE, Inc."
+  },
+  "ENB": {
+    "cik": "895728",
+    "name": "ENBRIDGE INC"
+  },
+  "ENBRIDGE": {
+    "cik": "895728",
+    "name": "ENBRIDGE INC"
+  },
+  "IBKR": {
+    "cik": "1381197",
+    "name": "Interactive Brokers Group, Inc."
+  },
+  "INTERACTIVEBROKERSGROUP": {
+    "cik": "1381197",
+    "name": "Interactive Brokers Group, Inc."
+  },
+  "PLD": {
+    "cik": "1045609",
+    "name": "Prologis, Inc."
+  },
+  "PROLOGIS": {
+    "cik": "1045609",
+    "name": "Prologis, Inc."
+  },
+  "SMFG": {
+    "cik": "1022837",
+    "name": "SUMITOMO MITSUI FINANCIAL GROUP, INC."
+  },
+  "SUMITOMOMITSUIFINANCIALGROUP": {
+    "cik": "1022837",
+    "name": "SUMITOMO MITSUI FINANCIAL GROUP, INC."
+  },
+  "BN": {
+    "cik": "1001085",
+    "name": "BROOKFIELD Corp /ON/"
+  },
+  "BROOKFIELD": {
+    "cik": "1001085",
+    "name": "BROOKFIELD Corp /ON/"
+  },
+  "HOOD": {
+    "cik": "1783879",
+    "name": "Robinhood Markets, Inc."
+  },
+  "ROBINHOODMARKETS": {
+    "cik": "1783879",
+    "name": "Robinhood Markets, Inc."
+  },
+  "VRTX": {
+    "cik": "875320",
+    "name": "VERTEX PHARMACEUTICALS INC / MA"
+  },
+  "VERTEXPHARMACEUTICALS": {
+    "cik": "875320",
+    "name": "VERTEX PHARMACEUTICALS INC / MA"
+  },
+  "SO": {
+    "cik": "092122",
+    "name": "SOUTHERN CO"
+  },
+  "SOUTHERN": {
+    "cik": "092122",
+    "name": "SOUTHERN CO"
+  },
+  "CEG": {
+    "cik": "1868275",
+    "name": "Constellation Energy Corp"
+  },
+  "CONSTELLATIONENERGY": {
+    "cik": "1868275",
+    "name": "Constellation Energy Corp"
+  },
+  "RIO": {
+    "cik": "863064",
+    "name": "RIO TINTO PLC"
+  },
+  "RIOTINTOPLC": {
+    "cik": "863064",
+    "name": "RIO TINTO PLC"
+  },
+  "NTES": {
+    "cik": "1110646",
+    "name": "NetEase, Inc."
+  },
+  "NETEASE": {
+    "cik": "1110646",
+    "name": "NetEase, Inc."
+  },
+  "ICE": {
+    "cik": "1571949",
+    "name": "Intercontinental Exchange, Inc."
+  },
+  "INTERCONTINENTALEXCHANGE": {
+    "cik": "1571949",
+    "name": "Intercontinental Exchange, Inc."
+  },
+  "MMC": {
+    "cik": "062709",
+    "name": "MARSH & MCLENNAN COMPANIES, INC."
+  },
+  "MARSH&MCLENNANCOMPANIES": {
+    "cik": "062709",
+    "name": "MARSH & MCLENNAN COMPANIES, INC."
+  },
+  "PH": {
+    "cik": "076334",
+    "name": "Parker-Hannifin Corp"
+  },
+  "PARKER-HANNIFIN": {
+    "cik": "076334",
+    "name": "Parker-Hannifin Corp"
+  },
+  "CDNS": {
+    "cik": "813672",
+    "name": "CADENCE DESIGN SYSTEMS INC"
+  },
+  "CADENCEDESIGNSYSTEMS": {
+    "cik": "813672",
+    "name": "CADENCE DESIGN SYSTEMS INC"
+  },
+  "MSTR": {
+    "cik": "1050446",
+    "name": "Strategy Inc"
+  },
+  "STRATEGY": {
+    "cik": "1050446",
+    "name": "Strategy Inc"
+  },
+  "BAM": {
+    "cik": "1937926",
+    "name": "Brookfield Asset Management Ltd."
+  },
+  "BROOKFIELDASSETMANAGEMENT": {
+    "cik": "1937926",
+    "name": "Brookfield Asset Management Ltd."
+  },
+  "BMY": {
+    "cik": "014272",
+    "name": "BRISTOL MYERS SQUIBB CO"
+  },
+  "BRISTOLMYERSSQUIBB": {
+    "cik": "014272",
+    "name": "BRISTOL MYERS SQUIBB CO"
+  },
+  "CME": {
+    "cik": "1156375",
+    "name": "CME GROUP INC."
+  },
+  "CMEGROUP": {
+    "cik": "1156375",
+    "name": "CME GROUP INC."
+  },
+  "HCA": {
+    "cik": "860730",
+    "name": "HCA Healthcare, Inc."
+  },
+  "HCAHEALTHCARE": {
+    "cik": "860730",
+    "name": "HCA Healthcare, Inc."
+  },
+  "DUK": {
+    "cik": "1326160",
+    "name": "Duke Energy CORP"
+  },
+  "DUKEENERGY": {
+    "cik": "1326160",
+    "name": "Duke Energy CORP"
+  },
+  "CVS": {
+    "cik": "064803",
+    "name": "CVS HEALTH Corp"
+  },
+  "CVSHEALTH": {
+    "cik": "064803",
+    "name": "CVS HEALTH Corp"
+  },
+  "SBUX": {
+    "cik": "829224",
+    "name": "STARBUCKS CORP"
+  },
+  "STARBUCKS": {
+    "cik": "829224",
+    "name": "STARBUCKS CORP"
+  },
+  "BMO": {
+    "cik": "927971",
+    "name": "BANK OF MONTREAL /CAN/"
+  },
+  "BANKOFMONTREAL/CAN/": {
+    "cik": "927971",
+    "name": "BANK OF MONTREAL /CAN/"
+  },
+  "RBLX": {
+    "cik": "1315098",
+    "name": "Roblox Corp"
+  },
+  "ROBLOX": {
+    "cik": "1315098",
+    "name": "Roblox Corp"
+  },
+  "RCL": {
+    "cik": "884887",
+    "name": "ROYAL CARIBBEAN CRUISES LTD"
+  },
+  "ROYALCARIBBEANCRUISES": {
+    "cik": "884887",
+    "name": "ROYAL CARIBBEAN CRUISES LTD"
+  },
+  "TT": {
+    "cik": "1466258",
+    "name": "Trane Technologies plc"
+  },
+  "TRANETECHNOLOGIESPLC": {
+    "cik": "1466258",
+    "name": "Trane Technologies plc"
+  },
+  "AMT": {
+    "cik": "1053507",
+    "name": "AMERICAN TOWER CORP /MA/"
+  },
+  "AMERICANTOWER": {
+    "cik": "1053507",
+    "name": "AMERICAN TOWER CORP /MA/"
+  },
+  "MCO": {
+    "cik": "1059556",
+    "name": "MOODYS CORP /DE/"
+  },
+  "MOODYS": {
+    "cik": "1059556",
+    "name": "MOODYS CORP /DE/"
+  },
+  "WM": {
+    "cik": "823768",
+    "name": "WASTE MANAGEMENT INC"
+  },
+  "WASTEMANAGEMENT": {
+    "cik": "823768",
+    "name": "WASTE MANAGEMENT INC"
+  },
+  "SHW": {
+    "cik": "089800",
+    "name": "SHERWIN WILLIAMS CO"
+  },
+  "SHERWINWILLIAMS": {
+    "cik": "089800",
+    "name": "SHERWIN WILLIAMS CO"
+  },
+  "ORLY": {
+    "cik": "898173",
+    "name": "O REILLY AUTOMOTIVE INC"
+  },
+  "OREILLYAUTOMOTIVE": {
+    "cik": "898173",
+    "name": "O REILLY AUTOMOTIVE INC"
+  },
+  "BP": {
+    "cik": "313807",
+    "name": "BP PLC"
+  },
+  "BPPLC": {
+    "cik": "313807",
+    "name": "BP PLC"
+  },
+  "GLD": {
+    "cik": "1222333",
+    "name": "SPDR GOLD TRUST"
+  },
+  "SPDRGOLDTRUST": {
+    "cik": "1222333",
+    "name": "SPDR GOLD TRUST"
+  },
+  "GD": {
+    "cik": "040533",
+    "name": "GENERAL DYNAMICS CORP"
+  },
+  "GENERALDYNAMICS": {
+    "cik": "040533",
+    "name": "GENERAL DYNAMICS CORP"
+  },
+  "NEM": {
+    "cik": "1164727",
+    "name": "NEWMONT Corp /DE/"
+  },
+  "NEWMONT": {
+    "cik": "1164727",
+    "name": "NEWMONT Corp /DE/"
+  },
+  "MCK": {
+    "cik": "927653",
+    "name": "MCKESSON CORP"
+  },
+  "MCKESSON": {
+    "cik": "927653",
+    "name": "MCKESSON CORP"
+  },
+  "SCCO": {
+    "cik": "1001838",
+    "name": "SOUTHERN COPPER CORP/"
+  },
+  "SOUTHERNCOPPERCORP/": {
+    "cik": "1001838",
+    "name": "SOUTHERN COPPER CORP/"
+  },
+  "DELL": {
+    "cik": "1571996",
+    "name": "Dell Technologies Inc."
+  },
+  "DELLTECHNOLOGIES": {
+    "cik": "1571996",
+    "name": "Dell Technologies Inc."
+  },
+  "RACE": {
+    "cik": "1648416",
+    "name": "Ferrari N.V."
+  },
+  "FERRARINV": {
+    "cik": "1648416",
+    "name": "Ferrari N.V."
+  },
+  "RELX": {
+    "cik": "929869",
+    "name": "RELX PLC"
+  },
+  "RELXPLC": {
+    "cik": "929869",
+    "name": "RELX PLC"
+  },
+  "COIN": {
+    "cik": "1679788",
+    "name": "Coinbase Global, Inc."
+  },
+  "COINBASEGLOBAL": {
+    "cik": "1679788",
+    "name": "Coinbase Global, Inc."
+  },
+  "MMM": {
+    "cik": "066740",
+    "name": "3M CO"
+  },
+  "NOC": {
+    "cik": "1133421",
+    "name": "NORTHROP GRUMMAN CORP /DE/"
+  },
+  "NORTHROPGRUMMAN": {
+    "cik": "1133421",
+    "name": "NORTHROP GRUMMAN CORP /DE/"
+  },
+  "GSK": {
+    "cik": "1131399",
+    "name": "GSK plc"
+  },
+  "GSKPLC": {
+    "cik": "1131399",
+    "name": "GSK plc"
+  },
+  "MFG": {
+    "cik": "1335730",
+    "name": "MIZUHO FINANCIAL GROUP INC"
+  },
+  "MIZUHOFINANCIALGROUP": {
+    "cik": "1335730",
+    "name": "MIZUHO FINANCIAL GROUP INC"
+  },
+  "MDLZ": {
+    "cik": "1103982",
+    "name": "Mondelez International, Inc."
+  },
+  "MONDELEZINTERNATIONAL": {
+    "cik": "1103982",
+    "name": "Mondelez International, Inc."
+  },
+  "BAESY": {
+    "cik": "895564",
+    "name": "BAE SYSTEMS PLC /FI/"
+  },
+  "BAESYSTEMSPLC/FI/": {
+    "cik": "895564",
+    "name": "BAE SYSTEMS PLC /FI/"
+  },
+  "BNS": {
+    "cik": "009631",
+    "name": "BANK OF NOVA SCOTIA"
+  },
+  "BANKOFNOVASCOTIA": {
+    "cik": "009631",
+    "name": "BANK OF NOVA SCOTIA"
+  },
+  "CTAS": {
+    "cik": "723254",
+    "name": "CINTAS CORP"
+  },
+  "CINTAS": {
+    "cik": "723254",
+    "name": "CINTAS CORP"
+  },
+  "APO": {
+    "cik": "1858681",
+    "name": "Apollo Global Management, Inc."
+  },
+  "APOLLOGLOBALMANAGEMENT": {
+    "cik": "1858681",
+    "name": "Apollo Global Management, Inc."
+  },
+  "TRI": {
+    "cik": "1075124",
+    "name": "THOMSON REUTERS CORP /CAN/"
+  },
+  "THOMSONREUTERS": {
+    "cik": "1075124",
+    "name": "THOMSON REUTERS CORP /CAN/"
+  },
+  "MSI": {
+    "cik": "068505",
+    "name": "Motorola Solutions, Inc."
+  },
+  "MOTOROLASOLUTIONS": {
+    "cik": "068505",
+    "name": "Motorola Solutions, Inc."
+  },
+  "PNC": {
+    "cik": "713676",
+    "name": "PNC FINANCIAL SERVICES GROUP, INC."
+  },
+  "PNCFINANCIALSERVICESGROUP": {
+    "cik": "713676",
+    "name": "PNC FINANCIAL SERVICES GROUP, INC."
+  },
+  "PBR": {
+    "cik": "1119639",
+    "name": "PETROBRAS - PETROLEO BRASILEIRO SA"
+  },
+  "PETROBRAS-PETROLEOBRASILEIROSA": {
+    "cik": "1119639",
+    "name": "PETROBRAS - PETROLEO BRASILEIRO SA"
+  },
+  "CI": {
+    "cik": "1739940",
+    "name": "Cigna Group"
+  },
+  "CIGNAGROUP": {
+    "cik": "1739940",
+    "name": "Cigna Group"
+  },
+  "MGCLY": {
+    "cik": "2039784",
+    "name": "Midea Group Co., Ltd./ADR"
+  },
+  "MIDEAGROUPCOLTD/ADR": {
+    "cik": "2039784",
+    "name": "Midea Group Co., Ltd./ADR"
+  },
+  "SNOW": {
+    "cik": "1640147",
+    "name": "Snowflake Inc."
+  },
+  "SNOWFLAKE": {
+    "cik": "1640147",
+    "name": "Snowflake Inc."
+  },
+  "AON": {
+    "cik": "315293",
+    "name": "Aon plc"
+  },
+  "AONPLC": {
+    "cik": "315293",
+    "name": "Aon plc"
+  },
+  "NU": {
+    "cik": "1691493",
+    "name": "Nu Holdings Ltd."
+  },
+  "NUHOLDINGS": {
+    "cik": "1691493",
+    "name": "Nu Holdings Ltd."
+  },
+  "AEM": {
+    "cik": "002809",
+    "name": "AGNICO EAGLE MINES LTD"
+  },
+  "AGNICOEAGLEMINES": {
+    "cik": "002809",
+    "name": "AGNICO EAGLE MINES LTD"
+  },
+  "NET": {
+    "cik": "1477333",
+    "name": "Cloudflare, Inc."
+  },
+  "CLOUDFLARE": {
+    "cik": "1477333",
+    "name": "Cloudflare, Inc."
+  },
+  "ITW": {
+    "cik": "049826",
+    "name": "ILLINOIS TOOL WORKS INC"
+  },
+  "ILLINOISTOOLWORKS": {
+    "cik": "049826",
+    "name": "ILLINOIS TOOL WORKS INC"
+  },
+  "EQIX": {
+    "cik": "1101239",
+    "name": "EQUINIX INC"
+  },
+  "EQUINIX": {
+    "cik": "1101239",
+    "name": "EQUINIX INC"
+  },
+  "HWM": {
+    "cik": "004281",
+    "name": "Howmet Aerospace Inc."
+  },
+  "HOWMETAEROSPACE": {
+    "cik": "004281",
+    "name": "Howmet Aerospace Inc."
+  },
+  "CRH": {
+    "cik": "849395",
+    "name": "CRH PUBLIC LTD CO"
+  },
+  "CRHPUBLIC": {
+    "cik": "849395",
+    "name": "CRH PUBLIC LTD CO"
+  },
+  "USB": {
+    "cik": "036104",
+    "name": "US BANCORP \\DE\\"
+  },
+  "USBANCORP\\DE\\": {
+    "cik": "036104",
+    "name": "US BANCORP \\DE\\"
+  },
+  "ECL": {
+    "cik": "031462",
+    "name": "ECOLAB INC."
+  },
+  "ECOLAB": {
+    "cik": "031462",
+    "name": "ECOLAB INC."
+  },
+  "ING": {
+    "cik": "1039765",
+    "name": "ING GROEP NV"
+  },
+  "INGGROEPNV": {
+    "cik": "1039765",
+    "name": "ING GROEP NV"
+  },
+  "AJG": {
+    "cik": "354190",
+    "name": "Arthur J. Gallagher & Co."
+  },
+  "ARTHURJGALLAGHER&": {
+    "cik": "354190",
+    "name": "Arthur J. Gallagher & Co."
+  },
+  "CM": {
+    "cik": "1045520",
+    "name": "CANADIAN IMPERIAL BANK OF COMMERCE /CAN/"
+  },
+  "CANADIANIMPERIALBANKOFCOMMERCE/CAN/": {
+    "cik": "1045520",
+    "name": "CANADIAN IMPERIAL BANK OF COMMERCE /CAN/"
+  },
+  "ABNB": {
+    "cik": "1559720",
+    "name": "Airbnb, Inc."
+  },
+  "AIRBNB": {
+    "cik": "1559720",
+    "name": "Airbnb, Inc."
+  },
+  "BK": {
+    "cik": "1390777",
+    "name": "Bank of New York Mellon Corp"
+  },
+  "BANKOFNEWYORKMELLON": {
+    "cik": "1390777",
+    "name": "Bank of New York Mellon Corp"
+  },
+  "TDG": {
+    "cik": "1260221",
+    "name": "TransDigm Group INC"
+  },
+  "TRANSDIGMGROUP": {
+    "cik": "1260221",
+    "name": "TransDigm Group INC"
+  },
+  "MAR": {
+    "cik": "1048286",
+    "name": "MARRIOTT INTERNATIONAL INC /MD/"
+  },
+  "MARRIOTTINTERNATIONAL": {
+    "cik": "1048286",
+    "name": "MARRIOTT INTERNATIONAL INC /MD/"
+  },
+  "EMR": {
+    "cik": "032604",
+    "name": "EMERSON ELECTRIC CO"
+  },
+  "EMERSONELECTRIC": {
+    "cik": "032604",
+    "name": "EMERSON ELECTRIC CO"
+  },
+  "BCS": {
+    "cik": "312069",
+    "name": "BARCLAYS PLC"
+  },
+  "BARCLAYSPLC": {
+    "cik": "312069",
+    "name": "BARCLAYS PLC"
+  },
+  "FI": {
+    "cik": "798354",
+    "name": "FISERV INC"
+  },
+  "FISERV": {
+    "cik": "798354",
+    "name": "FISERV INC"
+  },
+  "UPS": {
+    "cik": "1090727",
+    "name": "UNITED PARCEL SERVICE INC"
+  },
+  "UNITEDPARCELSERVICE": {
+    "cik": "1090727",
+    "name": "UNITED PARCEL SERVICE INC"
+  },
+  "INFY": {
+    "cik": "1067491",
+    "name": "Infosys Ltd"
+  },
+  "INFOSYS": {
+    "cik": "1067491",
+    "name": "Infosys Ltd"
+  },
+  "RSG": {
+    "cik": "1060391",
+    "name": "REPUBLIC SERVICES, INC."
+  },
+  "REPUBLICSERVICES": {
+    "cik": "1060391",
+    "name": "REPUBLIC SERVICES, INC."
+  },
+  "ATEYY": {
+    "cik": "1158838",
+    "name": "ADVANTEST CORP"
+  },
+  "ADVANTEST": {
+    "cik": "1158838",
+    "name": "ADVANTEST CORP"
+  },
+  "ITUB": {
+    "cik": "1132597",
+    "name": "Itau Unibanco Holding S.A."
+  },
+  "ITAUUNIBANCOHOLDINGSA": {
+    "cik": "1132597",
+    "name": "Itau Unibanco Holding S.A."
+  },
+  "AZO": {
+    "cik": "866787",
+    "name": "AUTOZONE INC"
+  },
+  "AUTOZONE": {
+    "cik": "866787",
+    "name": "AUTOZONE INC"
+  },
+  "DB": {
+    "cik": "1159508",
+    "name": "DEUTSCHE BANK AKTIENGESELLSCHAFT"
+  },
+  "DEUTSCHEBANKAKTIENGESELLSCHAFT": {
+    "cik": "1159508",
+    "name": "DEUTSCHE BANK AKTIENGESELLSCHAFT"
+  },
+  "NGG": {
+    "cik": "1004315",
+    "name": "NATIONAL GRID PLC"
+  },
+  "NATIONALGRIDPLC": {
+    "cik": "1004315",
+    "name": "NATIONAL GRID PLC"
+  },
+  "JCI": {
+    "cik": "833444",
+    "name": "Johnson Controls International plc"
+  },
+  "JOHNSONCONTROLSINTERNATIONALPLC": {
+    "cik": "833444",
+    "name": "Johnson Controls International plc"
+  },
+  "CP": {
+    "cik": "016875",
+    "name": "CANADIAN PACIFIC KANSAS CITY LTD/CN"
+  },
+  "CANADIANPACIFICKANSASCITYLTD/CN": {
+    "cik": "016875",
+    "name": "CANADIAN PACIFIC KANSAS CITY LTD/CN"
+  },
+  "ELV": {
+    "cik": "1156039",
+    "name": "Elevance Health, Inc."
+  },
+  "ELEVANCEHEALTH": {
+    "cik": "1156039",
+    "name": "Elevance Health, Inc."
+  },
+  "WMB": {
+    "cik": "107263",
+    "name": "WILLIAMS COMPANIES, INC."
+  },
+  "WILLIAMSCOMPANIES": {
+    "cik": "107263",
+    "name": "WILLIAMS COMPANIES, INC."
+  },
+  "EPD": {
+    "cik": "1061219",
+    "name": "ENTERPRISE PRODUCTS PARTNERS L.P."
+  },
+  "ENTERPRISEPRODUCTSPARTNERSLP": {
+    "cik": "1061219",
+    "name": "ENTERPRISE PRODUCTS PARTNERS L.P."
+  },
+  "CNQ": {
+    "cik": "1017413",
+    "name": "CANADIAN NATURAL RESOURCES LTD"
+  },
+  "CANADIANNATURALRESOURCES": {
+    "cik": "1017413",
+    "name": "CANADIAN NATURAL RESOURCES LTD"
+  },
+  "ADSK": {
+    "cik": "769397",
+    "name": "Autodesk, Inc."
+  },
+  "AUTODESK": {
+    "cik": "769397",
+    "name": "Autodesk, Inc."
+  },
+  "ZTS": {
+    "cik": "1555280",
+    "name": "Zoetis Inc."
+  },
+  "ZOETIS": {
+    "cik": "1555280",
+    "name": "Zoetis Inc."
+  },
+  "LYG": {
+    "cik": "1160106",
+    "name": "Lloyds Banking Group plc"
+  },
+  "LLOYDSBANKINGGROUPPLC": {
+    "cik": "1160106",
+    "name": "Lloyds Banking Group plc"
+  },
+  "IAU": {
+    "cik": "1278680",
+    "name": "ISHARES GOLD TRUST"
+  },
+  "ISHARESGOLDTRUST": {
+    "cik": "1278680",
+    "name": "ISHARES GOLD TRUST"
+  },
+  "GLW": {
+    "cik": "024741",
+    "name": "CORNING INC /NY"
+  },
+  "CORNING": {
+    "cik": "024741",
+    "name": "CORNING INC /NY"
+  },
+  "SPG": {
+    "cik": "1063761",
+    "name": "SIMON PROPERTY GROUP INC /DE/"
+  },
+  "SIMONPROPERTYGROUP": {
+    "cik": "1063761",
+    "name": "SIMON PROPERTY GROUP INC /DE/"
+  },
+  "EOG": {
+    "cik": "821189",
+    "name": "EOG RESOURCES INC"
+  },
+  "EOGRESOURCES": {
+    "cik": "821189",
+    "name": "EOG RESOURCES INC"
+  },
+  "CL": {
+    "cik": "021665",
+    "name": "COLGATE PALMOLIVE CO"
+  },
+  "COLGATEPALMOLIVE": {
+    "cik": "021665",
+    "name": "COLGATE PALMOLIVE CO"
+  },
+  "FCX": {
+    "cik": "831259",
+    "name": "FREEPORT-MCMORAN INC"
+  },
+  "FREEPORT-MCMORAN": {
+    "cik": "831259",
+    "name": "FREEPORT-MCMORAN INC"
+  },
+  "MNST": {
+    "cik": "865752",
+    "name": "Monster Beverage Corp"
+  },
+  "MONSTERBEVERAGE": {
+    "cik": "865752",
+    "name": "Monster Beverage Corp"
+  },
+  "HLT": {
+    "cik": "1585689",
+    "name": "Hilton Worldwide Holdings Inc."
+  },
+  "HILTONWORLDWIDEHOLDINGS": {
+    "cik": "1585689",
+    "name": "Hilton Worldwide Holdings Inc."
+  },
+  "PYPL": {
+    "cik": "1633917",
+    "name": "PayPal Holdings, Inc."
+  },
+  "PAYPALHOLDINGS": {
+    "cik": "1633917",
+    "name": "PayPal Holdings, Inc."
+  },
+  "GBTC": {
+    "cik": "1588489",
+    "name": "Grayscale Bitcoin Trust ETF"
+  },
+  "GRAYSCALEBITCOINTRUSTETF": {
+    "cik": "1588489",
+    "name": "Grayscale Bitcoin Trust ETF"
+  },
+  "APD": {
+    "cik": "002969",
+    "name": "Air Products & Chemicals, Inc."
+  },
+  "AIRPRODUCTS&CHEMICALS": {
+    "cik": "002969",
+    "name": "Air Products & Chemicals, Inc."
+  },
+  "VST": {
+    "cik": "1692819",
+    "name": "Vistra Corp."
+  },
+  "VISTRA": {
+    "cik": "1692819",
+    "name": "Vistra Corp."
+  },
+  "NSC": {
+    "cik": "702165",
+    "name": "NORFOLK SOUTHERN CORP"
+  },
+  "NORFOLKSOUTHERN": {
+    "cik": "702165",
+    "name": "NORFOLK SOUTHERN CORP"
+  },
+  "EQNR": {
+    "cik": "1140625",
+    "name": "EQUINOR ASA"
+  },
+  "EQUINORASA": {
+    "cik": "1140625",
+    "name": "EQUINOR ASA"
+  },
+  "AMX": {
+    "cik": "1129137",
+    "name": "AMERICA MOVIL SAB DE CV/"
+  },
+  "AMERICAMOVILSABDECV/": {
+    "cik": "1129137",
+    "name": "AMERICA MOVIL SAB DE CV/"
+  },
+  "URI": {
+    "cik": "1067701",
+    "name": "UNITED RENTALS, INC."
+  },
+  "UNITEDRENTALS": {
+    "cik": "1067701",
+    "name": "UNITED RENTALS, INC."
+  },
+  "TRV": {
+    "cik": "086312",
+    "name": "TRAVELERS COMPANIES, INC."
+  },
+  "TRAVELERSCOMPANIES": {
+    "cik": "086312",
+    "name": "TRAVELERS COMPANIES, INC."
+  },
+  "FTNT": {
+    "cik": "1262039",
+    "name": "Fortinet, Inc."
+  },
+  "FORTINET": {
+    "cik": "1262039",
+    "name": "Fortinet, Inc."
+  },
+  "WDAY": {
+    "cik": "1327811",
+    "name": "Workday, Inc."
+  },
+  "WORKDAY": {
+    "cik": "1327811",
+    "name": "Workday, Inc."
+  },
+  "CPNG": {
+    "cik": "1834584",
+    "name": "Coupang, Inc."
+  },
+  "COUPANG": {
+    "cik": "1834584",
+    "name": "Coupang, Inc."
+  },
+  "CSX": {
+    "cik": "277948",
+    "name": "CSX CORP"
+  },
+  "KMI": {
+    "cik": "1506307",
+    "name": "KINDER MORGAN, INC."
+  },
+  "KINDERMORGAN": {
+    "cik": "1506307",
+    "name": "KINDER MORGAN, INC."
+  },
+  "ALNY": {
+    "cik": "1178670",
+    "name": "ALNYLAM PHARMACEUTICALS, INC."
+  },
+  "ALNYLAMPHARMACEUTICALS": {
+    "cik": "1178670",
+    "name": "ALNYLAM PHARMACEUTICALS, INC."
+  },
+  "DLR": {
+    "cik": "1297996",
+    "name": "DIGITAL REALTY TRUST, INC."
+  },
+  "DIGITALREALTYTRUST": {
+    "cik": "1297996",
+    "name": "DIGITAL REALTY TRUST, INC."
+  },
+  "ET": {
+    "cik": "1276187",
+    "name": "Energy Transfer LP"
+  },
+  "ENERGYTRANSFER": {
+    "cik": "1276187",
+    "name": "Energy Transfer LP"
+  },
+  "TEL": {
+    "cik": "1385157",
+    "name": "TE Connectivity plc"
+  },
+  "TECONNECTIVITYPLC": {
+    "cik": "1385157",
+    "name": "TE Connectivity plc"
+  },
+  "BMWKY": {
+    "cik": "1446250",
+    "name": "Bayerische Motoren Werke AG/ADR"
+  },
+  "BAYERISCHEMOTORENWERKEAG/ADR": {
+    "cik": "1446250",
+    "name": "Bayerische Motoren Werke AG/ADR"
+  },
+  "CNI": {
+    "cik": "016868",
+    "name": "CANADIAN NATIONAL RAILWAY CO"
+  },
+  "CANADIANNATIONALRAILWAY": {
+    "cik": "016868",
+    "name": "CANADIAN NATIONAL RAILWAY CO"
+  },
+  "TFC": {
+    "cik": "092230",
+    "name": "TRUIST FINANCIAL CORP"
+  },
+  "TRUISTFINANCIAL": {
+    "cik": "092230",
+    "name": "TRUIST FINANCIAL CORP"
+  },
+  "MRVL": {
+    "cik": "1835632",
+    "name": "Marvell Technology, Inc."
+  },
+  "MARVELLTECHNOLOGY": {
+    "cik": "1835632",
+    "name": "Marvell Technology, Inc."
+  },
+  "REGN": {
+    "cik": "872589",
+    "name": "REGENERON PHARMACEUTICALS, INC."
+  },
+  "REGENERONPHARMACEUTICALS": {
+    "cik": "872589",
+    "name": "REGENERON PHARMACEUTICALS, INC."
+  },
+  "AXON": {
+    "cik": "1069183",
+    "name": "AXON ENTERPRISE, INC."
+  },
+  "AXONENTERPRISE": {
+    "cik": "1069183",
+    "name": "AXON ENTERPRISE, INC."
+  },
+  "ARES": {
+    "cik": "1176948",
+    "name": "Ares Management Corp"
+  },
+  "ARESMANAGEMENT": {
+    "cik": "1176948",
+    "name": "Ares Management Corp"
+  },
+  "NWG": {
+    "cik": "844150",
+    "name": "NatWest Group plc"
+  },
+  "NATWESTGROUPPLC": {
+    "cik": "844150",
+    "name": "NatWest Group plc"
+  },
+  "CRWV": {
+    "cik": "1769628",
+    "name": "CoreWeave, Inc."
+  },
+  "COREWEAVE": {
+    "cik": "1769628",
+    "name": "CoreWeave, Inc."
+  },
+  "AFL": {
+    "cik": "004977",
+    "name": "AFLAC INC"
+  },
+  "AFLAC": {
+    "cik": "004977",
+    "name": "AFLAC INC"
+  },
+  "CMI": {
+    "cik": "026172",
+    "name": "CUMMINS INC"
+  },
+  "CUMMINS": {
+    "cik": "026172",
+    "name": "CUMMINS INC"
+  },
+  "AEP": {
+    "cik": "004904",
+    "name": "AMERICAN ELECTRIC POWER CO INC"
+  },
+  "AMERICANELECTRICPOWER": {
+    "cik": "004904",
+    "name": "AMERICAN ELECTRIC POWER CO INC"
+  },
+  "PWR": {
+    "cik": "1050915",
+    "name": "QUANTA SERVICES, INC."
+  },
+  "QUANTASERVICES": {
+    "cik": "1050915",
+    "name": "QUANTA SERVICES, INC."
+  },
+  "COR": {
+    "cik": "1140859",
+    "name": "Cencora, Inc."
+  },
+  "CENCORA": {
+    "cik": "1140859",
+    "name": "Cencora, Inc."
+  },
+  "DEO": {
+    "cik": "835403",
+    "name": "DIAGEO PLC"
+  },
+  "DIAGEOPLC": {
+    "cik": "835403",
+    "name": "DIAGEO PLC"
+  },
+  "NXPI": {
+    "cik": "1413447",
+    "name": "NXP Semiconductors N.V."
+  },
+  "NXPSEMICONDUCTORSNV": {
+    "cik": "1413447",
+    "name": "NXP Semiconductors N.V."
+  },
+  "GM": {
+    "cik": "1467858",
+    "name": "General Motors Co"
+  },
+  "GENERALMOTORS": {
+    "cik": "1467858",
+    "name": "General Motors Co"
+  },
+  "MPC": {
+    "cik": "1510295",
+    "name": "Marathon Petroleum Corp"
+  },
+  "MARATHONPETROLEUM": {
+    "cik": "1510295",
+    "name": "Marathon Petroleum Corp"
+  },
+  "ROP": {
+    "cik": "882835",
+    "name": "ROPER TECHNOLOGIES INC"
+  },
+  "ROPERTECHNOLOGIES": {
+    "cik": "882835",
+    "name": "ROPER TECHNOLOGIES INC"
+  },
+  "O": {
+    "cik": "726728",
+    "name": "REALTY INCOME CORP"
+  },
+  "REALTYINCOME": {
+    "cik": "726728",
+    "name": "REALTY INCOME CORP"
+  },
+  "FAST": {
+    "cik": "815556",
+    "name": "FASTENAL CO"
+  },
+  "FASTENAL": {
+    "cik": "815556",
+    "name": "FASTENAL CO"
+  },
+  "PCAR": {
+    "cik": "075362",
+    "name": "PACCAR INC"
+  },
+  "PACCAR": {
+    "cik": "075362",
+    "name": "PACCAR INC"
+  },
+  "SRE": {
+    "cik": "1032208",
+    "name": "SEMPRA"
+  },
+  "SEMPRA": {
+    "cik": "1032208",
+    "name": "SEMPRA"
+  },
+  "FDX": {
+    "cik": "1048911",
+    "name": "FEDEX CORP"
+  },
+  "FEDEX": {
+    "cik": "1048911",
+    "name": "FEDEX CORP"
+  },
+  "TRP": {
+    "cik": "1232384",
+    "name": "TC ENERGY CORP"
+  },
+  "TCENERGY": {
+    "cik": "1232384",
+    "name": "TC ENERGY CORP"
+  },
+  "SLB": {
+    "cik": "087347",
+    "name": "SCHLUMBERGER LIMITED/NV"
+  },
+  "SCHLUMBERGERLIMITED/NV": {
+    "cik": "087347",
+    "name": "SCHLUMBERGER LIMITED/NV"
+  },
+  "MFC": {
+    "cik": "1086888",
+    "name": "MANULIFE FINANCIAL CORP"
+  },
+  "MANULIFEFINANCIAL": {
+    "cik": "1086888",
+    "name": "MANULIFE FINANCIAL CORP"
+  },
+  "BDX": {
+    "cik": "010795",
+    "name": "BECTON DICKINSON & CO"
+  },
+  "BECTONDICKINSON&": {
+    "cik": "010795",
+    "name": "BECTON DICKINSON & CO"
+  },
+  "E": {
+    "cik": "1002242",
+    "name": "ENI SPA"
+  },
+  "ENISPA": {
+    "cik": "1002242",
+    "name": "ENI SPA"
+  },
+  "LHX": {
+    "cik": "202058",
+    "name": "L3HARRIS TECHNOLOGIES, INC. /DE/"
+  },
+  "L3HARRISTECHNOLOGIES": {
+    "cik": "202058",
+    "name": "L3HARRIS TECHNOLOGIES, INC. /DE/"
+  },
+  "NDAQ": {
+    "cik": "1120193",
+    "name": "NASDAQ, INC."
+  },
+  "NASDAQ": {
+    "cik": "1120193",
+    "name": "NASDAQ, INC."
+  },
+  "PSX": {
+    "cik": "1534701",
+    "name": "Phillips 66"
+  },
+  "PHILLIPS66": {
+    "cik": "1534701",
+    "name": "Phillips 66"
+  },
+  "CMG": {
+    "cik": "1058090",
+    "name": "CHIPOTLE MEXICAN GRILL INC"
+  },
+  "CHIPOTLEMEXICANGRILL": {
+    "cik": "1058090",
+    "name": "CHIPOTLE MEXICAN GRILL INC"
+  },
+  "MET": {
+    "cik": "1099219",
+    "name": "METLIFE INC"
+  },
+  "METLIFE": {
+    "cik": "1099219",
+    "name": "METLIFE INC"
+  },
+  "MPLX": {
+    "cik": "1552000",
+    "name": "MPLX LP"
+  },
+  "CARR": {
+    "cik": "1783180",
+    "name": "CARRIER GLOBAL Corp"
+  },
+  "CARRIERGLOBAL": {
+    "cik": "1783180",
+    "name": "CARRIER GLOBAL Corp"
+  },
+  "ALL": {
+    "cik": "899051",
+    "name": "ALLSTATE CORP"
+  },
+  "ALLSTATE": {
+    "cik": "899051",
+    "name": "ALLSTATE CORP"
+  },
+  "IDXX": {
+    "cik": "874716",
+    "name": "IDEXX LABORATORIES INC /DE"
+  },
+  "IDEXXLABORATORIES": {
+    "cik": "874716",
+    "name": "IDEXX LABORATORIES INC /DE"
+  },
+  "LNG": {
+    "cik": "003570",
+    "name": "Cheniere Energy, Inc."
+  },
+  "CHENIEREENERGY": {
+    "cik": "003570",
+    "name": "Cheniere Energy, Inc."
+  },
+  "DHI": {
+    "cik": "882184",
+    "name": "HORTON D R INC /DE/"
+  },
+  "HORTONDR": {
+    "cik": "882184",
+    "name": "HORTON D R INC /DE/"
+  },
+  "D": {
+    "cik": "715957",
+    "name": "DOMINION ENERGY, INC"
+  },
+  "DOMINIONENERGY": {
+    "cik": "715957",
+    "name": "DOMINION ENERGY, INC"
+  },
+  "JD": {
+    "cik": "1549802",
+    "name": "JD.com, Inc."
+  },
+  "JDCOM": {
+    "cik": "1549802",
+    "name": "JD.com, Inc."
+  },
+  "SU": {
+    "cik": "311337",
+    "name": "SUNCOR ENERGY INC"
+  },
+  "SUNCORENERGY": {
+    "cik": "311337",
+    "name": "SUNCOR ENERGY INC"
+  },
+  "PSA": {
+    "cik": "1393311",
+    "name": "Public Storage"
+  },
+  "PUBLICSTORAGE": {
+    "cik": "1393311",
+    "name": "Public Storage"
+  },
+  "IFNNY": {
+    "cik": "1107457",
+    "name": "INFINEON TECHNOLOGIES AG"
+  },
+  "INFINEONTECHNOLOGIESAG": {
+    "cik": "1107457",
+    "name": "INFINEON TECHNOLOGIES AG"
+  },
+  "B": {
+    "cik": "756894",
+    "name": "BARRICK MINING CORP"
+  },
+  "BARRICKMINING": {
+    "cik": "756894",
+    "name": "BARRICK MINING CORP"
+  },
+  "FLUT": {
+    "cik": "1635327",
+    "name": "Flutter Entertainment plc"
+  },
+  "FLUTTERENTERTAINMENTPLC": {
+    "cik": "1635327",
+    "name": "Flutter Entertainment plc"
+  },
+  "EONGY": {
+    "cik": "1136808",
+    "name": "E.ON SE"
+  },
+  "EONSE": {
+    "cik": "1136808",
+    "name": "E.ON SE"
+  },
+  "TAK": {
+    "cik": "1395064",
+    "name": "TAKEDA PHARMACEUTICAL CO LTD"
+  },
+  "TAKEDAPHARMACEUTICAL": {
+    "cik": "1395064",
+    "name": "TAKEDA PHARMACEUTICAL CO LTD"
+  },
+  "CBRE": {
+    "cik": "1138118",
+    "name": "CBRE GROUP, INC."
+  },
+  "CBREGROUP": {
+    "cik": "1138118",
+    "name": "CBRE GROUP, INC."
+  },
+  "PTCAY": {
+    "cik": "1547873",
+    "name": "PT Chandra Asri Petrochemical Tbk/ADR"
+  },
+  "PTCHANDRAASRIPETROCHEMICALTBK/ADR": {
+    "cik": "1547873",
+    "name": "PT Chandra Asri Petrochemical Tbk/ADR"
+  },
+  "IMO": {
+    "cik": "049938",
+    "name": "IMPERIAL OIL LTD"
+  },
+  "IMPERIALOIL": {
+    "cik": "049938",
+    "name": "IMPERIAL OIL LTD"
+  },
+  "ROST": {
+    "cik": "745732",
+    "name": "ROSS STORES, INC."
+  },
+  "ROSSSTORES": {
+    "cik": "745732",
+    "name": "ROSS STORES, INC."
+  },
+  "VLO": {
+    "cik": "1035002",
+    "name": "VALERO ENERGY CORP/TX"
+  },
+  "VALEROENERGYCORP/TX": {
+    "cik": "1035002",
+    "name": "VALERO ENERGY CORP/TX"
+  },
+  "RDDT": {
+    "cik": "1713445",
+    "name": "Reddit, Inc."
+  },
+  "REDDIT": {
+    "cik": "1713445",
+    "name": "Reddit, Inc."
+  },
+  "GWW": {
+    "cik": "277135",
+    "name": "W.W. GRAINGER, INC."
+  },
+  "WWGRAINGER": {
+    "cik": "277135",
+    "name": "W.W. GRAINGER, INC."
+  },
+  "CTVA": {
+    "cik": "1755672",
+    "name": "Corteva, Inc."
+  },
+  "CORTEVA": {
+    "cik": "1755672",
+    "name": "Corteva, Inc."
+  },
+  "PAYX": {
+    "cik": "723531",
+    "name": "PAYCHEX INC"
+  },
+  "PAYCHEX": {
+    "cik": "723531",
+    "name": "PAYCHEX INC"
+  },
+  "VRT": {
+    "cik": "1674101",
+    "name": "Vertiv Holdings Co"
+  },
+  "VERTIVHOLDINGS": {
+    "cik": "1674101",
+    "name": "Vertiv Holdings Co"
+  },
+  "OXY": {
+    "cik": "797468",
+    "name": "OCCIDENTAL PETROLEUM CORP /DE/"
+  },
+  "OCCIDENTALPETROLEUM": {
+    "cik": "797468",
+    "name": "OCCIDENTAL PETROLEUM CORP /DE/"
+  },
+  "DDOG": {
+    "cik": "1561550",
+    "name": "Datadog, Inc."
+  },
+  "DATADOG": {
+    "cik": "1561550",
+    "name": "Datadog, Inc."
+  },
+  "WCN": {
+    "cik": "1318220",
+    "name": "Waste Connections, Inc."
+  },
+  "WASTECONNECTIONS": {
+    "cik": "1318220",
+    "name": "Waste Connections, Inc."
+  },
+  "TCOM": {
+    "cik": "1269238",
+    "name": "Trip.com Group Ltd"
+  },
+  "TRIPCOMGROUP": {
+    "cik": "1269238",
+    "name": "Trip.com Group Ltd"
+  },
+  "XYZ": {
+    "cik": "1512673",
+    "name": "Block, Inc."
+  },
+  "BLOCK": {
+    "cik": "1512673",
+    "name": "Block, Inc."
+  },
+  "BKR": {
+    "cik": "1701605",
+    "name": "Baker Hughes Co"
+  },
+  "BAKERHUGHES": {
+    "cik": "1701605",
+    "name": "Baker Hughes Co"
+  },
+  "FERG": {
+    "cik": "2011641",
+    "name": "Ferguson Enterprises Inc. /DE/"
+  },
+  "FERGUSONENTERPRISES": {
+    "cik": "2011641",
+    "name": "Ferguson Enterprises Inc. /DE/"
+  },
+  "F": {
+    "cik": "037996",
+    "name": "FORD MOTOR CO"
+  },
+  "FORDMOTOR": {
+    "cik": "037996",
+    "name": "FORD MOTOR CO"
+  },
+  "ARGX": {
+    "cik": "1697862",
+    "name": "ARGENX SE"
+  },
+  "ARGENXSE": {
+    "cik": "1697862",
+    "name": "ARGENX SE"
+  },
+  "AMP": {
+    "cik": "820027",
+    "name": "AMERIPRISE FINANCIAL INC"
+  },
+  "AMERIPRISEFINANCIAL": {
+    "cik": "820027",
+    "name": "AMERIPRISE FINANCIAL INC"
+  },
+  "WPM": {
+    "cik": "1323404",
+    "name": "Wheaton Precious Metals Corp."
+  },
+  "WHEATONPRECIOUSMETALS": {
+    "cik": "1323404",
+    "name": "Wheaton Precious Metals Corp."
+  },
+  "OKE": {
+    "cik": "1039684",
+    "name": "ONEOK INC /NEW/"
+  },
+  "ONEOK": {
+    "cik": "1039684",
+    "name": "ONEOK INC /NEW/"
+  },
+  "GRMN": {
+    "cik": "1121788",
+    "name": "GARMIN LTD"
+  },
+  "GARMIN": {
+    "cik": "1121788",
+    "name": "GARMIN LTD"
+  },
+  "TEAM": {
+    "cik": "1650372",
+    "name": "Atlassian Corp"
+  },
+  "ATLASSIAN": {
+    "cik": "1650372",
+    "name": "Atlassian Corp"
+  },
+  "CPRT": {
+    "cik": "900075",
+    "name": "COPART INC"
+  },
+  "COPART": {
+    "cik": "900075",
+    "name": "COPART INC"
+  },
+  "RKT": {
+    "cik": "1805284",
+    "name": "Rocket Companies, Inc."
+  },
+  "ROCKETCOMPANIES": {
+    "cik": "1805284",
+    "name": "Rocket Companies, Inc."
+  },
+  "VEEV": {
+    "cik": "1393052",
+    "name": "VEEVA SYSTEMS INC"
+  },
+  "VEEVASYSTEMS": {
+    "cik": "1393052",
+    "name": "VEEVA SYSTEMS INC"
+  },
+  "TTWO": {
+    "cik": "946581",
+    "name": "TAKE TWO INTERACTIVE SOFTWARE INC"
+  },
+  "TAKETWOINTERACTIVESOFTWARE": {
+    "cik": "946581",
+    "name": "TAKE TWO INTERACTIVE SOFTWARE INC"
+  },
+  "HMC": {
+    "cik": "715153",
+    "name": "HONDA MOTOR CO LTD"
+  },
+  "HONDAMOTOR": {
+    "cik": "715153",
+    "name": "HONDA MOTOR CO LTD"
+  },
+  "KR": {
+    "cik": "056873",
+    "name": "KROGER CO"
+  },
+  "KROGER": {
+    "cik": "056873",
+    "name": "KROGER CO"
+  },
+  "EW": {
+    "cik": "1099800",
+    "name": "Edwards Lifesciences Corp"
+  },
+  "EDWARDSLIFESCIENCES": {
+    "cik": "1099800",
+    "name": "Edwards Lifesciences Corp"
+  },
+  "MSCI": {
+    "cik": "1408198",
+    "name": "MSCI Inc."
+  },
+  "AME": {
+    "cik": "1037868",
+    "name": "AMETEK INC/"
+  },
+  "AMETEKINC/": {
+    "cik": "1037868",
+    "name": "AMETEK INC/"
+  },
+  "GALDY": {
+    "cik": "2021390",
+    "name": "Galderma Group AG/ADR"
+  },
+  "GALDERMAGROUPAG/ADR": {
+    "cik": "2021390",
+    "name": "Galderma Group AG/ADR"
+  },
+  "VALE": {
+    "cik": "917851",
+    "name": "Vale S.A."
+  },
+  "VALESA": {
+    "cik": "917851",
+    "name": "Vale S.A."
+  },
+  "EXC": {
+    "cik": "1109357",
+    "name": "EXELON CORP"
+  },
+  "EXELON": {
+    "cik": "1109357",
+    "name": "EXELON CORP"
+  },
+  "EA": {
+    "cik": "712515",
+    "name": "ELECTRONIC ARTS INC."
+  },
+  "ELECTRONICARTS": {
+    "cik": "712515",
+    "name": "ELECTRONIC ARTS INC."
+  },
+  "BIDU": {
+    "cik": "1329099",
+    "name": "Baidu, Inc."
+  },
+  "BAIDU": {
+    "cik": "1329099",
+    "name": "Baidu, Inc."
+  },
+  "CVNA": {
+    "cik": "1690820",
+    "name": "CARVANA CO."
+  },
+  "CARVANA": {
+    "cik": "1690820",
+    "name": "CARVANA CO."
+  },
+  "ZS": {
+    "cik": "1713683",
+    "name": "Zscaler, Inc."
+  },
+  "ZSCALER": {
+    "cik": "1713683",
+    "name": "Zscaler, Inc."
+  },
+  "XEL": {
+    "cik": "072903",
+    "name": "XCEL ENERGY INC"
+  },
+  "XCELENERGY": {
+    "cik": "072903",
+    "name": "XCEL ENERGY INC"
+  },
+  "CCL": {
+    "cik": "815097",
+    "name": "CARNIVAL CORP"
+  },
+  "CARNIVAL": {
+    "cik": "815097",
+    "name": "CARNIVAL CORP"
+  },
+  "AIG": {
+    "cik": "005272",
+    "name": "AMERICAN INTERNATIONAL GROUP, INC."
+  },
+  "AMERICANINTERNATIONALGROUP": {
+    "cik": "005272",
+    "name": "AMERICAN INTERNATIONAL GROUP, INC."
+  },
+  "HLN": {
+    "cik": "1900304",
+    "name": "Haleon plc"
+  },
+  "HALEONPLC": {
+    "cik": "1900304",
+    "name": "Haleon plc"
+  },
+  "TGT": {
+    "cik": "027419",
+    "name": "TARGET CORP"
+  },
+  "TARGET": {
+    "cik": "027419",
+    "name": "TARGET CORP"
+  },
+  "KMB": {
+    "cik": "055785",
+    "name": "KIMBERLY CLARK CORP"
+  },
+  "KIMBERLYCLARK": {
+    "cik": "055785",
+    "name": "KIMBERLY CLARK CORP"
+  },
+  "FER": {
+    "cik": "1468522",
+    "name": "Ferrovial SE"
+  },
+  "FERROVIALSE": {
+    "cik": "1468522",
+    "name": "Ferrovial SE"
+  },
+  "MPWR": {
+    "cik": "1280452",
+    "name": "MONOLITHIC POWER SYSTEMS INC"
+  },
+  "MONOLITHICPOWERSYSTEMS": {
+    "cik": "1280452",
+    "name": "MONOLITHIC POWER SYSTEMS INC"
+  },
+  "CCEP": {
+    "cik": "1650107",
+    "name": "COCA-COLA EUROPACIFIC PARTNERS plc"
+  },
+  "COCA-COLAEUROPACIFICPARTNERSPLC": {
+    "cik": "1650107",
+    "name": "COCA-COLA EUROPACIFIC PARTNERS plc"
+  },
+  "CCI": {
+    "cik": "1051470",
+    "name": "CROWN CASTLE INC."
+  },
+  "CROWNCASTLE": {
+    "cik": "1051470",
+    "name": "CROWN CASTLE INC."
+  },
+  "BSBR": {
+    "cik": "1471055",
+    "name": "Banco Santander (Brasil) S.A."
+  },
+  "BANCOSANTANDER(BRASIL)SA": {
+    "cik": "1471055",
+    "name": "Banco Santander (Brasil) S.A."
+  },
+  "EBAY": {
+    "cik": "1065088",
+    "name": "EBAY INC"
+  },
+  "PEG": {
+    "cik": "788784",
+    "name": "PUBLIC SERVICE ENTERPRISE GROUP INC"
+  },
+  "PUBLICSERVICEENTERPRISEGROUP": {
+    "cik": "788784",
+    "name": "PUBLIC SERVICE ENTERPRISE GROUP INC"
+  },
+  "YUM": {
+    "cik": "1041061",
+    "name": "YUM BRANDS INC"
+  },
+  "YUMBRANDS": {
+    "cik": "1041061",
+    "name": "YUM BRANDS INC"
+  },
+  "FANG": {
+    "cik": "1539838",
+    "name": "Diamondback Energy, Inc."
+  },
+  "DIAMONDBACKENERGY": {
+    "cik": "1539838",
+    "name": "Diamondback Energy, Inc."
+  },
+  "ALAB": {
+    "cik": "1736297",
+    "name": "Astera Labs, Inc."
+  },
+  "ASTERALABS": {
+    "cik": "1736297",
+    "name": "Astera Labs, Inc."
+  },
+  "RMD": {
+    "cik": "943819",
+    "name": "RESMED INC"
+  },
+  "RESMED": {
+    "cik": "943819",
+    "name": "RESMED INC"
+  },
+  "LYV": {
+    "cik": "1335258",
+    "name": "Live Nation Entertainment, Inc."
+  },
+  "LIVENATIONENTERTAINMENT": {
+    "cik": "1335258",
+    "name": "Live Nation Entertainment, Inc."
+  },
+  "ETR": {
+    "cik": "065984",
+    "name": "ENTERGY CORP /DE/"
+  },
+  "ENTERGY": {
+    "cik": "065984",
+    "name": "ENTERGY CORP /DE/"
+  },
+  "HEI": {
+    "cik": "046619",
+    "name": "HEICO CORP"
+  },
+  "HEICO": {
+    "cik": "046619",
+    "name": "HEICO CORP"
+  },
+  "HSY": {
+    "cik": "047111",
+    "name": "HERSHEY CO"
+  },
+  "HERSHEY": {
+    "cik": "047111",
+    "name": "HERSHEY CO"
+  },
+  "ROK": {
+    "cik": "1024478",
+    "name": "ROCKWELL AUTOMATION, INC"
+  },
+  "ROCKWELLAUTOMATION": {
+    "cik": "1024478",
+    "name": "ROCKWELL AUTOMATION, INC"
+  },
+  "FNV": {
+    "cik": "1456346",
+    "name": "FRANCO NEVADA Corp"
+  },
+  "FRANCONEVADA": {
+    "cik": "1456346",
+    "name": "FRANCO NEVADA Corp"
+  },
+  "VMC": {
+    "cik": "1396009",
+    "name": "Vulcan Materials CO"
+  },
+  "VULCANMATERIALS": {
+    "cik": "1396009",
+    "name": "Vulcan Materials CO"
+  },
+  "ALC": {
+    "cik": "1167379",
+    "name": "ALCON INC"
+  },
+  "ALCON": {
+    "cik": "1167379",
+    "name": "ALCON INC"
+  },
+  "SYY": {
+    "cik": "096021",
+    "name": "SYSCO CORP"
+  },
+  "SYSCO": {
+    "cik": "096021",
+    "name": "SYSCO CORP"
+  },
+  "FRFHF": {
+    "cik": "915191",
+    "name": "FAIRFAX FINANCIAL HOLDINGS LTD/ CAN"
+  },
+  "FAIRFAXFINANCIALHOLDINGSLTD/CAN": {
+    "cik": "915191",
+    "name": "FAIRFAX FINANCIAL HOLDINGS LTD/ CAN"
+  },
+  "ONC": {
+    "cik": "1651308",
+    "name": "BeOne Medicines Ltd."
+  },
+  "BEONEMEDICINES": {
+    "cik": "1651308",
+    "name": "BeOne Medicines Ltd."
+  },
+  "TME": {
+    "cik": "1744676",
+    "name": "Tencent Music Entertainment Group"
+  },
+  "TENCENTMUSICENTERTAINMENTGROUP": {
+    "cik": "1744676",
+    "name": "Tencent Music Entertainment Group"
+  },
+  "CUK": {
+    "cik": "1125259",
+    "name": "CARNIVAL PLC"
+  },
+  "CARNIVALPLC": {
+    "cik": "1125259",
+    "name": "CARNIVAL PLC"
+  },
+  "DAL": {
+    "cik": "027904",
+    "name": "DELTA AIR LINES, INC."
+  },
+  "DELTAAIRLINES": {
+    "cik": "027904",
+    "name": "DELTA AIR LINES, INC."
+  },
+  "CSGP": {
+    "cik": "1057352",
+    "name": "COSTAR GROUP, INC."
+  },
+  "COSTARGROUP": {
+    "cik": "1057352",
+    "name": "COSTAR GROUP, INC."
+  },
+  "FICO": {
+    "cik": "814547",
+    "name": "FAIR ISAAC CORP"
+  },
+  "FAIRISAAC": {
+    "cik": "814547",
+    "name": "FAIR ISAAC CORP"
+  },
+  "DIA": {
+    "cik": "1041130",
+    "name": "SPDR DOW JONES INDUSTRIAL AVERAGE ETF TRUST"
+  },
+  "SPDRDOWJONESINDUSTRIALAVERAGEETFTRUST": {
+    "cik": "1041130",
+    "name": "SPDR DOW JONES INDUSTRIAL AVERAGE ETF TRUST"
+  },
+  "ABEV": {
+    "cik": "1565025",
+    "name": "AMBEV S.A."
+  },
+  "AMBEVSA": {
+    "cik": "1565025",
+    "name": "AMBEV S.A."
+  },
+  "VRSK": {
+    "cik": "1442145",
+    "name": "Verisk Analytics, Inc."
+  },
+  "VERISKANALYTICS": {
+    "cik": "1442145",
+    "name": "Verisk Analytics, Inc."
+  },
+  "MLM": {
+    "cik": "916076",
+    "name": "MARTIN MARIETTA MATERIALS INC"
+  },
+  "MARTINMARIETTAMATERIALS": {
+    "cik": "916076",
+    "name": "MARTIN MARIETTA MATERIALS INC"
+  },
+  "KDP": {
+    "cik": "1418135",
+    "name": "Keurig Dr Pepper Inc."
+  },
+  "KEURIGDRPEPPER": {
+    "cik": "1418135",
+    "name": "Keurig Dr Pepper Inc."
+  },
+  "HIG": {
+    "cik": "874766",
+    "name": "HARTFORD INSURANCE GROUP, INC."
+  },
+  "HARTFORDINSURANCEGROUP": {
+    "cik": "874766",
+    "name": "HARTFORD INSURANCE GROUP, INC."
+  },
+  "STX": {
+    "cik": "1137789",
+    "name": "Seagate Technology Holdings plc"
+  },
+  "SEAGATETECHNOLOGYHOLDINGSPLC": {
+    "cik": "1137789",
+    "name": "Seagate Technology Holdings plc"
+  },
+  "CHLSY": {
+    "cik": "1885110",
+    "name": "Chocoladefabriken Lindt & Spruengli AG/ADR"
+  },
+  "CHOCOLADEFABRIKENLINDT&SPRUENGLIAG/ADR": {
+    "cik": "1885110",
+    "name": "Chocoladefabriken Lindt & Spruengli AG/ADR"
+  },
+  "A": {
+    "cik": "1090872",
+    "name": "AGILENT TECHNOLOGIES, INC."
+  },
+  "AGILENTTECHNOLOGIES": {
+    "cik": "1090872",
+    "name": "AGILENT TECHNOLOGIES, INC."
+  },
+  "PRU": {
+    "cik": "1137774",
+    "name": "PRUDENTIAL FINANCIAL INC"
+  },
+  "PRUDENTIALFINANCIAL": {
+    "cik": "1137774",
+    "name": "PRUDENTIAL FINANCIAL INC"
+  },
+  "TRGP": {
+    "cik": "1389170",
+    "name": "Targa Resources Corp."
+  },
+  "TARGARESOURCES": {
+    "cik": "1389170",
+    "name": "Targa Resources Corp."
+  },
+  "GWLIF": {
+    "cik": "850918",
+    "name": "GREAT-WEST LIFECO INC."
+  },
+  "GREAT-WESTLIFECO": {
+    "cik": "850918",
+    "name": "GREAT-WEST LIFECO INC."
+  },
+  "CHTR": {
+    "cik": "1091667",
+    "name": "CHARTER COMMUNICATIONS, INC. /MO/"
+  },
+  "CHARTERCOMMUNICATIONS": {
+    "cik": "1091667",
+    "name": "CHARTER COMMUNICATIONS, INC. /MO/"
+  },
+  "LVS": {
+    "cik": "1300514",
+    "name": "LAS VEGAS SANDS CORP"
+  },
+  "LASVEGASSANDS": {
+    "cik": "1300514",
+    "name": "LAS VEGAS SANDS CORP"
+  },
+  "PUK": {
+    "cik": "1116578",
+    "name": "PRUDENTIAL PLC"
+  },
+  "PRUDENTIALPLC": {
+    "cik": "1116578",
+    "name": "PRUDENTIAL PLC"
+  },
+  "VICI": {
+    "cik": "1705696",
+    "name": "VICI PROPERTIES INC."
+  },
+  "VICIPROPERTIES": {
+    "cik": "1705696",
+    "name": "VICI PROPERTIES INC."
+  },
+  "CAH": {
+    "cik": "721371",
+    "name": "CARDINAL HEALTH INC"
+  },
+  "CARDINALHEALTH": {
+    "cik": "721371",
+    "name": "CARDINAL HEALTH INC"
+  },
+  "GEHC": {
+    "cik": "1932393",
+    "name": "GE HealthCare Technologies Inc."
+  },
+  "GEHEALTHCARETECHNOLOGIES": {
+    "cik": "1932393",
+    "name": "GE HealthCare Technologies Inc."
+  },
+  "OTIS": {
+    "cik": "1781335",
+    "name": "Otis Worldwide Corp"
+  },
+  "OTISWORLDWIDE": {
+    "cik": "1781335",
+    "name": "Otis Worldwide Corp"
+  },
+  "CCJ": {
+    "cik": "1009001",
+    "name": "CAMECO CORP"
+  },
+  "CAMECO": {
+    "cik": "1009001",
+    "name": "CAMECO CORP"
+  },
+  "JBS": {
+    "cik": "1791942",
+    "name": "JBS N.V."
+  },
+  "JBSNV": {
+    "cik": "1791942",
+    "name": "JBS N.V."
+  },
+  "KVUE": {
+    "cik": "1944048",
+    "name": "Kenvue Inc."
+  },
+  "KENVUE": {
+    "cik": "1944048",
+    "name": "Kenvue Inc."
+  },
+  "MCHP": {
+    "cik": "827054",
+    "name": "MICROCHIP TECHNOLOGY INC"
+  },
+  "MICROCHIPTECHNOLOGY": {
+    "cik": "827054",
+    "name": "MICROCHIP TECHNOLOGY INC"
+  },
+  "FIS": {
+    "cik": "1136893",
+    "name": "Fidelity National Information Services, Inc."
+  },
+  "FIDELITYNATIONALINFORMATIONSERVICES": {
+    "cik": "1136893",
+    "name": "Fidelity National Information Services, Inc."
+  },
+  "CHT": {
+    "cik": "1132924",
+    "name": "CHUNGHWA TELECOM CO LTD"
+  },
+  "CHUNGHWATELECOM": {
+    "cik": "1132924",
+    "name": "CHUNGHWA TELECOM CO LTD"
+  },
+  "LEN": {
+    "cik": "920760",
+    "name": "LENNAR CORP /NEW/"
+  },
+  "LENNAR": {
+    "cik": "920760",
+    "name": "LENNAR CORP /NEW/"
+  },
+  "ED": {
+    "cik": "1047862",
+    "name": "CONSOLIDATED EDISON INC"
+  },
+  "CONSOLIDATEDEDISON": {
+    "cik": "1047862",
+    "name": "CONSOLIDATED EDISON INC"
+  },
+  "GFI": {
+    "cik": "1172724",
+    "name": "GOLD FIELDS LTD"
+  },
+  "GOLDFIELDS": {
+    "cik": "1172724",
+    "name": "GOLD FIELDS LTD"
+  },
+  "XYL": {
+    "cik": "1524472",
+    "name": "Xylem Inc."
+  },
+  "XYLEM": {
+    "cik": "1524472",
+    "name": "Xylem Inc."
+  },
+  "WEC": {
+    "cik": "783325",
+    "name": "WEC ENERGY GROUP, INC."
+  },
+  "WECENERGYGROUP": {
+    "cik": "783325",
+    "name": "WEC ENERGY GROUP, INC."
+  },
+  "RJF": {
+    "cik": "720005",
+    "name": "RAYMOND JAMES FINANCIAL INC"
+  },
+  "RAYMONDJAMESFINANCIAL": {
+    "cik": "720005",
+    "name": "RAYMOND JAMES FINANCIAL INC"
+  },
+  "UAL": {
+    "cik": "100517",
+    "name": "United Airlines Holdings, Inc."
+  },
+  "UNITEDAIRLINESHOLDINGS": {
+    "cik": "100517",
+    "name": "United Airlines Holdings, Inc."
+  },
+  "CRCL": {
+    "cik": "1876042",
+    "name": "Circle Internet Group, Inc."
+  },
+  "CIRCLEINTERNETGROUP": {
+    "cik": "1876042",
+    "name": "Circle Internet Group, Inc."
+  },
+  "CTSH": {
+    "cik": "1058290",
+    "name": "COGNIZANT TECHNOLOGY SOLUTIONS CORP"
+  },
+  "COGNIZANTTECHNOLOGYSOLUTIONS": {
+    "cik": "1058290",
+    "name": "COGNIZANT TECHNOLOGY SOLUTIONS CORP"
+  },
+  "FMX": {
+    "cik": "1061736",
+    "name": "MEXICAN ECONOMIC DEVELOPMENT INC"
+  },
+  "MEXICANECONOMICDEVELOPMENT": {
+    "cik": "1061736",
+    "name": "MEXICAN ECONOMIC DEVELOPMENT INC"
+  },
+  "MDY": {
+    "cik": "936958",
+    "name": "SPDR S&P MIDCAP 400 ETF TRUST"
+  },
+  "SPDRS&PMIDCAP400ETFTRUST": {
+    "cik": "936958",
+    "name": "SPDR S&P MIDCAP 400 ETF TRUST"
+  },
+  "AU": {
+    "cik": "1973832",
+    "name": "AngloGold Ashanti PLC"
+  },
+  "ANGLOGOLDASHANTIPLC": {
+    "cik": "1973832",
+    "name": "AngloGold Ashanti PLC"
+  },
+  "PCG": {
+    "cik": "1004980",
+    "name": "PG&E Corp"
+  },
+  "PG&E": {
+    "cik": "1004980",
+    "name": "PG&E Corp"
+  },
+  "WAB": {
+    "cik": "943452",
+    "name": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP"
+  },
+  "WESTINGHOUSEAIRBRAKETECHNOLOGIES": {
+    "cik": "943452",
+    "name": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP"
+  },
+  "NUE": {
+    "cik": "073309",
+    "name": "NUCOR CORP"
+  },
+  "NUCOR": {
+    "cik": "073309",
+    "name": "NUCOR CORP"
+  },
+  "HUM": {
+    "cik": "049071",
+    "name": "HUMANA INC"
+  },
+  "HUMANA": {
+    "cik": "049071",
+    "name": "HUMANA INC"
+  },
+  "TSCO": {
+    "cik": "916365",
+    "name": "TRACTOR SUPPLY CO /DE/"
+  },
+  "TRACTORSUPPLY": {
+    "cik": "916365",
+    "name": "TRACTOR SUPPLY CO /DE/"
+  },
+  "ACGL": {
+    "cik": "947484",
+    "name": "ARCH CAPITAL GROUP LTD."
+  },
+  "ARCHCAPITALGROUP": {
+    "cik": "947484",
+    "name": "ARCH CAPITAL GROUP LTD."
+  },
+  "WDS": {
+    "cik": "844551",
+    "name": "WOODSIDE ENERGY GROUP LTD"
+  },
+  "WOODSIDEENERGYGROUP": {
+    "cik": "844551",
+    "name": "WOODSIDE ENERGY GROUP LTD"
+  },
+  "SLF": {
+    "cik": "1097362",
+    "name": "SUN LIFE FINANCIAL INC"
+  },
+  "SUNLIFEFINANCIAL": {
+    "cik": "1097362",
+    "name": "SUN LIFE FINANCIAL INC"
+  },
+  "DD": {
+    "cik": "1666700",
+    "name": "DuPont de Nemours, Inc."
+  },
+  "DUPONTDENEMOURS": {
+    "cik": "1666700",
+    "name": "DuPont de Nemours, Inc."
+  },
+  "HPE": {
+    "cik": "1645590",
+    "name": "Hewlett Packard Enterprise Co"
+  },
+  "HEWLETTPACKARDENTERPRISE": {
+    "cik": "1645590",
+    "name": "Hewlett Packard Enterprise Co"
+  },
+  "EFX": {
+    "cik": "033185",
+    "name": "EQUIFAX INC"
+  },
+  "EQUIFAX": {
+    "cik": "033185",
+    "name": "EQUIFAX INC"
+  },
+  "STT": {
+    "cik": "093751",
+    "name": "STATE STREET CORP"
+  },
+  "STATESTREET": {
+    "cik": "093751",
+    "name": "STATE STREET CORP"
+  },
+  "EL": {
+    "cik": "1001250",
+    "name": "ESTEE LAUDER COMPANIES INC"
+  },
+  "ESTEELAUDERCOMPANIES": {
+    "cik": "1001250",
+    "name": "ESTEE LAUDER COMPANIES INC"
+  },
+  "UI": {
+    "cik": "1511737",
+    "name": "Ubiquiti Inc."
+  },
+  "UBIQUITI": {
+    "cik": "1511737",
+    "name": "Ubiquiti Inc."
+  },
+  "TYHOY": {
+    "cik": "2018139",
+    "name": "Toyota Tsusho Corporation/ADR"
+  },
+  "TOYOTATSUSHOCORPORATION/ADR": {
+    "cik": "2018139",
+    "name": "Toyota Tsusho Corporation/ADR"
+  },
+  "EXR": {
+    "cik": "1289490",
+    "name": "Extra Space Storage Inc."
+  },
+  "EXTRASPACESTORAGE": {
+    "cik": "1289490",
+    "name": "Extra Space Storage Inc."
+  },
+  "WTW": {
+    "cik": "1140536",
+    "name": "WILLIS TOWERS WATSON PLC"
+  },
+  "WILLISTOWERSWATSONPLC": {
+    "cik": "1140536",
+    "name": "WILLIS TOWERS WATSON PLC"
+  },
+  "NRG": {
+    "cik": "1013871",
+    "name": "NRG ENERGY, INC."
+  },
+  "NRGENERGY": {
+    "cik": "1013871",
+    "name": "NRG ENERGY, INC."
+  },
+  "IQV": {
+    "cik": "1478242",
+    "name": "IQVIA HOLDINGS INC."
+  },
+  "IQVIAHOLDINGS": {
+    "cik": "1478242",
+    "name": "IQVIA HOLDINGS INC."
+  },
+  "CVE": {
+    "cik": "1475260",
+    "name": "CENOVUS ENERGY INC."
+  },
+  "CENOVUSENERGY": {
+    "cik": "1475260",
+    "name": "CENOVUS ENERGY INC."
+  },
+  "DIDIY": {
+    "cik": "1764757",
+    "name": "DiDi Global Inc."
+  },
+  "DIDIGLOBAL": {
+    "cik": "1764757",
+    "name": "DiDi Global Inc."
+  },
+  "VG": {
+    "cik": "2007855",
+    "name": "Venture Global, Inc."
+  },
+  "VENTUREGLOBAL": {
+    "cik": "2007855",
+    "name": "Venture Global, Inc."
+  },
+  "EQT": {
+    "cik": "033213",
+    "name": "EQT Corp"
+  },
+  "RYAAY": {
+    "cik": "1038683",
+    "name": "RYANAIR HOLDINGS PLC"
+  },
+  "RYANAIRHOLDINGSPLC": {
+    "cik": "1038683",
+    "name": "RYANAIR HOLDINGS PLC"
+  },
+  "ODFL": {
+    "cik": "878927",
+    "name": "OLD DOMINION FREIGHT LINE, INC."
+  },
+  "OLDDOMINIONFREIGHTLINE": {
+    "cik": "878927",
+    "name": "OLD DOMINION FREIGHT LINE, INC."
+  },
+  "BBD": {
+    "cik": "1160330",
+    "name": "BANK BRADESCO"
+  },
+  "BANKBRADESCO": {
+    "cik": "1160330",
+    "name": "BANK BRADESCO"
+  },
+  "IR": {
+    "cik": "1699150",
+    "name": "Ingersoll Rand Inc."
+  },
+  "INGERSOLLRAND": {
+    "cik": "1699150",
+    "name": "Ingersoll Rand Inc."
+  },
+  "KB": {
+    "cik": "1445930",
+    "name": "KB Financial Group Inc."
+  },
+  "KBFINANCIALGROUP": {
+    "cik": "1445930",
+    "name": "KB Financial Group Inc."
+  },
+  "VTR": {
+    "cik": "740260",
+    "name": "Ventas, Inc."
+  },
+  "VENTAS": {
+    "cik": "740260",
+    "name": "Ventas, Inc."
+  },
+  "KHC": {
+    "cik": "1637459",
+    "name": "Kraft Heinz Co"
+  },
+  "KRAFTHEINZ": {
+    "cik": "1637459",
+    "name": "Kraft Heinz Co"
+  },
+  "INSM": {
+    "cik": "1104506",
+    "name": "INSMED Inc"
+  },
+  "INSMED": {
+    "cik": "1104506",
+    "name": "INSMED Inc"
+  },
+  "MTB": {
+    "cik": "036270",
+    "name": "M&T BANK CORP"
+  },
+  "M&TBANK": {
+    "cik": "036270",
+    "name": "M&T BANK CORP"
+  },
+  "AMRZ": {
+    "cik": "2035989",
+    "name": "Amrize Ltd"
+  },
+  "AMRIZE": {
+    "cik": "2035989",
+    "name": "Amrize Ltd"
+  },
+  "TEF": {
+    "cik": "814052",
+    "name": "TELEFONICA S A"
+  },
+  "TELEFONICASA": {
+    "cik": "814052",
+    "name": "TELEFONICA S A"
+  },
+  "IX": {
+    "cik": "1070304",
+    "name": "ORIX CORP"
+  },
+  "ORIX": {
+    "cik": "1070304",
+    "name": "ORIX CORP"
+  },
+  "FUJIY": {
+    "cik": "800365",
+    "name": "FUJI PHOTO FILM CO LTD /FI"
+  },
+  "FUJIPHOTOFILM": {
+    "cik": "800365",
+    "name": "FUJI PHOTO FILM CO LTD /FI"
+  },
+  "DXCM": {
+    "cik": "1093557",
+    "name": "DEXCOM INC"
+  },
+  "DEXCOM": {
+    "cik": "1093557",
+    "name": "DEXCOM INC"
+  },
+  "BRO": {
+    "cik": "079282",
+    "name": "BROWN & BROWN, INC."
+  },
+  "BROWN&BROWN": {
+    "cik": "079282",
+    "name": "BROWN & BROWN, INC."
+  },
+  "ADM": {
+    "cik": "007084",
+    "name": "Archer-Daniels-Midland Co"
+  },
+  "ARCHER-DANIELS-MIDLAND": {
+    "cik": "007084",
+    "name": "Archer-Daniels-Midland Co"
+  },
+  "SOFI": {
+    "cik": "1818874",
+    "name": "SoFi Technologies, Inc."
+  },
+  "SOFITECHNOLOGIES": {
+    "cik": "1818874",
+    "name": "SoFi Technologies, Inc."
+  },
+  "WIT": {
+    "cik": "1123799",
+    "name": "WIPRO LTD"
+  },
+  "WIPRO": {
+    "cik": "1123799",
+    "name": "WIPRO LTD"
+  },
+  "IRM": {
+    "cik": "1020569",
+    "name": "IRON MOUNTAIN INC"
+  },
+  "IRONMOUNTAIN": {
+    "cik": "1020569",
+    "name": "IRON MOUNTAIN INC"
+  },
+  "KEYS": {
+    "cik": "1601046",
+    "name": "Keysight Technologies, Inc."
+  },
+  "KEYSIGHTTECHNOLOGIES": {
+    "cik": "1601046",
+    "name": "Keysight Technologies, Inc."
+  },
+  "AFRM": {
+    "cik": "1820953",
+    "name": "Affirm Holdings, Inc."
+  },
+  "AFFIRMHOLDINGS": {
+    "cik": "1820953",
+    "name": "Affirm Holdings, Inc."
+  },
+  "CLS": {
+    "cik": "1030894",
+    "name": "CELESTICA INC"
+  },
+  "CELESTICA": {
+    "cik": "1030894",
+    "name": "CELESTICA INC"
+  },
+  "BR": {
+    "cik": "1383312",
+    "name": "BROADRIDGE FINANCIAL SOLUTIONS, INC."
+  },
+  "BROADRIDGEFINANCIALSOLUTIONS": {
+    "cik": "1383312",
+    "name": "BROADRIDGE FINANCIAL SOLUTIONS, INC."
+  },
+  "OWL": {
+    "cik": "1823945",
+    "name": "BLUE OWL CAPITAL INC."
+  },
+  "BLUEOWLCAPITAL": {
+    "cik": "1823945",
+    "name": "BLUE OWL CAPITAL INC."
+  },
+  "WBD": {
+    "cik": "1437107",
+    "name": "Warner Bros. Discovery, Inc."
+  },
+  "WARNERBROSDISCOVERY": {
+    "cik": "1437107",
+    "name": "Warner Bros. Discovery, Inc."
+  },
+  "QSR": {
+    "cik": "1618756",
+    "name": "Restaurant Brands International Inc."
+  },
+  "RESTAURANTBRANDSINTERNATIONAL": {
+    "cik": "1618756",
+    "name": "Restaurant Brands International Inc."
+  },
+  "CRDO": {
+    "cik": "1807794",
+    "name": "Credo Technology Group Holding Ltd"
+  },
+  "CREDOTECHNOLOGYGROUPHOLDING": {
+    "cik": "1807794",
+    "name": "Credo Technology Group Holding Ltd"
+  },
+  "WDC": {
+    "cik": "106040",
+    "name": "WESTERN DIGITAL CORP"
+  },
+  "WESTERNDIGITAL": {
+    "cik": "106040",
+    "name": "WESTERN DIGITAL CORP"
+  },
+  "VOD": {
+    "cik": "839923",
+    "name": "VODAFONE GROUP PUBLIC LTD CO"
+  },
+  "VODAFONEGROUPPUBLIC": {
+    "cik": "839923",
+    "name": "VODAFONE GROUP PUBLIC LTD CO"
+  },
+  "SYF": {
+    "cik": "1601712",
+    "name": "Synchrony Financial"
+  },
+  "SYNCHRONYFINANCIAL": {
+    "cik": "1601712",
+    "name": "Synchrony Financial"
+  },
+  "KBGGY": {
+    "cik": "1535759",
+    "name": "Kongsberg Gruppen ASA/ADR"
+  },
+  "KONGSBERGGRUPPENASA/ADR": {
+    "cik": "1535759",
+    "name": "Kongsberg Gruppen ASA/ADR"
+  },
+  "WTKWY": {
+    "cik": "861967",
+    "name": "WOLTERS KLUWER N V /FI"
+  },
+  "WOLTERSKLUWERNV/FI": {
+    "cik": "861967",
+    "name": "WOLTERS KLUWER N V /FI"
+  },
+  "EXPE": {
+    "cik": "1324424",
+    "name": "Expedia Group, Inc."
+  },
+  "EXPEDIAGROUP": {
+    "cik": "1324424",
+    "name": "Expedia Group, Inc."
+  },
+  "DTE": {
+    "cik": "936340",
+    "name": "DTE ENERGY CO"
+  },
+  "DTEENERGY": {
+    "cik": "936340",
+    "name": "DTE ENERGY CO"
+  },
+  "ROL": {
+    "cik": "084839",
+    "name": "ROLLINS INC"
+  },
+  "ROLLINS": {
+    "cik": "084839",
+    "name": "ROLLINS INC"
+  },
+  "KGC": {
+    "cik": "701818",
+    "name": "KINROSS GOLD CORP"
+  },
+  "KINROSSGOLD": {
+    "cik": "701818",
+    "name": "KINROSS GOLD CORP"
+  },
+  "VIK": {
+    "cik": "1745201",
+    "name": "Viking Holdings Ltd"
+  },
+  "VIKINGHOLDINGS": {
+    "cik": "1745201",
+    "name": "Viking Holdings Ltd"
+  },
+  "EME": {
+    "cik": "105634",
+    "name": "EMCOR Group, Inc."
+  },
+  "EMCORGROUP": {
+    "cik": "105634",
+    "name": "EMCOR Group, Inc."
+  },
+  "K": {
+    "cik": "055067",
+    "name": "KELLANOVA"
+  },
+  "KELLANOVA": {
+    "cik": "055067",
+    "name": "KELLANOVA"
+  },
+  "NTR": {
+    "cik": "1725964",
+    "name": "Nutrien Ltd."
+  },
+  "NUTRIEN": {
+    "cik": "1725964",
+    "name": "Nutrien Ltd."
+  },
+  "FIX": {
+    "cik": "1035983",
+    "name": "COMFORT SYSTEMS USA INC"
+  },
+  "COMFORTSYSTEMSUSA": {
+    "cik": "1035983",
+    "name": "COMFORT SYSTEMS USA INC"
+  },
+  "AVB": {
+    "cik": "915912",
+    "name": "AVALONBAY COMMUNITIES INC"
+  },
+  "AVALONBAYCOMMUNITIES": {
+    "cik": "915912",
+    "name": "AVALONBAY COMMUNITIES INC"
+  },
+  "WRB": {
+    "cik": "011544",
+    "name": "BERKLEY W R CORP"
+  },
+  "BERKLEYWR": {
+    "cik": "011544",
+    "name": "BERKLEY W R CORP"
+  },
+  "STLA": {
+    "cik": "1605484",
+    "name": "Stellantis N.V."
+  },
+  "STELLANTISNV": {
+    "cik": "1605484",
+    "name": "Stellantis N.V."
+  },
+  "TW": {
+    "cik": "1758730",
+    "name": "Tradeweb Markets Inc."
+  },
+  "TRADEWEBMARKETS": {
+    "cik": "1758730",
+    "name": "Tradeweb Markets Inc."
+  },
+  "SYM": {
+    "cik": "1837240",
+    "name": "Symbotic Inc."
+  },
+  "SYMBOTIC": {
+    "cik": "1837240",
+    "name": "Symbotic Inc."
+  },
+  "LPLA": {
+    "cik": "1397911",
+    "name": "LPL Financial Holdings Inc."
+  },
+  "LPLFINANCIALHOLDINGS": {
+    "cik": "1397911",
+    "name": "LPL Financial Holdings Inc."
+  },
+  "PSTG": {
+    "cik": "1474432",
+    "name": "Pure Storage, Inc."
+  },
+  "PURESTORAGE": {
+    "cik": "1474432",
+    "name": "Pure Storage, Inc."
+  },
+  "PHG": {
+    "cik": "313216",
+    "name": "KONINKLIJKE PHILIPS NV"
+  },
+  "KONINKLIJKEPHILIPSNV": {
+    "cik": "313216",
+    "name": "KONINKLIJKE PHILIPS NV"
+  },
+  "ERIC": {
+    "cik": "717826",
+    "name": "ERICSSON LM TELEPHONE CO"
+  },
+  "ERICSSONLMTELEPHONE": {
+    "cik": "717826",
+    "name": "ERICSSON LM TELEPHONE CO"
+  },
+  "AEE": {
+    "cik": "1002910",
+    "name": "AMEREN CORP"
+  },
+  "AMEREN": {
+    "cik": "1002910",
+    "name": "AMEREN CORP"
+  },
+  "MDB": {
+    "cik": "1441816",
+    "name": "MongoDB, Inc."
+  },
+  "MONGODB": {
+    "cik": "1441816",
+    "name": "MongoDB, Inc."
+  },
+  "STZ": {
+    "cik": "016918",
+    "name": "CONSTELLATION BRANDS, INC."
+  },
+  "CONSTELLATIONBRANDS": {
+    "cik": "016918",
+    "name": "CONSTELLATION BRANDS, INC."
+  },
+  "AWK": {
+    "cik": "1410636",
+    "name": "American Water Works Company, Inc."
+  },
+  "AMERICANWATERWORKSCOMPANY": {
+    "cik": "1410636",
+    "name": "American Water Works Company, Inc."
+  },
+  "GIS": {
+    "cik": "040704",
+    "name": "GENERAL MILLS INC"
+  },
+  "GENERALMILLS": {
+    "cik": "040704",
+    "name": "GENERAL MILLS INC"
+  },
+  "HUBS": {
+    "cik": "1404655",
+    "name": "HUBSPOT INC"
+  },
+  "HUBSPOT": {
+    "cik": "1404655",
+    "name": "HUBSPOT INC"
+  },
+  "MT": {
+    "cik": "1243429",
+    "name": "ArcelorMittal"
+  },
+  "ARCELORMITTAL": {
+    "cik": "1243429",
+    "name": "ArcelorMittal"
+  },
+  "PHM": {
+    "cik": "822416",
+    "name": "PULTEGROUP INC/MI/"
+  },
+  "PULTEGROUPINC/MI/": {
+    "cik": "822416",
+    "name": "PULTEGROUP INC/MI/"
+  },
+  "TTD": {
+    "cik": "1671933",
+    "name": "Trade Desk, Inc."
+  },
+  "TRADEDESK": {
+    "cik": "1671933",
+    "name": "Trade Desk, Inc."
+  },
+  "MTD": {
+    "cik": "1037646",
+    "name": "METTLER TOLEDO INTERNATIONAL INC/"
+  },
+  "METTLERTOLEDOINTERNATIONALINC/": {
+    "cik": "1037646",
+    "name": "METTLER TOLEDO INTERNATIONAL INC/"
+  },
+  "FIG": {
+    "cik": "1579878",
+    "name": "Figma, Inc."
+  },
+  "FIGMA": {
+    "cik": "1579878",
+    "name": "Figma, Inc."
+  },
+  "PPL": {
+    "cik": "922224",
+    "name": "PPL Corp"
+  },
+  "ATO": {
+    "cik": "731802",
+    "name": "ATMOS ENERGY CORP"
+  },
+  "ATMOSENERGY": {
+    "cik": "731802",
+    "name": "ATMOS ENERGY CORP"
+  },
+  "VLTO": {
+    "cik": "1967680",
+    "name": "Veralto Corp"
+  },
+  "VERALTO": {
+    "cik": "1967680",
+    "name": "Veralto Corp"
+  },
+  "HPQ": {
+    "cik": "047217",
+    "name": "HP INC"
+  },
+  "CQP": {
+    "cik": "1383650",
+    "name": "Cheniere Energy Partners, L.P."
+  },
+  "CHENIEREENERGYPARTNERSLP": {
+    "cik": "1383650",
+    "name": "Cheniere Energy Partners, L.P."
+  },
+  "GRAB": {
+    "cik": "1855612",
+    "name": "Grab Holdings Ltd"
+  },
+  "GRABHOLDINGS": {
+    "cik": "1855612",
+    "name": "Grab Holdings Ltd"
+  },
+  "RKLB": {
+    "cik": "1819994",
+    "name": "Rocket Lab Corp"
+  },
+  "ROCKETLAB": {
+    "cik": "1819994",
+    "name": "Rocket Lab Corp"
+  },
+  "TOST": {
+    "cik": "1650164",
+    "name": "Toast, Inc."
+  },
+  "TOAST": {
+    "cik": "1650164",
+    "name": "Toast, Inc."
+  },
+  "EQR": {
+    "cik": "906107",
+    "name": "EQUITY RESIDENTIAL"
+  },
+  "EQUITYRESIDENTIAL": {
+    "cik": "906107",
+    "name": "EQUITY RESIDENTIAL"
+  },
+  "HBAN": {
+    "cik": "049196",
+    "name": "HUNTINGTON BANCSHARES INC /MD/"
+  },
+  "HUNTINGTONBANCSHARES": {
+    "cik": "049196",
+    "name": "HUNTINGTON BANCSHARES INC /MD/"
+  },
+  "VRSN": {
+    "cik": "1014473",
+    "name": "VERISIGN INC/CA"
+  },
+  "VERISIGNINC/CA": {
+    "cik": "1014473",
+    "name": "VERISIGN INC/CA"
+  },
+  "LI": {
+    "cik": "1791706",
+    "name": "Li Auto Inc."
+  },
+  "LIAUTO": {
+    "cik": "1791706",
+    "name": "Li Auto Inc."
+  },
+  "TDY": {
+    "cik": "1094285",
+    "name": "TELEDYNE TECHNOLOGIES INC"
+  },
+  "TELEDYNETECHNOLOGIES": {
+    "cik": "1094285",
+    "name": "TELEDYNE TECHNOLOGIES INC"
+  },
+  "CNP": {
+    "cik": "1130310",
+    "name": "CENTERPOINT ENERGY INC"
+  },
+  "CENTERPOINTENERGY": {
+    "cik": "1130310",
+    "name": "CENTERPOINT ENERGY INC"
+  },
+  "TU": {
+    "cik": "868675",
+    "name": "TELUS CORP"
+  },
+  "TELUS": {
+    "cik": "868675",
+    "name": "TELUS CORP"
+  },
+  "GELHY": {
+    "cik": "1474968",
+    "name": "Geely Automobile Holdings Limited/ADR"
+  },
+  "GEELYAUTOMOBILEHOLDINGSLIMITED/ADR": {
+    "cik": "1474968",
+    "name": "Geely Automobile Holdings Limited/ADR"
+  },
+  "FE": {
+    "cik": "1031296",
+    "name": "FIRSTENERGY CORP"
+  },
+  "FIRSTENERGY": {
+    "cik": "1031296",
+    "name": "FIRSTENERGY CORP"
+  },
+  "NOK": {
+    "cik": "924613",
+    "name": "NOKIA CORP"
+  },
+  "NOKIA": {
+    "cik": "924613",
+    "name": "NOKIA CORP"
+  },
+  "FTS": {
+    "cik": "1666175",
+    "name": "Fortis Inc."
+  },
+  "FORTIS": {
+    "cik": "1666175",
+    "name": "Fortis Inc."
+  },
+  "PINS": {
+    "cik": "1506293",
+    "name": "PINTEREST, INC."
+  },
+  "PINTEREST": {
+    "cik": "1506293",
+    "name": "PINTEREST, INC."
+  },
+  "NTRS": {
+    "cik": "073124",
+    "name": "NORTHERN TRUST CORP"
+  },
+  "NORTHERNTRUST": {
+    "cik": "073124",
+    "name": "NORTHERN TRUST CORP"
+  },
+  "NTAP": {
+    "cik": "1002047",
+    "name": "NetApp, Inc."
+  },
+  "NETAPP": {
+    "cik": "1002047",
+    "name": "NetApp, Inc."
+  },
+  "PTC": {
+    "cik": "857005",
+    "name": "PTC INC."
+  },
+  "SW": {
+    "cik": "2005951",
+    "name": "Smurfit Westrock plc"
+  },
+  "SMURFITWESTROCKPLC": {
+    "cik": "2005951",
+    "name": "Smurfit Westrock plc"
+  },
+  "ASX": {
+    "cik": "1122411",
+    "name": "ASE Technology Holding Co., Ltd."
+  },
+  "ASETECHNOLOGYHOLDINGCO": {
+    "cik": "1122411",
+    "name": "ASE Technology Holding Co., Ltd."
+  },
+  "PUBGY": {
+    "cik": "1050952",
+    "name": "PUBLICIS GROUPE SA"
+  },
+  "PUBLICISGROUPESA": {
+    "cik": "1050952",
+    "name": "PUBLICIS GROUPE SA"
+  },
+  "DRI": {
+    "cik": "940944",
+    "name": "DARDEN RESTAURANTS INC"
+  },
+  "DARDENRESTAURANTS": {
+    "cik": "940944",
+    "name": "DARDEN RESTAURANTS INC"
+  },
+  "CBOE": {
+    "cik": "1374310",
+    "name": "Cboe Global Markets, Inc."
+  },
+  "CBOEGLOBALMARKETS": {
+    "cik": "1374310",
+    "name": "Cboe Global Markets, Inc."
+  },
+  "FUTU": {
+    "cik": "1754581",
+    "name": "Futu Holdings Ltd"
+  },
+  "FUTUHOLDINGS": {
+    "cik": "1754581",
+    "name": "Futu Holdings Ltd"
+  },
+  "PPG": {
+    "cik": "079879",
+    "name": "PPG INDUSTRIES INC"
+  },
+  "PPGINDUSTRIES": {
+    "cik": "079879",
+    "name": "PPG INDUSTRIES INC"
+  },
+  "ZM": {
+    "cik": "1585521",
+    "name": "Zoom Communications, Inc."
+  },
+  "ZOOMCOMMUNICATIONS": {
+    "cik": "1585521",
+    "name": "Zoom Communications, Inc."
+  },
+  "IP": {
+    "cik": "051434",
+    "name": "INTERNATIONAL PAPER CO /NEW/"
+  },
+  "INTERNATIONALPAPER": {
+    "cik": "051434",
+    "name": "INTERNATIONAL PAPER CO /NEW/"
+  },
+  "FOXA": {
+    "cik": "1754301",
+    "name": "Fox Corp"
+  },
+  "FOX": {
+    "cik": "1754301",
+    "name": "Fox Corp"
+  },
+  "DSFIY": {
+    "cik": "1989183",
+    "name": "DSM-Firmenich AG/ADR"
+  },
+  "DSM-FIRMENICHAG/ADR": {
+    "cik": "1989183",
+    "name": "DSM-Firmenich AG/ADR"
+  },
+  "MKL": {
+    "cik": "1096343",
+    "name": "MARKEL GROUP INC."
+  },
+  "MARKELGROUP": {
+    "cik": "1096343",
+    "name": "MARKEL GROUP INC."
+  },
+  "RF": {
+    "cik": "1281761",
+    "name": "REGIONS FINANCIAL CORP"
+  },
+  "REGIONSFINANCIAL": {
+    "cik": "1281761",
+    "name": "REGIONS FINANCIAL CORP"
+  },
+  "CG": {
+    "cik": "1527166",
+    "name": "Carlyle Group Inc."
+  },
+  "CARLYLEGROUP": {
+    "cik": "1527166",
+    "name": "Carlyle Group Inc."
+  },
+  "NTRA": {
+    "cik": "1604821",
+    "name": "Natera, Inc."
+  },
+  "NATERA": {
+    "cik": "1604821",
+    "name": "Natera, Inc."
+  },
+  "CYBR": {
+    "cik": "1598110",
+    "name": "CyberArk Software Ltd."
+  },
+  "CYBERARKSOFTWARE": {
+    "cik": "1598110",
+    "name": "CyberArk Software Ltd."
+  },
+  "CINF": {
+    "cik": "020286",
+    "name": "CINCINNATI FINANCIAL CORP"
+  },
+  "CINCINNATIFINANCIAL": {
+    "cik": "020286",
+    "name": "CINCINNATI FINANCIAL CORP"
+  },
+  "SMCI": {
+    "cik": "1375365",
+    "name": "Super Micro Computer, Inc."
+  },
+  "SUPERMICROCOMPUTER": {
+    "cik": "1375365",
+    "name": "Super Micro Computer, Inc."
+  },
+  "STE": {
+    "cik": "1757898",
+    "name": "STERIS plc"
+  },
+  "STERISPLC": {
+    "cik": "1757898",
+    "name": "STERIS plc"
+  },
+  "TYL": {
+    "cik": "860731",
+    "name": "TYLER TECHNOLOGIES INC"
+  },
+  "TYLERTECHNOLOGIES": {
+    "cik": "860731",
+    "name": "TYLER TECHNOLOGIES INC"
+  },
+  "BNTX": {
+    "cik": "1776985",
+    "name": "BioNTech SE"
+  },
+  "BIONTECHSE": {
+    "cik": "1776985",
+    "name": "BioNTech SE"
+  },
+  "FCNCA": {
+    "cik": "798941",
+    "name": "FIRST CITIZENS BANCSHARES INC /DE/"
+  },
+  "FIRSTCITIZENSBANCSHARES": {
+    "cik": "798941",
+    "name": "FIRST CITIZENS BANCSHARES INC /DE/"
+  },
+  "BEKE": {
+    "cik": "1809587",
+    "name": "KE Holdings Inc."
+  },
+  "KEHOLDINGS": {
+    "cik": "1809587",
+    "name": "KE Holdings Inc."
+  },
+  "ULTA": {
+    "cik": "1403568",
+    "name": "Ulta Beauty, Inc."
+  },
+  "ULTABEAUTY": {
+    "cik": "1403568",
+    "name": "Ulta Beauty, Inc."
+  },
+  "DOV": {
+    "cik": "029905",
+    "name": "DOVER Corp"
+  },
+  "DOVER": {
+    "cik": "029905",
+    "name": "DOVER Corp"
+  },
+  "ESLT": {
+    "cik": "1027664",
+    "name": "ELBIT SYSTEMS LTD"
+  },
+  "ELBITSYSTEMS": {
+    "cik": "1027664",
+    "name": "ELBIT SYSTEMS LTD"
+  },
+  "ES": {
+    "cik": "072741",
+    "name": "EVERSOURCE ENERGY"
+  },
+  "EVERSOURCEENERGY": {
+    "cik": "072741",
+    "name": "EVERSOURCE ENERGY"
+  },
+  "STM": {
+    "cik": "932787",
+    "name": "STMicroelectronics N.V."
+  },
+  "STMICROELECTRONICSNV": {
+    "cik": "932787",
+    "name": "STMicroelectronics N.V."
+  },
+  "LDOS": {
+    "cik": "1336920",
+    "name": "Leidos Holdings, Inc."
+  },
+  "LEIDOSHOLDINGS": {
+    "cik": "1336920",
+    "name": "Leidos Holdings, Inc."
+  },
+  "PODD": {
+    "cik": "1145197",
+    "name": "INSULET CORP"
+  },
+  "INSULET": {
+    "cik": "1145197",
+    "name": "INSULET CORP"
+  },
+  "WSM": {
+    "cik": "719955",
+    "name": "WILLIAMS SONOMA INC"
+  },
+  "WILLIAMSSONOMA": {
+    "cik": "719955",
+    "name": "WILLIAMS SONOMA INC"
+  },
+  "EXE": {
+    "cik": "895126",
+    "name": "EXPAND ENERGY Corp"
+  },
+  "EXPANDENERGY": {
+    "cik": "895126",
+    "name": "EXPAND ENERGY Corp"
+  },
+  "RSHGY": {
+    "cik": "1447391",
+    "name": "RESONA HOLDINGS INC"
+  },
+  "RESONAHOLDINGS": {
+    "cik": "1447391",
+    "name": "RESONA HOLDINGS INC"
+  },
+  "HUBB": {
+    "cik": "048898",
+    "name": "HUBBELL INC"
+  },
+  "HUBBELL": {
+    "cik": "048898",
+    "name": "HUBBELL INC"
+  },
+  "TROW": {
+    "cik": "1113169",
+    "name": "PRICE T ROWE GROUP INC"
+  },
+  "PRICETROWEGROUP": {
+    "cik": "1113169",
+    "name": "PRICE T ROWE GROUP INC"
+  },
+  "DG": {
+    "cik": "029534",
+    "name": "DOLLAR GENERAL CORP"
+  },
+  "DOLLARGENERAL": {
+    "cik": "029534",
+    "name": "DOLLAR GENERAL CORP"
+  },
+  "JBL": {
+    "cik": "898293",
+    "name": "JABIL INC"
+  },
+  "JABIL": {
+    "cik": "898293",
+    "name": "JABIL INC"
+  },
+  "TELNY": {
+    "cik": "1126113",
+    "name": "TELENOR ASA"
+  },
+  "TELENORASA": {
+    "cik": "1126113",
+    "name": "TELENOR ASA"
+  },
+  "PBA": {
+    "cik": "1546066",
+    "name": "PEMBINA PIPELINE CORP"
+  },
+  "PEMBINAPIPELINE": {
+    "cik": "1546066",
+    "name": "PEMBINA PIPELINE CORP"
+  },
+  "LH": {
+    "cik": "920148",
+    "name": "LABCORP HOLDINGS INC."
+  },
+  "LABCORPHOLDINGS": {
+    "cik": "920148",
+    "name": "LABCORP HOLDINGS INC."
+  },
+  "NVR": {
+    "cik": "906163",
+    "name": "NVR INC"
+  },
+  "SHG": {
+    "cik": "1263043",
+    "name": "SHINHAN FINANCIAL GROUP CO LTD"
+  },
+  "SHINHANFINANCIALGROUP": {
+    "cik": "1263043",
+    "name": "SHINHAN FINANCIAL GROUP CO LTD"
+  },
+  "IOT": {
+    "cik": "1642896",
+    "name": "Samsara Inc."
+  },
+  "SAMSARA": {
+    "cik": "1642896",
+    "name": "Samsara Inc."
+  },
+  "CHD": {
+    "cik": "313927",
+    "name": "CHURCH & DWIGHT CO INC /DE/"
+  },
+  "CHURCH&DWIGHT": {
+    "cik": "313927",
+    "name": "CHURCH & DWIGHT CO INC /DE/"
+  },
+  "DVN": {
+    "cik": "1090012",
+    "name": "DEVON ENERGY CORP/DE"
+  },
+  "DEVONENERGYCORP/DE": {
+    "cik": "1090012",
+    "name": "DEVON ENERGY CORP/DE"
+  },
+  "NMR": {
+    "cik": "1163653",
+    "name": "NOMURA HOLDINGS INC"
+  },
+  "NOMURAHOLDINGS": {
+    "cik": "1163653",
+    "name": "NOMURA HOLDINGS INC"
+  },
+  "TPG": {
+    "cik": "1880661",
+    "name": "TPG Inc."
+  },
+  "CFG": {
+    "cik": "759944",
+    "name": "CITIZENS FINANCIAL GROUP INC/RI"
+  },
+  "CITIZENSFINANCIALGROUPINC/RI": {
+    "cik": "759944",
+    "name": "CITIZENS FINANCIAL GROUP INC/RI"
+  },
+  "FSLR": {
+    "cik": "1274494",
+    "name": "FIRST SOLAR, INC."
+  },
+  "FIRSTSOLAR": {
+    "cik": "1274494",
+    "name": "FIRST SOLAR, INC."
+  },
+  "BCE": {
+    "cik": "718940",
+    "name": "BCE INC"
+  },
+  "CDW": {
+    "cik": "1402057",
+    "name": "CDW Corp"
+  },
+  "RBA": {
+    "cik": "1046102",
+    "name": "RB GLOBAL INC."
+  },
+  "RBGLOBAL": {
+    "cik": "1046102",
+    "name": "RB GLOBAL INC."
+  },
+  "TPL": {
+    "cik": "1811074",
+    "name": "Texas Pacific Land Corp"
+  },
+  "TEXASPACIFICLAND": {
+    "cik": "1811074",
+    "name": "Texas Pacific Land Corp"
+  },
+  "CPAY": {
+    "cik": "1175454",
+    "name": "CORPAY, INC."
+  },
+  "CORPAY": {
+    "cik": "1175454",
+    "name": "CORPAY, INC."
+  },
+  "SATS": {
+    "cik": "1415404",
+    "name": "EchoStar CORP"
+  },
+  "ECHOSTAR": {
+    "cik": "1415404",
+    "name": "EchoStar CORP"
+  },
+  "BAP": {
+    "cik": "1001290",
+    "name": "CREDICORP LTD"
+  },
+  "CREDICORP": {
+    "cik": "1001290",
+    "name": "CREDICORP LTD"
+  },
+  "TEVA": {
+    "cik": "818686",
+    "name": "TEVA PHARMACEUTICAL INDUSTRIES LTD"
+  },
+  "TEVAPHARMACEUTICALINDUSTRIES": {
+    "cik": "818686",
+    "name": "TEVA PHARMACEUTICAL INDUSTRIES LTD"
+  },
+  "SBAC": {
+    "cik": "1034054",
+    "name": "SBA COMMUNICATIONS CORP"
+  },
+  "SBACOMMUNICATIONS": {
+    "cik": "1034054",
+    "name": "SBA COMMUNICATIONS CORP"
+  },
+  "YAHOY": {
+    "cik": "1446437",
+    "name": "Yahoo! Japan Corp"
+  },
+  "YAHOO!JAPAN": {
+    "cik": "1446437",
+    "name": "Yahoo! Japan Corp"
+  },
+  "AER": {
+    "cik": "1378789",
+    "name": "AerCap Holdings N.V."
+  },
+  "AERCAPHOLDINGSNV": {
+    "cik": "1378789",
+    "name": "AerCap Holdings N.V."
+  },
+  "FLEX": {
+    "cik": "866374",
+    "name": "FLEX LTD."
+  },
+  "SSNC": {
+    "cik": "1402436",
+    "name": "SS&C Technologies Holdings Inc"
+  },
+  "SS&CTECHNOLOGIESHOLDINGS": {
+    "cik": "1402436",
+    "name": "SS&C Technologies Holdings Inc"
+  },
+  "NBIS": {
+    "cik": "1513845",
+    "name": "Nebius Group N.V."
+  },
+  "NEBIUSGROUPNV": {
+    "cik": "1513845",
+    "name": "Nebius Group N.V."
+  },
+  "CHKP": {
+    "cik": "1015922",
+    "name": "CHECK POINT SOFTWARE TECHNOLOGIES LTD"
+  },
+  "CHECKPOINTSOFTWARETECHNOLOGIES": {
+    "cik": "1015922",
+    "name": "CHECK POINT SOFTWARE TECHNOLOGIES LTD"
+  },
+  "TPR": {
+    "cik": "1116132",
+    "name": "TAPESTRY, INC."
+  },
+  "TAPESTRY": {
+    "cik": "1116132",
+    "name": "TAPESTRY, INC."
+  },
+  "DKNG": {
+    "cik": "1883685",
+    "name": "DraftKings Inc."
+  },
+  "DRAFTKINGS": {
+    "cik": "1883685",
+    "name": "DraftKings Inc."
+  },
+  "EIX": {
+    "cik": "827052",
+    "name": "EDISON INTERNATIONAL"
+  },
+  "EDISONINTERNATIONAL": {
+    "cik": "827052",
+    "name": "EDISON INTERNATIONAL"
+  },
+  "RPRX": {
+    "cik": "1802768",
+    "name": "Royalty Pharma plc"
+  },
+  "ROYALTYPHARMAPLC": {
+    "cik": "1802768",
+    "name": "Royalty Pharma plc"
+  },
+  "BIIB": {
+    "cik": "875045",
+    "name": "BIOGEN INC."
+  },
+  "BIOGEN": {
+    "cik": "875045",
+    "name": "BIOGEN INC."
+  },
+  "PMDIY": {
+    "cik": "2013003",
+    "name": "Pro Medicus Ltd./ADR"
+  },
+  "PROMEDICUSLTD/ADR": {
+    "cik": "2013003",
+    "name": "Pro Medicus Ltd./ADR"
+  },
+  "CMS": {
+    "cik": "811156",
+    "name": "CMS ENERGY CORP"
+  },
+  "CMSENERGY": {
+    "cik": "811156",
+    "name": "CMS ENERGY CORP"
+  },
+  "ZBH": {
+    "cik": "1136869",
+    "name": "ZIMMER BIOMET HOLDINGS, INC."
+  },
+  "ZIMMERBIOMETHOLDINGS": {
+    "cik": "1136869",
+    "name": "ZIMMER BIOMET HOLDINGS, INC."
+  },
+  "CASY": {
+    "cik": "726958",
+    "name": "CASEYS GENERAL STORES INC"
+  },
+  "CASEYSGENERALSTORES": {
+    "cik": "726958",
+    "name": "CASEYS GENERAL STORES INC"
+  },
+  "NTNX": {
+    "cik": "1618732",
+    "name": "Nutanix, Inc."
+  },
+  "NUTANIX": {
+    "cik": "1618732",
+    "name": "Nutanix, Inc."
+  },
+  "GWRE": {
+    "cik": "1528396",
+    "name": "Guidewire Software, Inc."
+  },
+  "GUIDEWIRESOFTWARE": {
+    "cik": "1528396",
+    "name": "Guidewire Software, Inc."
+  },
+  "CKHGF": {
+    "cik": "1469059",
+    "name": "Capitec Bank Holdings Ltd / ADR"
+  },
+  "CAPITECBANKHOLDINGS": {
+    "cik": "1469059",
+    "name": "Capitec Bank Holdings Ltd / ADR"
+  },
+  "GIB": {
+    "cik": "1061574",
+    "name": "CGI INC"
+  },
+  "CGI": {
+    "cik": "1061574",
+    "name": "CGI INC"
+  },
+  "NJDCY": {
+    "cik": "1158967",
+    "name": "NIDEC CORP"
+  },
+  "NIDEC": {
+    "cik": "1158967",
+    "name": "NIDEC CORP"
+  },
+  "AS": {
+    "cik": "1988894",
+    "name": "Amer Sports, Inc."
+  },
+  "AMERSPORTS": {
+    "cik": "1988894",
+    "name": "Amer Sports, Inc."
+  },
+  "GPN": {
+    "cik": "1123360",
+    "name": "GLOBAL PAYMENTS INC"
+  },
+  "GLOBALPAYMENTS": {
+    "cik": "1123360",
+    "name": "GLOBAL PAYMENTS INC"
+  },
+  "KEY": {
+    "cik": "091576",
+    "name": "KEYCORP /NEW/"
+  },
+  "KEYCORP/NEW/": {
+    "cik": "091576",
+    "name": "KEYCORP /NEW/"
+  },
+  "ON": {
+    "cik": "1097864",
+    "name": "ON SEMICONDUCTOR CORP"
+  },
+  "ONSEMICONDUCTOR": {
+    "cik": "1097864",
+    "name": "ON SEMICONDUCTOR CORP"
+  },
+  "DGX": {
+    "cik": "1022079",
+    "name": "QUEST DIAGNOSTICS INC"
+  },
+  "QUESTDIAGNOSTICS": {
+    "cik": "1022079",
+    "name": "QUEST DIAGNOSTICS INC"
+  },
+  "TSN": {
+    "cik": "100493",
+    "name": "TYSON FOODS, INC."
+  },
+  "TYSONFOODS": {
+    "cik": "100493",
+    "name": "TYSON FOODS, INC."
+  },
+  "XPEV": {
+    "cik": "1810997",
+    "name": "XPENG INC."
+  },
+  "XPENG": {
+    "cik": "1810997",
+    "name": "XPENG INC."
+  },
+  "DKS": {
+    "cik": "1089063",
+    "name": "DICK'S SPORTING GOODS, INC."
+  },
+  "DICK'SSPORTINGGOODS": {
+    "cik": "1089063",
+    "name": "DICK'S SPORTING GOODS, INC."
+  },
+  "GDDY": {
+    "cik": "1609711",
+    "name": "GoDaddy Inc."
+  },
+  "GODADDY": {
+    "cik": "1609711",
+    "name": "GoDaddy Inc."
+  },
+  "L": {
+    "cik": "060086",
+    "name": "LOEWS CORP"
+  },
+  "LOEWS": {
+    "cik": "060086",
+    "name": "LOEWS CORP"
+  },
+  "ZG": {
+    "cik": "1617640",
+    "name": "ZILLOW GROUP, INC."
+  },
+  "ZILLOWGROUP": {
+    "cik": "1617640",
+    "name": "ZILLOW GROUP, INC."
+  },
+  "BNT": {
+    "cik": "1837429",
+    "name": "Brookfield Wealth Solutions Ltd."
+  },
+  "BROOKFIELDWEALTHSOLUTIONS": {
+    "cik": "1837429",
+    "name": "Brookfield Wealth Solutions Ltd."
+  },
+  "VIV": {
+    "cik": "1066119",
+    "name": "TELEFONICA BRASIL S.A."
+  },
+  "TELEFONICABRASILSA": {
+    "cik": "1066119",
+    "name": "TELEFONICA BRASIL S.A."
+  },
+  "EBR": {
+    "cik": "1439124",
+    "name": "BRAZILIAN ELECTRIC POWER CO"
+  },
+  "BRAZILIANELECTRICPOWER": {
+    "cik": "1439124",
+    "name": "BRAZILIAN ELECTRIC POWER CO"
+  },
+  "DLTR": {
+    "cik": "935703",
+    "name": "DOLLAR TREE, INC."
+  },
+  "DOLLARTREE": {
+    "cik": "935703",
+    "name": "DOLLAR TREE, INC."
+  },
+  "RCI": {
+    "cik": "733099",
+    "name": "ROGERS COMMUNICATIONS INC"
+  },
+  "ROGERSCOMMUNICATIONS": {
+    "cik": "733099",
+    "name": "ROGERS COMMUNICATIONS INC"
+  },
+  "CIEN": {
+    "cik": "936395",
+    "name": "CIENA CORP"
+  },
+  "CIENA": {
+    "cik": "936395",
+    "name": "CIENA CORP"
+  },
+  "GPC": {
+    "cik": "040987",
+    "name": "GENUINE PARTS CO"
+  },
+  "GENUINEPARTS": {
+    "cik": "040987",
+    "name": "GENUINE PARTS CO"
+  },
+  "AMCR": {
+    "cik": "1748790",
+    "name": "Amcor plc"
+  },
+  "AMCORPLC": {
+    "cik": "1748790",
+    "name": "Amcor plc"
+  },
+  "CW": {
+    "cik": "026324",
+    "name": "CURTISS WRIGHT CORP"
+  },
+  "CURTISSWRIGHT": {
+    "cik": "026324",
+    "name": "CURTISS WRIGHT CORP"
+  },
+  "LII": {
+    "cik": "1069202",
+    "name": "LENNOX INTERNATIONAL INC"
+  },
+  "LENNOXINTERNATIONAL": {
+    "cik": "1069202",
+    "name": "LENNOX INTERNATIONAL INC"
+  },
+  "EC": {
+    "cik": "1444406",
+    "name": "ECOPETROL S.A."
+  },
+  "ECOPETROLSA": {
+    "cik": "1444406",
+    "name": "ECOPETROL S.A."
+  },
+  "HKHHY": {
+    "cik": "1142231",
+    "name": "HEINEKEN HOLDING N V"
+  },
+  "HEINEKENHOLDINGNV": {
+    "cik": "1142231",
+    "name": "HEINEKEN HOLDING N V"
+  },
+  "LULU": {
+    "cik": "1397187",
+    "name": "lululemon athletica inc."
+  },
+  "LULULEMONATHLETICA": {
+    "cik": "1397187",
+    "name": "lululemon athletica inc."
+  },
+  "PSKY": {
+    "cik": "2041610",
+    "name": "Paramount Skydance Corp"
+  },
+  "PARAMOUNTSKYDANCE": {
+    "cik": "2041610",
+    "name": "Paramount Skydance Corp"
+  },
+  "HAL": {
+    "cik": "045012",
+    "name": "HALLIBURTON CO"
+  },
+  "HALLIBURTON": {
+    "cik": "045012",
+    "name": "HALLIBURTON CO"
+  },
+  "TER": {
+    "cik": "097210",
+    "name": "TERADYNE, INC"
+  },
+  "TERADYNE": {
+    "cik": "097210",
+    "name": "TERADYNE, INC"
+  },
+  "RL": {
+    "cik": "1037038",
+    "name": "RALPH LAUREN CORP"
+  },
+  "RALPHLAUREN": {
+    "cik": "1037038",
+    "name": "RALPH LAUREN CORP"
+  },
+  "KOF": {
+    "cik": "910631",
+    "name": "COCA COLA FEMSA SAB DE CV"
+  },
+  "COCACOLAFEMSASABDECV": {
+    "cik": "910631",
+    "name": "COCA COLA FEMSA SAB DE CV"
+  },
+  "STLD": {
+    "cik": "1022671",
+    "name": "STEEL DYNAMICS INC"
+  },
+  "STEELDYNAMICS": {
+    "cik": "1022671",
+    "name": "STEEL DYNAMICS INC"
+  },
+  "PKG": {
+    "cik": "075677",
+    "name": "PACKAGING CORP OF AMERICA"
+  },
+  "PACKAGING": {
+    "cik": "075677",
+    "name": "PACKAGING CORP OF AMERICA"
+  },
+  "IT": {
+    "cik": "749251",
+    "name": "GARTNER INC"
+  },
+  "GARTNER": {
+    "cik": "749251",
+    "name": "GARTNER INC"
+  },
+  "EDPFY": {
+    "cik": "1039610",
+    "name": "EDP ENERGIAS DE PORTUGAL SA"
+  },
+  "EDPENERGIASDEPORTUGALSA": {
+    "cik": "1039610",
+    "name": "EDP ENERGIAS DE PORTUGAL SA"
+  },
+  "TLK": {
+    "cik": "1001807",
+    "name": "PERUSAHAAN PERSEROAN PERSERO PT TELEKOMUNIKASI INDONESIA TBK"
+  },
+  "PERUSAHAANPERSEROANPERSEROPTTELEKOMUNIKASIINDONESIATBK": {
+    "cik": "1001807",
+    "name": "PERUSAHAAN PERSEROAN PERSERO PT TELEKOMUNIKASI INDONESIA TBK"
+  },
+  "CTRA": {
+    "cik": "858470",
+    "name": "Coterra Energy Inc."
+  },
+  "COTERRAENERGY": {
+    "cik": "858470",
+    "name": "Coterra Energy Inc."
+  },
+  "TRMB": {
+    "cik": "864749",
+    "name": "TRIMBLE INC."
+  },
+  "TRIMBLE": {
+    "cik": "864749",
+    "name": "TRIMBLE INC."
+  },
+  "FFIV": {
+    "cik": "1048695",
+    "name": "F5, INC."
+  },
+  "NI": {
+    "cik": "1111711",
+    "name": "NISOURCE INC."
+  },
+  "NISOURCE": {
+    "cik": "1111711",
+    "name": "NISOURCE INC."
+  },
+  "IONQ": {
+    "cik": "1824920",
+    "name": "IonQ, Inc."
+  },
+  "IHG": {
+    "cik": "858446",
+    "name": "INTERCONTINENTAL HOTELS GROUP PLC /NEW/"
+  },
+  "INTERCONTINENTALHOTELSGROUPPLC/NEW/": {
+    "cik": "858446",
+    "name": "INTERCONTINENTAL HOTELS GROUP PLC /NEW/"
+  },
+  "TS": {
+    "cik": "1190723",
+    "name": "TENARIS SA"
+  },
+  "TENARISSA": {
+    "cik": "1190723",
+    "name": "TENARIS SA"
+  },
+  "UTHR": {
+    "cik": "1082554",
+    "name": "UNITED THERAPEUTICS Corp"
+  },
+  "UNITEDTHERAPEUTICS": {
+    "cik": "1082554",
+    "name": "UNITED THERAPEUTICS Corp"
+  },
+  "ESS": {
+    "cik": "920522",
+    "name": "ESSEX PROPERTY TRUST, INC."
+  },
+  "ESSEXPROPERTYTRUST": {
+    "cik": "920522",
+    "name": "ESSEX PROPERTY TRUST, INC."
+  },
+  "PNR": {
+    "cik": "077360",
+    "name": "PENTAIR plc"
+  },
+  "PENTAIRPLC": {
+    "cik": "077360",
+    "name": "PENTAIR plc"
+  },
+  "INVH": {
+    "cik": "1687229",
+    "name": "Invitation Homes Inc."
+  },
+  "INVITATIONHOMES": {
+    "cik": "1687229",
+    "name": "Invitation Homes Inc."
+  },
+  "APTV": {
+    "cik": "1521332",
+    "name": "Aptiv PLC"
+  },
+  "APTIVPLC": {
+    "cik": "1521332",
+    "name": "Aptiv PLC"
+  },
+  "FITBI": {
+    "cik": "035527",
+    "name": "FIFTH THIRD BANCORP"
+  },
+  "FIFTHTHIRDBANCORP": {
+    "cik": "035527",
+    "name": "FIFTH THIRD BANCORP"
+  },
+  "MKC": {
+    "cik": "063754",
+    "name": "MCCORMICK & CO INC"
+  },
+  "MCCORMICK&": {
+    "cik": "063754",
+    "name": "MCCORMICK & CO INC"
+  },
+  "WY": {
+    "cik": "106535",
+    "name": "WEYERHAEUSER CO"
+  },
+  "WEYERHAEUSER": {
+    "cik": "106535",
+    "name": "WEYERHAEUSER CO"
+  },
+  "PFG": {
+    "cik": "1126328",
+    "name": "PRINCIPAL FINANCIAL GROUP INC"
+  },
+  "PRINCIPALFINANCIALGROUP": {
+    "cik": "1126328",
+    "name": "PRINCIPAL FINANCIAL GROUP INC"
+  },
+  "SMMT": {
+    "cik": "1599298",
+    "name": "Summit Therapeutics Inc."
+  },
+  "SUMMITTHERAPEUTICS": {
+    "cik": "1599298",
+    "name": "Summit Therapeutics Inc."
+  },
+  "FTAI": {
+    "cik": "1590364",
+    "name": "FTAI Aviation Ltd."
+  },
+  "FTAIAVIATION": {
+    "cik": "1590364",
+    "name": "FTAI Aviation Ltd."
+  },
+  "GFS": {
+    "cik": "1709048",
+    "name": "GLOBALFOUNDRIES Inc."
+  },
+  "GLOBALFOUNDRIES": {
+    "cik": "1709048",
+    "name": "GLOBALFOUNDRIES Inc."
+  },
+  "OMVKY": {
+    "cik": "882602",
+    "name": "OMV AKTIENGESELLSCHAFT /FI"
+  },
+  "OMVAKTIENGESELLSCHAFT/FI": {
+    "cik": "882602",
+    "name": "OMV AKTIENGESELLSCHAFT /FI"
+  },
+  "SGI": {
+    "cik": "1206264",
+    "name": "SOMNIGROUP INTERNATIONAL INC."
+  },
+  "SOMNIGROUPINTERNATIONAL": {
+    "cik": "1206264",
+    "name": "SOMNIGROUP INTERNATIONAL INC."
+  },
+  "GEN": {
+    "cik": "849399",
+    "name": "Gen Digital Inc."
+  },
+  "GENDIGITAL": {
+    "cik": "849399",
+    "name": "Gen Digital Inc."
+  },
+  "DECK": {
+    "cik": "910521",
+    "name": "DECKERS OUTDOOR CORP"
+  },
+  "DECKERSOUTDOOR": {
+    "cik": "910521",
+    "name": "DECKERS OUTDOOR CORP"
+  },
+  "WAT": {
+    "cik": "1000697",
+    "name": "WATERS CORP /DE/"
+  },
+  "WATERS": {
+    "cik": "1000697",
+    "name": "WATERS CORP /DE/"
+  },
+  "GMAB": {
+    "cik": "1434265",
+    "name": "GENMAB A/S"
+  },
+  "GENMABA/S": {
+    "cik": "1434265",
+    "name": "GENMAB A/S"
+  },
+  "WST": {
+    "cik": "105770",
+    "name": "WEST PHARMACEUTICAL SERVICES INC"
+  },
+  "WESTPHARMACEUTICALSERVICES": {
+    "cik": "105770",
+    "name": "WEST PHARMACEUTICAL SERVICES INC"
+  },
+  "J": {
+    "cik": "052988",
+    "name": "JACOBS SOLUTIONS INC."
+  },
+  "JACOBSSOLUTIONS": {
+    "cik": "052988",
+    "name": "JACOBS SOLUTIONS INC."
+  },
+  "DOW": {
+    "cik": "1751788",
+    "name": "DOW INC."
+  },
+  "USFD": {
+    "cik": "1665918",
+    "name": "US Foods Holding Corp."
+  },
+  "USFOODSHOLDING": {
+    "cik": "1665918",
+    "name": "US Foods Holding Corp."
+  },
+  "WMG": {
+    "cik": "1319161",
+    "name": "Warner Music Group Corp."
+  },
+  "WARNERMUSICGROUP": {
+    "cik": "1319161",
+    "name": "Warner Music Group Corp."
+  },
+  "NWSA": {
+    "cik": "1564708",
+    "name": "NEWS CORP"
+  },
+  "NEWS": {
+    "cik": "1564708",
+    "name": "NEWS CORP"
+  },
+  "KEP": {
+    "cik": "887225",
+    "name": "KOREA ELECTRIC POWER CORP"
+  },
+  "KOREAELECTRICPOWER": {
+    "cik": "887225",
+    "name": "KOREA ELECTRIC POWER CORP"
+  },
+  "KLAR": {
+    "cik": "2003292",
+    "name": "Klarna Group plc"
+  },
+  "KLARNAGROUPPLC": {
+    "cik": "2003292",
+    "name": "Klarna Group plc"
+  },
+  "BE": {
+    "cik": "1664703",
+    "name": "Bloom Energy Corp"
+  },
+  "BLOOMENERGY": {
+    "cik": "1664703",
+    "name": "Bloom Energy Corp"
+  },
+  "TLN": {
+    "cik": "1622536",
+    "name": "Talen Energy Corp"
+  },
+  "TALENENERGY": {
+    "cik": "1622536",
+    "name": "Talen Energy Corp"
+  },
+  "KSPI": {
+    "cik": "1985487",
+    "name": "Joint Stock Co Kaspi.kz"
+  },
+  "JOINTSTOCK": {
+    "cik": "1985487",
+    "name": "Joint Stock Co Kaspi.kz"
+  },
+  "NPXYY": {
+    "cik": "2019040",
+    "name": "Nippon Sanso Holdings Corporation/ADR"
+  },
+  "NIPPONSANSOHOLDINGSCORPORATION/ADR": {
+    "cik": "2019040",
+    "name": "Nippon Sanso Holdings Corporation/ADR"
+  },
+  "EXPD": {
+    "cik": "746515",
+    "name": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC"
+  },
+  "EXPEDITORSINTERNATIONALOFWASHINGTON": {
+    "cik": "746515",
+    "name": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC"
+  },
+  "LYB": {
+    "cik": "1489393",
+    "name": "LyondellBasell Industries N.V."
+  },
+  "LYONDELLBASELLINDUSTRIESNV": {
+    "cik": "1489393",
+    "name": "LyondellBasell Industries N.V."
+  },
+  "ACM": {
+    "cik": "868857",
+    "name": "AECOM"
+  },
+  "AECOM": {
+    "cik": "868857",
+    "name": "AECOM"
+  },
+  "SNA": {
+    "cik": "091440",
+    "name": "Snap-on Inc"
+  },
+  "SNAP-ON": {
+    "cik": "091440",
+    "name": "Snap-on Inc"
+  },
+  "CRBG": {
+    "cik": "1889539",
+    "name": "Corebridge Financial, Inc."
+  },
+  "COREBRIDGEFINANCIAL": {
+    "cik": "1889539",
+    "name": "Corebridge Financial, Inc."
+  },
+  "GFL": {
+    "cik": "1780232",
+    "name": "GFL Environmental Inc."
+  },
+  "GFLENVIRONMENTAL": {
+    "cik": "1780232",
+    "name": "GFL Environmental Inc."
+  },
+  "BURL": {
+    "cik": "1579298",
+    "name": "Burlington Stores, Inc."
+  },
+  "BURLINGTONSTORES": {
+    "cik": "1579298",
+    "name": "Burlington Stores, Inc."
+  },
+  "UMC": {
+    "cik": "1033767",
+    "name": "UNITED MICROELECTRONICS CORP"
+  },
+  "UNITEDMICROELECTRONICS": {
+    "cik": "1033767",
+    "name": "UNITED MICROELECTRONICS CORP"
+  },
+  "BEP": {
+    "cik": "1533232",
+    "name": "Brookfield Renewable Partners L.P."
+  },
+  "BROOKFIELDRENEWABLEPARTNERSLP": {
+    "cik": "1533232",
+    "name": "Brookfield Renewable Partners L.P."
+  },
+  "ERIE": {
+    "cik": "922621",
+    "name": "ERIE INDEMNITY CO"
+  },
+  "ERIEINDEMNITY": {
+    "cik": "922621",
+    "name": "ERIE INDEMNITY CO"
+  },
+  "U": {
+    "cik": "1810806",
+    "name": "Unity Software Inc."
+  },
+  "UNITYSOFTWARE": {
+    "cik": "1810806",
+    "name": "Unity Software Inc."
+  },
+  "BG": {
+    "cik": "1996862",
+    "name": "Bunge Global SA"
+  },
+  "BUNGEGLOBALSA": {
+    "cik": "1996862",
+    "name": "Bunge Global SA"
+  },
+  "NIO": {
+    "cik": "1736541",
+    "name": "NIO Inc."
+  },
+  "MAA": {
+    "cik": "912595",
+    "name": "MID AMERICA APARTMENT COMMUNITIES INC."
+  },
+  "MIDAMERICAAPARTMENTCOMMUNITIES": {
+    "cik": "912595",
+    "name": "MID AMERICA APARTMENT COMMUNITIES INC."
+  },
+  "TRU": {
+    "cik": "1552033",
+    "name": "TransUnion"
+  },
+  "TRANSUNION": {
+    "cik": "1552033",
+    "name": "TransUnion"
+  },
+  "SN": {
+    "cik": "1957132",
+    "name": "SharkNinja, Inc."
+  },
+  "SHARKNINJA": {
+    "cik": "1957132",
+    "name": "SharkNinja, Inc."
+  },
+  "LUV": {
+    "cik": "092380",
+    "name": "SOUTHWEST AIRLINES CO"
+  },
+  "SOUTHWESTAIRLINES": {
+    "cik": "092380",
+    "name": "SOUTHWEST AIRLINES CO"
+  },
+  "LOGI": {
+    "cik": "1032975",
+    "name": "LOGITECH INTERNATIONAL S.A."
+  },
+  "LOGITECHINTERNATIONALSA": {
+    "cik": "1032975",
+    "name": "LOGITECH INTERNATIONAL S.A."
+  },
+  "IFF": {
+    "cik": "051253",
+    "name": "INTERNATIONAL FLAVORS & FRAGRANCES INC"
+  },
+  "INTERNATIONALFLAVORS&FRAGRANCES": {
+    "cik": "051253",
+    "name": "INTERNATIONAL FLAVORS & FRAGRANCES INC"
+  },
+  "FTV": {
+    "cik": "1659166",
+    "name": "Fortive Corp"
+  },
+  "FORTIVE": {
+    "cik": "1659166",
+    "name": "Fortive Corp"
+  },
+  "DOCU": {
+    "cik": "1261333",
+    "name": "DOCUSIGN, INC."
+  },
+  "DOCUSIGN": {
+    "cik": "1261333",
+    "name": "DOCUSIGN, INC."
+  },
+  "EVRG": {
+    "cik": "1711269",
+    "name": "Evergy, Inc."
+  },
+  "EVERGY": {
+    "cik": "1711269",
+    "name": "Evergy, Inc."
+  },
+  "PFGC": {
+    "cik": "1618673",
+    "name": "Performance Food Group Co"
+  },
+  "PERFORMANCEFOODGROUP": {
+    "cik": "1618673",
+    "name": "Performance Food Group Co"
+  },
+  "INCY": {
+    "cik": "879169",
+    "name": "INCYTE CORP"
+  },
+  "INCYTE": {
+    "cik": "879169",
+    "name": "INCYTE CORP"
+  },
+  "THC": {
+    "cik": "070318",
+    "name": "TENET HEALTHCARE CORP"
+  },
+  "TENETHEALTHCARE": {
+    "cik": "070318",
+    "name": "TENET HEALTHCARE CORP"
+  },
+  "LNT": {
+    "cik": "352541",
+    "name": "ALLIANT ENERGY CORP"
+  },
+  "ALLIANTENERGY": {
+    "cik": "352541",
+    "name": "ALLIANT ENERGY CORP"
+  },
+  "RIVN": {
+    "cik": "1874178",
+    "name": "Rivian Automotive, Inc. / DE"
+  },
+  "RIVIANAUTOMOTIVE": {
+    "cik": "1874178",
+    "name": "Rivian Automotive, Inc. / DE"
+  },
+  "TECK": {
+    "cik": "886986",
+    "name": "TECK RESOURCES LTD"
+  },
+  "TECKRESOURCES": {
+    "cik": "886986",
+    "name": "TECK RESOURCES LTD"
+  },
+  "COHR": {
+    "cik": "820318",
+    "name": "COHERENT CORP."
+  },
+  "COHERENT": {
+    "cik": "820318",
+    "name": "COHERENT CORP."
+  },
+  "SUI": {
+    "cik": "912593",
+    "name": "SUN COMMUNITIES INC"
+  },
+  "SUNCOMMUNITIES": {
+    "cik": "912593",
+    "name": "SUN COMMUNITIES INC"
+  },
+  "RPM": {
+    "cik": "110621",
+    "name": "RPM INTERNATIONAL INC/DE/"
+  },
+  "RPMINTERNATIONALINC/DE/": {
+    "cik": "110621",
+    "name": "RPM INTERNATIONAL INC/DE/"
+  },
+  "BWXT": {
+    "cik": "1486957",
+    "name": "BWX Technologies, Inc."
+  },
+  "BWXTECHNOLOGIES": {
+    "cik": "1486957",
+    "name": "BWX Technologies, Inc."
+  },
+  "FNMA": {
+    "cik": "310522",
+    "name": "FEDERAL NATIONAL MORTGAGE ASSOCIATION FANNIE MAE"
+  },
+  "FEDERALNATIONALMORTGAGEASSOCIATIONFANNIEMAE": {
+    "cik": "310522",
+    "name": "FEDERAL NATIONAL MORTGAGE ASSOCIATION FANNIE MAE"
+  },
+  "WSO": {
+    "cik": "105016",
+    "name": "WATSCO INC"
+  },
+  "WATSCO": {
+    "cik": "105016",
+    "name": "WATSCO INC"
+  },
+  "YUMC": {
+    "cik": "1673358",
+    "name": "Yum China Holdings, Inc."
+  },
+  "YUMCHINAHOLDINGS": {
+    "cik": "1673358",
+    "name": "Yum China Holdings, Inc."
+  },
+  "SBS": {
+    "cik": "1170858",
+    "name": "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO-SABESP"
+  },
+  "COMPANHIADESANEAMENTOBASICODOESTADODESAOPAULO-SABESP": {
+    "cik": "1170858",
+    "name": "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO-SABESP"
+  },
+  "FTI": {
+    "cik": "1681459",
+    "name": "TechnipFMC plc"
+  },
+  "TECHNIPFMCPLC": {
+    "cik": "1681459",
+    "name": "TechnipFMC plc"
+  },
+  "SNN": {
+    "cik": "845982",
+    "name": "SMITH & NEPHEW PLC"
+  },
+  "SMITH&NEPHEWPLC": {
+    "cik": "845982",
+    "name": "SMITH & NEPHEW PLC"
+  },
+  "TWLO": {
+    "cik": "1447669",
+    "name": "TWILIO INC"
+  },
+  "TWILIO": {
+    "cik": "1447669",
+    "name": "TWILIO INC"
+  },
+  "FNF": {
+    "cik": "1331875",
+    "name": "Fidelity National Financial, Inc."
+  },
+  "FIDELITYNATIONALFINANCIAL": {
+    "cik": "1331875",
+    "name": "Fidelity National Financial, Inc."
+  },
+  "BSY": {
+    "cik": "1031308",
+    "name": "BENTLEY SYSTEMS INC"
+  },
+  "BENTLEYSYSTEMS": {
+    "cik": "1031308",
+    "name": "BENTLEY SYSTEMS INC"
+  },
+  "OKTA": {
+    "cik": "1660134",
+    "name": "Okta, Inc."
+  },
+  "CHWY": {
+    "cik": "1766502",
+    "name": "Chewy, Inc."
+  },
+  "CHEWY": {
+    "cik": "1766502",
+    "name": "Chewy, Inc."
+  },
+  "EQH": {
+    "cik": "1333986",
+    "name": "Equitable Holdings, Inc."
+  },
+  "EQUITABLEHOLDINGS": {
+    "cik": "1333986",
+    "name": "Equitable Holdings, Inc."
+  },
+  "CHRW": {
+    "cik": "1043277",
+    "name": "C. H. ROBINSON WORLDWIDE, INC."
+  },
+  "CHROBINSONWORLDWIDE": {
+    "cik": "1043277",
+    "name": "C. H. ROBINSON WORLDWIDE, INC."
+  },
+  "CNC": {
+    "cik": "1071739",
+    "name": "CENTENE CORP"
+  },
+  "CENTENE": {
+    "cik": "1071739",
+    "name": "CENTENE CORP"
+  },
+  "ILMN": {
+    "cik": "1110803",
+    "name": "ILLUMINA, INC."
+  },
+  "ILLUMINA": {
+    "cik": "1110803",
+    "name": "ILLUMINA, INC."
+  },
+  "ZBRA": {
+    "cik": "877212",
+    "name": "ZEBRA TECHNOLOGIES CORP"
+  },
+  "ZEBRATECHNOLOGIES": {
+    "cik": "877212",
+    "name": "ZEBRA TECHNOLOGIES CORP"
+  },
+  "BBY": {
+    "cik": "764478",
+    "name": "BEST BUY CO INC"
+  },
+  "BESTBUY": {
+    "cik": "764478",
+    "name": "BEST BUY CO INC"
+  },
+  "NVT": {
+    "cik": "1720635",
+    "name": "nVent Electric plc"
+  },
+  "NVENTELECTRICPLC": {
+    "cik": "1720635",
+    "name": "nVent Electric plc"
+  },
+  "PKX": {
+    "cik": "889132",
+    "name": "POSCO HOLDINGS INC."
+  },
+  "POSCOHOLDINGS": {
+    "cik": "889132",
+    "name": "POSCO HOLDINGS INC."
+  },
+  "BCH": {
+    "cik": "1161125",
+    "name": "BANK OF CHILE"
+  },
+  "BANKOFCHILE": {
+    "cik": "1161125",
+    "name": "BANK OF CHILE"
+  },
+  "MAS": {
+    "cik": "062996",
+    "name": "MASCO CORP /DE/"
+  },
+  "MASCO": {
+    "cik": "062996",
+    "name": "MASCO CORP /DE/"
+  },
+  "VDMCY": {
+    "cik": "1468608",
+    "name": "Vodacom Group Ltd / ADR"
+  },
+  "VODACOMGROUP": {
+    "cik": "1468608",
+    "name": "Vodacom Group Ltd / ADR"
+  },
+  "RS": {
+    "cik": "861884",
+    "name": "RELIANCE, INC."
+  },
+  "RELIANCE": {
+    "cik": "861884",
+    "name": "RELIANCE, INC."
+  },
+  "PAAS": {
+    "cik": "771992",
+    "name": "PAN AMERICAN SILVER CORP"
+  },
+  "PANAMERICANSILVER": {
+    "cik": "771992",
+    "name": "PAN AMERICAN SILVER CORP"
+  },
+  "LPGCY": {
+    "cik": "2068440",
+    "name": "Laopu Gold Co. Ltd./ADR"
+  },
+  "LAOPUGOLD": {
+    "cik": "2068440",
+    "name": "Laopu Gold Co. Ltd./ADR"
+  },
+  "CLX": {
+    "cik": "021076",
+    "name": "CLOROX CO /DE/"
+  },
+  "CLOROX": {
+    "cik": "021076",
+    "name": "CLOROX CO /DE/"
+  },
+  "TKO": {
+    "cik": "1973266",
+    "name": "TKO Group Holdings, Inc."
+  },
+  "TKOGROUPHOLDINGS": {
+    "cik": "1973266",
+    "name": "TKO Group Holdings, Inc."
+  },
+  "ALLE": {
+    "cik": "1579241",
+    "name": "Allegion plc"
+  },
+  "ALLEGIONPLC": {
+    "cik": "1579241",
+    "name": "Allegion plc"
+  },
+  "MTZ": {
+    "cik": "015615",
+    "name": "MASTEC INC"
+  },
+  "MASTEC": {
+    "cik": "015615",
+    "name": "MASTEC INC"
+  },
+  "BLDR": {
+    "cik": "1316835",
+    "name": "Builders FirstSource, Inc."
+  },
+  "BUILDERSFIRSTSOURCE": {
+    "cik": "1316835",
+    "name": "Builders FirstSource, Inc."
+  },
+  "DPZ": {
+    "cik": "1286681",
+    "name": "DOMINOS PIZZA INC"
+  },
+  "DOMINOSPIZZA": {
+    "cik": "1286681",
+    "name": "DOMINOS PIZZA INC"
+  },
+  "FMS": {
+    "cik": "1333141",
+    "name": "Fresenius Medical Care AG"
+  },
+  "FRESENIUSMEDICALCAREAG": {
+    "cik": "1333141",
+    "name": "Fresenius Medical Care AG"
+  },
+  "XPO": {
+    "cik": "1166003",
+    "name": "XPO, Inc."
+  },
+  "KIM": {
+    "cik": "879101",
+    "name": "KIMCO REALTY CORP"
+  },
+  "KIMCOREALTY": {
+    "cik": "879101",
+    "name": "KIMCO REALTY CORP"
+  },
+  "ARCC": {
+    "cik": "1287750",
+    "name": "ARES CAPITAL CORP"
+  },
+  "ARESCAPITAL": {
+    "cik": "1287750",
+    "name": "ARES CAPITAL CORP"
+  },
+  "OMC": {
+    "cik": "029989",
+    "name": "OMNICOM GROUP INC."
+  },
+  "OMNICOMGROUP": {
+    "cik": "029989",
+    "name": "OMNICOM GROUP INC."
+  },
+  "WES": {
+    "cik": "1423902",
+    "name": "Western Midstream Partners, LP"
+  },
+  "WESTERNMIDSTREAMPARTNERS": {
+    "cik": "1423902",
+    "name": "Western Midstream Partners, LP"
+  },
+  "LTM": {
+    "cik": "1047716",
+    "name": "LATAM AIRLINES GROUP S.A."
+  },
+  "LATAMAIRLINESGROUPSA": {
+    "cik": "1047716",
+    "name": "LATAM AIRLINES GROUP S.A."
+  },
+  "JLL": {
+    "cik": "1037976",
+    "name": "JONES LANG LASALLE INC"
+  },
+  "JONESLANGLASALLE": {
+    "cik": "1037976",
+    "name": "JONES LANG LASALLE INC"
+  },
+  "WWD": {
+    "cik": "108312",
+    "name": "Woodward, Inc."
+  },
+  "WOODWARD": {
+    "cik": "108312",
+    "name": "Woodward, Inc."
+  },
+  "RBRK": {
+    "cik": "1943896",
+    "name": "Rubrik, Inc."
+  },
+  "RUBRIK": {
+    "cik": "1943896",
+    "name": "Rubrik, Inc."
+  },
+  "EWBC": {
+    "cik": "1069157",
+    "name": "EAST WEST BANCORP INC"
+  },
+  "EASTWESTBANCORP": {
+    "cik": "1069157",
+    "name": "EAST WEST BANCORP INC"
+  },
+  "ARE": {
+    "cik": "1035443",
+    "name": "ALEXANDRIA REAL ESTATE EQUITIES, INC."
+  },
+  "ALEXANDRIAREALESTATEEQUITIES": {
+    "cik": "1035443",
+    "name": "ALEXANDRIA REAL ESTATE EQUITIES, INC."
+  },
+  "APG": {
+    "cik": "1796209",
+    "name": "APi Group Corp"
+  },
+  "APIGROUP": {
+    "cik": "1796209",
+    "name": "APi Group Corp"
+  },
+  "CSL": {
+    "cik": "790051",
+    "name": "CARLISLE COMPANIES INC"
+  },
+  "CARLISLECOMPANIES": {
+    "cik": "790051",
+    "name": "CARLISLE COMPANIES INC"
+  },
+  "ASTS": {
+    "cik": "1780312",
+    "name": "AST SpaceMobile, Inc."
+  },
+  "ASTSPACEMOBILE": {
+    "cik": "1780312",
+    "name": "AST SpaceMobile, Inc."
+  },
+  "UDR": {
+    "cik": "074208",
+    "name": "UDR, Inc."
+  },
+  "DT": {
+    "cik": "1773383",
+    "name": "Dynatrace, Inc."
+  },
+  "DYNATRACE": {
+    "cik": "1773383",
+    "name": "Dynatrace, Inc."
+  },
+  "WPC": {
+    "cik": "1025378",
+    "name": "W. P. Carey Inc."
+  },
+  "WPCAREY": {
+    "cik": "1025378",
+    "name": "W. P. Carey Inc."
+  },
+  "BIP": {
+    "cik": "1406234",
+    "name": "Brookfield Infrastructure Partners L.P."
+  },
+  "BROOKFIELDINFRASTRUCTUREPARTNERSLP": {
+    "cik": "1406234",
+    "name": "Brookfield Infrastructure Partners L.P."
+  },
+  "HLI": {
+    "cik": "1302215",
+    "name": "HOULIHAN LOKEY, INC."
+  },
+  "HOULIHANLOKEY": {
+    "cik": "1302215",
+    "name": "HOULIHAN LOKEY, INC."
+  },
+  "SOAGY": {
+    "cik": "1715801",
+    "name": "Sartorius AG/ADR"
+  },
+  "SARTORIUSAG/ADR": {
+    "cik": "1715801",
+    "name": "Sartorius AG/ADR"
+  },
+  "ZTO": {
+    "cik": "1677250",
+    "name": "ZTO Express (Cayman) Inc."
+  },
+  "ZTOEXPRESS(CAYMAN)": {
+    "cik": "1677250",
+    "name": "ZTO Express (Cayman) Inc."
+  },
+  "CELH": {
+    "cik": "1341766",
+    "name": "Celsius Holdings, Inc."
+  },
+  "CELSIUSHOLDINGS": {
+    "cik": "1341766",
+    "name": "Celsius Holdings, Inc."
+  },
+  "ITT": {
+    "cik": "216228",
+    "name": "ITT INC."
+  },
+  "TXT": {
+    "cik": "217346",
+    "name": "TEXTRON INC"
+  },
+  "TEXTRON": {
+    "cik": "217346",
+    "name": "TEXTRON INC"
+  },
+  "OKLO": {
+    "cik": "1849056",
+    "name": "Oklo Inc."
+  },
+  "HOLX": {
+    "cik": "859737",
+    "name": "HOLOGIC INC"
+  },
+  "HOLOGIC": {
+    "cik": "859737",
+    "name": "HOLOGIC INC"
+  },
+  "AMH": {
+    "cik": "1562401",
+    "name": "American Homes 4 Rent"
+  },
+  "AMERICANHOMES4RENT": {
+    "cik": "1562401",
+    "name": "American Homes 4 Rent"
+  },
+  "ONON": {
+    "cik": "1858985",
+    "name": "On Holding AG"
+  },
+  "ONHOLDINGAG": {
+    "cik": "1858985",
+    "name": "On Holding AG"
+  },
+  "GGG": {
+    "cik": "042888",
+    "name": "GRACO INC"
+  },
+  "GRACO": {
+    "cik": "042888",
+    "name": "GRACO INC"
+  },
+  "NLY": {
+    "cik": "1043219",
+    "name": "ANNALY CAPITAL MANAGEMENT INC"
+  },
+  "ANNALYCAPITALMANAGEMENT": {
+    "cik": "1043219",
+    "name": "ANNALY CAPITAL MANAGEMENT INC"
+  },
+  "ENTG": {
+    "cik": "1101302",
+    "name": "ENTEGRIS INC"
+  },
+  "ENTEGRIS": {
+    "cik": "1101302",
+    "name": "ENTEGRIS INC"
+  },
+  "QXO": {
+    "cik": "1236275",
+    "name": "QXO, Inc."
+  },
+  "NBIX": {
+    "cik": "914475",
+    "name": "NEUROCRINE BIOSCIENCES INC"
+  },
+  "NEUROCRINEBIOSCIENCES": {
+    "cik": "914475",
+    "name": "NEUROCRINE BIOSCIENCES INC"
+  },
+  "BXP": {
+    "cik": "1037540",
+    "name": "BXP, Inc."
+  },
+  "ROKU": {
+    "cik": "1428439",
+    "name": "ROKU, INC"
+  },
+  "CX": {
+    "cik": "1076378",
+    "name": "CEMEX SAB DE CV"
+  },
+  "CEMEXSABDECV": {
+    "cik": "1076378",
+    "name": "CEMEX SAB DE CV"
+  },
+  "EG": {
+    "cik": "1095073",
+    "name": "EVEREST GROUP, LTD."
+  },
+  "EVERESTGROUP": {
+    "cik": "1095073",
+    "name": "EVEREST GROUP, LTD."
+  },
+  "EMA": {
+    "cik": "1127248",
+    "name": "EMERA INC"
+  },
+  "EMERA": {
+    "cik": "1127248",
+    "name": "EMERA INC"
+  },
+  "COOP": {
+    "cik": "933136",
+    "name": "Mr. Cooper Group Inc."
+  },
+  "MRCOOPERGROUP": {
+    "cik": "933136",
+    "name": "Mr. Cooper Group Inc."
+  },
+  "ARNNY": {
+    "cik": "1719117",
+    "name": "ASR Nederland N.V./ADR"
+  },
+  "ASRNEDERLANDNV/ADR": {
+    "cik": "1719117",
+    "name": "ASR Nederland N.V./ADR"
+  },
+  "YMM": {
+    "cik": "1838413",
+    "name": "Full Truck Alliance Co. Ltd."
+  },
+  "FULLTRUCKALLIANCE": {
+    "cik": "1838413",
+    "name": "Full Truck Alliance Co. Ltd."
+  },
+  "MEDP": {
+    "cik": "1668397",
+    "name": "Medpace Holdings, Inc."
+  },
+  "MEDPACEHOLDINGS": {
+    "cik": "1668397",
+    "name": "Medpace Holdings, Inc."
+  },
+  "RKUNY": {
+    "cik": "1294591",
+    "name": "Rakuten Group, Inc."
+  },
+  "RAKUTENGROUP": {
+    "cik": "1294591",
+    "name": "Rakuten Group, Inc."
+  },
+  "HRL": {
+    "cik": "048465",
+    "name": "HORMEL FOODS CORP /DE/"
+  },
+  "HORMELFOODS": {
+    "cik": "048465",
+    "name": "HORMEL FOODS CORP /DE/"
+  },
+  "CF": {
+    "cik": "1324404",
+    "name": "CF Industries Holdings, Inc."
+  },
+  "CFINDUSTRIESHOLDINGS": {
+    "cik": "1324404",
+    "name": "CF Industries Holdings, Inc."
+  },
+  "JEF": {
+    "cik": "096223",
+    "name": "Jefferies Financial Group Inc."
+  },
+  "JEFFERIESFINANCIALGROUP": {
+    "cik": "096223",
+    "name": "Jefferies Financial Group Inc."
+  },
+  "H": {
+    "cik": "1468174",
+    "name": "Hyatt Hotels Corp"
+  },
+  "HYATTHOTELS": {
+    "cik": "1468174",
+    "name": "Hyatt Hotels Corp"
+  },
+  "CNH": {
+    "cik": "1567094",
+    "name": "CNH Industrial N.V."
+  },
+  "CNHINDUSTRIALNV": {
+    "cik": "1567094",
+    "name": "CNH Industrial N.V."
+  },
+  "RYAN": {
+    "cik": "1849253",
+    "name": "RYAN SPECIALTY HOLDINGS, INC."
+  },
+  "RYANSPECIALTYHOLDINGS": {
+    "cik": "1849253",
+    "name": "RYAN SPECIALTY HOLDINGS, INC."
+  },
+  "TEM": {
+    "cik": "1717115",
+    "name": "Tempus AI, Inc."
+  },
+  "TEMPUSAI": {
+    "cik": "1717115",
+    "name": "Tempus AI, Inc."
+  },
+  "SFM": {
+    "cik": "1575515",
+    "name": "Sprouts Farmers Market, Inc."
+  },
+  "SPROUTSFARMERSMARKET": {
+    "cik": "1575515",
+    "name": "Sprouts Farmers Market, Inc."
+  },
+  "BALL": {
+    "cik": "009389",
+    "name": "BALL Corp"
+  },
+  "DOCS": {
+    "cik": "1516513",
+    "name": "Doximity, Inc."
+  },
+  "DOXIMITY": {
+    "cik": "1516513",
+    "name": "Doximity, Inc."
+  },
+  "ICLR": {
+    "cik": "1060955",
+    "name": "ICON PLC"
+  },
+  "ICONPLC": {
+    "cik": "1060955",
+    "name": "ICON PLC"
+  },
+  "NXTT": {
+    "cik": "1784970",
+    "name": "Next Technology Holding Inc."
+  },
+  "NEXTTECHNOLOGYHOLDING": {
+    "cik": "1784970",
+    "name": "Next Technology Holding Inc."
+  },
+  "CIB": {
+    "cik": "2058897",
+    "name": "Grupo Cibest S.A."
+  },
+  "GRUPOCIBESTSA": {
+    "cik": "2058897",
+    "name": "Grupo Cibest S.A."
+  },
+  "GLPI": {
+    "cik": "1575965",
+    "name": "Gaming & Leisure Properties, Inc."
+  },
+  "GAMING&LEISUREPROPERTIES": {
+    "cik": "1575965",
+    "name": "Gaming & Leisure Properties, Inc."
+  },
+  "JBHT": {
+    "cik": "728535",
+    "name": "HUNT J B TRANSPORT SERVICES INC"
+  },
+  "HUNTJBTRANSPORTSERVICES": {
+    "cik": "728535",
+    "name": "HUNT J B TRANSPORT SERVICES INC"
+  },
+  "EVR": {
+    "cik": "1360901",
+    "name": "Evercore Inc."
+  },
+  "EVERCORE": {
+    "cik": "1360901",
+    "name": "Evercore Inc."
+  },
+  "ALLY": {
+    "cik": "040729",
+    "name": "Ally Financial Inc."
+  },
+  "ALLYFINANCIAL": {
+    "cik": "040729",
+    "name": "Ally Financial Inc."
+  },
+  "TOL": {
+    "cik": "794170",
+    "name": "Toll Brothers, Inc."
+  },
+  "TOLLBROTHERS": {
+    "cik": "794170",
+    "name": "Toll Brothers, Inc."
+  },
+  "AGI": {
+    "cik": "1178819",
+    "name": "ALAMOS GOLD INC"
+  },
+  "ALAMOSGOLD": {
+    "cik": "1178819",
+    "name": "ALAMOS GOLD INC"
+  },
+  "AVAV": {
+    "cik": "1368622",
+    "name": "AeroVironment Inc"
+  },
+  "AEROVIRONMENT": {
+    "cik": "1368622",
+    "name": "AeroVironment Inc"
+  },
+  "PHYS": {
+    "cik": "1477049",
+    "name": "Sprott Physical Gold Trust"
+  },
+  "SPROTTPHYSICALGOLDTRUST": {
+    "cik": "1477049",
+    "name": "Sprott Physical Gold Trust"
+  },
+  "WF": {
+    "cik": "1264136",
+    "name": "WOORI FINANCIAL GROUP INC."
+  },
+  "WOORIFINANCIALGROUP": {
+    "cik": "1264136",
+    "name": "WOORI FINANCIAL GROUP INC."
+  },
+  "BJ": {
+    "cik": "1531152",
+    "name": "BJ's Wholesale Club Holdings, Inc."
+  },
+  "BJ'SWHOLESALECLUBHOLDINGS": {
+    "cik": "1531152",
+    "name": "BJ's Wholesale Club Holdings, Inc."
+  },
+  "FDS": {
+    "cik": "1013237",
+    "name": "FACTSET RESEARCH SYSTEMS INC"
+  },
+  "FACTSETRESEARCHSYSTEMS": {
+    "cik": "1013237",
+    "name": "FACTSET RESEARCH SYSTEMS INC"
+  },
+  "REG": {
+    "cik": "910606",
+    "name": "REGENCY CENTERS CORP"
+  },
+  "REGENCYCENTERS": {
+    "cik": "910606",
+    "name": "REGENCY CENTERS CORP"
+  },
+  "MGA": {
+    "cik": "749098",
+    "name": "MAGNA INTERNATIONAL INC"
+  },
+  "MAGNAINTERNATIONAL": {
+    "cik": "749098",
+    "name": "MAGNA INTERNATIONAL INC"
+  },
+  "WYNN": {
+    "cik": "1174922",
+    "name": "WYNN RESORTS LTD"
+  },
+  "WYNNRESORTS": {
+    "cik": "1174922",
+    "name": "WYNN RESORTS LTD"
+  },
+  "BF-A": {
+    "cik": "014693",
+    "name": "BROWN FORMAN CORP"
+  },
+  "BROWNFORMAN": {
+    "cik": "014693",
+    "name": "BROWN FORMAN CORP"
+  },
+  "AVY": {
+    "cik": "008818",
+    "name": "Avery Dennison Corp"
+  },
+  "AVERYDENNISON": {
+    "cik": "008818",
+    "name": "Avery Dennison Corp"
+  },
+  "MANH": {
+    "cik": "1056696",
+    "name": "MANHATTAN ASSOCIATES INC"
+  },
+  "MANHATTANASSOCIATES": {
+    "cik": "1056696",
+    "name": "MANHATTAN ASSOCIATES INC"
+  },
+  "COO": {
+    "cik": "711404",
+    "name": "COOPER COMPANIES, INC."
+  },
+  "COOPERCOMPANIES": {
+    "cik": "711404",
+    "name": "COOPER COMPANIES, INC."
+  },
+  "VNOM": {
+    "cik": "2074176",
+    "name": "Viper Energy, Inc."
+  },
+  "VIPERENERGY": {
+    "cik": "2074176",
+    "name": "Viper Energy, Inc."
+  },
+  "LECO": {
+    "cik": "059527",
+    "name": "LINCOLN ELECTRIC HOLDINGS INC"
+  },
+  "LINCOLNELECTRICHOLDINGS": {
+    "cik": "059527",
+    "name": "LINCOLN ELECTRIC HOLDINGS INC"
+  },
+  "KTOS": {
+    "cik": "1069258",
+    "name": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC."
+  },
+  "KRATOSDEFENSE&SECURITYSOLUTIONS": {
+    "cik": "1069258",
+    "name": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC."
+  },
+  "ULS": {
+    "cik": "1901440",
+    "name": "UL Solutions Inc."
+  },
+  "ULSOLUTIONS": {
+    "cik": "1901440",
+    "name": "UL Solutions Inc."
+  },
+  "DUOL": {
+    "cik": "1562088",
+    "name": "Duolingo, Inc."
+  },
+  "DUOLINGO": {
+    "cik": "1562088",
+    "name": "Duolingo, Inc."
+  },
+  "RTO": {
+    "cik": "930157",
+    "name": "RENTOKIL INITIAL PLC /FI"
+  },
+  "RENTOKILINITIALPLC/FI": {
+    "cik": "930157",
+    "name": "RENTOKIL INITIAL PLC /FI"
+  },
+  "LAMR": {
+    "cik": "1090425",
+    "name": "LAMAR ADVERTISING CO/NEW"
+  },
+  "LAMARADVERTISINGCO/NEW": {
+    "cik": "1090425",
+    "name": "LAMAR ADVERTISING CO/NEW"
+  },
+  "OHI": {
+    "cik": "888491",
+    "name": "OMEGA HEALTHCARE INVESTORS INC"
+  },
+  "OMEGAHEALTHCAREINVESTORS": {
+    "cik": "888491",
+    "name": "OMEGA HEALTHCARE INVESTORS INC"
+  },
+  "NDSN": {
+    "cik": "072331",
+    "name": "NORDSON CORP"
+  },
+  "NORDSON": {
+    "cik": "072331",
+    "name": "NORDSON CORP"
+  },
+  "RGA": {
+    "cik": "898174",
+    "name": "REINSURANCE GROUP OF AMERICA INC"
+  },
+  "REINSURANCEGROUPOFAMERICA": {
+    "cik": "898174",
+    "name": "REINSURANCE GROUP OF AMERICA INC"
+  },
+  "FN": {
+    "cik": "1408710",
+    "name": "Fabrinet"
+  },
+  "FABRINET": {
+    "cik": "1408710",
+    "name": "Fabrinet"
+  },
+  "SLV": {
+    "cik": "1330568",
+    "name": "iShares Silver Trust"
+  },
+  "ISHARESSILVERTRUST": {
+    "cik": "1330568",
+    "name": "iShares Silver Trust"
+  },
+  "DOC": {
+    "cik": "765880",
+    "name": "HEALTHPEAK PROPERTIES, INC."
+  },
+  "HEALTHPEAKPROPERTIES": {
+    "cik": "765880",
+    "name": "HEALTHPEAK PROPERTIES, INC."
+  },
+  "CLH": {
+    "cik": "822818",
+    "name": "CLEAN HARBORS INC"
+  },
+  "CLEANHARBORS": {
+    "cik": "822818",
+    "name": "CLEAN HARBORS INC"
+  },
+  "PAC": {
+    "cik": "1347557",
+    "name": "Pacific Airport Group"
+  },
+  "PACIFICAIRPORTGROUP": {
+    "cik": "1347557",
+    "name": "Pacific Airport Group"
+  },
+  "BEN": {
+    "cik": "038777",
+    "name": "FRANKLIN RESOURCES INC"
+  },
+  "FRANKLINRESOURCES": {
+    "cik": "038777",
+    "name": "FRANKLIN RESOURCES INC"
+  },
+  "BAH": {
+    "cik": "1443646",
+    "name": "Booz Allen Hamilton Holding Corp"
+  },
+  "BOOZALLENHAMILTONHOLDING": {
+    "cik": "1443646",
+    "name": "Booz Allen Hamilton Holding Corp"
+  },
+  "OC": {
+    "cik": "1370946",
+    "name": "Owens Corning"
+  },
+  "OWENSCORNING": {
+    "cik": "1370946",
+    "name": "Owens Corning"
+  },
+  "EHC": {
+    "cik": "785161",
+    "name": "Encompass Health Corp"
+  },
+  "ENCOMPASSHEALTH": {
+    "cik": "785161",
+    "name": "Encompass Health Corp"
+  },
+  "RGLD": {
+    "cik": "085535",
+    "name": "ROYAL GOLD INC"
+  },
+  "ROYALGOLD": {
+    "cik": "085535",
+    "name": "ROYAL GOLD INC"
+  },
+  "CNA": {
+    "cik": "021175",
+    "name": "CNA FINANCIAL CORP"
+  },
+  "CNAFINANCIAL": {
+    "cik": "021175",
+    "name": "CNA FINANCIAL CORP"
+  },
+  "SOLV": {
+    "cik": "1964738",
+    "name": "Solventum Corp"
+  },
+  "SOLVENTUM": {
+    "cik": "1964738",
+    "name": "Solventum Corp"
+  },
+  "ELS": {
+    "cik": "895417",
+    "name": "EQUITY LIFESTYLE PROPERTIES INC"
+  },
+  "EQUITYLIFESTYLEPROPERTIES": {
+    "cik": "895417",
+    "name": "EQUITY LIFESTYLE PROPERTIES INC"
+  },
+  "IEX": {
+    "cik": "832101",
+    "name": "IDEX CORP /DE/"
+  },
+  "IDEX": {
+    "cik": "832101",
+    "name": "IDEX CORP /DE/"
+  },
+  "JOBY": {
+    "cik": "1819848",
+    "name": "Joby Aviation, Inc."
+  },
+  "JOBYAVIATION": {
+    "cik": "1819848",
+    "name": "Joby Aviation, Inc."
+  },
+  "BSAC": {
+    "cik": "1027552",
+    "name": "BANCO SANTANDER CHILE"
+  },
+  "BANCOSANTANDERCHILE": {
+    "cik": "1027552",
+    "name": "BANCO SANTANDER CHILE"
+  },
+  "HST": {
+    "cik": "1070750",
+    "name": "HOST HOTELS & RESORTS, INC."
+  },
+  "HOSTHOTELS&RESORTS": {
+    "cik": "1070750",
+    "name": "HOST HOTELS & RESORTS, INC."
+  },
+  "STN": {
+    "cik": "1131383",
+    "name": "STANTEC INC"
+  },
+  "STANTEC": {
+    "cik": "1131383",
+    "name": "STANTEC INC"
+  },
+  "VTRS": {
+    "cik": "1792044",
+    "name": "Viatris Inc"
+  },
+  "VIATRIS": {
+    "cik": "1792044",
+    "name": "Viatris Inc"
+  },
+  "BAX": {
+    "cik": "010456",
+    "name": "BAXTER INTERNATIONAL INC"
+  },
+  "BAXTERINTERNATIONAL": {
+    "cik": "010456",
+    "name": "BAXTER INTERNATIONAL INC"
+  },
+  "RDY": {
+    "cik": "1135951",
+    "name": "DR REDDYS LABORATORIES LTD"
+  },
+  "DRREDDYSLABORATORIES": {
+    "cik": "1135951",
+    "name": "DR REDDYS LABORATORIES LTD"
+  },
+  "POOL": {
+    "cik": "945841",
+    "name": "POOL CORP"
+  },
+  "SNAP": {
+    "cik": "1564408",
+    "name": "Snap Inc"
+  },
+  "PAA": {
+    "cik": "1070423",
+    "name": "PLAINS ALL AMERICAN PIPELINE LP"
+  },
+  "PLAINSALLAMERICANPIPELINE": {
+    "cik": "1070423",
+    "name": "PLAINS ALL AMERICAN PIPELINE LP"
+  },
+  "SNX": {
+    "cik": "1177394",
+    "name": "TD SYNNEX CORP"
+  },
+  "TDSYNNEX": {
+    "cik": "1177394",
+    "name": "TD SYNNEX CORP"
+  },
+  "SQM": {
+    "cik": "909037",
+    "name": "CHEMICAL & MINING CO OF CHILE INC"
+  },
+  "CHEMICAL&MINING": {
+    "cik": "909037",
+    "name": "CHEMICAL & MINING CO OF CHILE INC"
+  },
+  "YPF": {
+    "cik": "904851",
+    "name": "YPF SOCIEDAD ANONIMA"
+  },
+  "YPFSOCIEDADANONIMA": {
+    "cik": "904851",
+    "name": "YPF SOCIEDAD ANONIMA"
+  },
+  "CART": {
+    "cik": "1579091",
+    "name": "Maplebear Inc."
+  },
+  "MAPLEBEAR": {
+    "cik": "1579091",
+    "name": "Maplebear Inc."
+  },
+  "AEG": {
+    "cik": "769218",
+    "name": "AEGON LTD."
+  },
+  "AEGON": {
+    "cik": "769218",
+    "name": "AEGON LTD."
+  },
+  "SAIL": {
+    "cik": "2030781",
+    "name": "SailPoint, Inc."
+  },
+  "SAILPOINT": {
+    "cik": "2030781",
+    "name": "SailPoint, Inc."
+  },
+  "CRS": {
+    "cik": "017843",
+    "name": "CARPENTER TECHNOLOGY CORP"
+  },
+  "CARPENTERTECHNOLOGY": {
+    "cik": "017843",
+    "name": "CARPENTER TECHNOLOGY CORP"
+  },
+  "PAYC": {
+    "cik": "1590955",
+    "name": "Paycom Software, Inc."
+  },
+  "PAYCOMSOFTWARE": {
+    "cik": "1590955",
+    "name": "Paycom Software, Inc."
+  },
+  "GLXY": {
+    "cik": "1859392",
+    "name": "Galaxy Digital Inc."
+  },
+  "GALAXYDIGITAL": {
+    "cik": "1859392",
+    "name": "Galaxy Digital Inc."
+  },
+  "LITE": {
+    "cik": "1633978",
+    "name": "Lumentum Holdings Inc."
+  },
+  "LUMENTUMHOLDINGS": {
+    "cik": "1633978",
+    "name": "Lumentum Holdings Inc."
+  },
+  "ASND": {
+    "cik": "1612042",
+    "name": "Ascendis Pharma A/S"
+  },
+  "ASCENDISPHARMAA/S": {
+    "cik": "1612042",
+    "name": "Ascendis Pharma A/S"
+  },
+  "SOTGY": {
+    "cik": "1601992",
+    "name": "Sunny Optical Technology (Group) Co Limited/ADR"
+  },
+  "SUNNYOPTICALTECHNOLOGY(GROUP)": {
+    "cik": "1601992",
+    "name": "Sunny Optical Technology (Group) Co Limited/ADR"
+  },
+  "UNM": {
+    "cik": "005513",
+    "name": "Unum Group"
+  },
+  "UNUMGROUP": {
+    "cik": "005513",
+    "name": "Unum Group"
+  },
+  "SUZ": {
+    "cik": "909327",
+    "name": "Suzano S.A."
+  },
+  "SUZANOSA": {
+    "cik": "909327",
+    "name": "Suzano S.A."
+  },
+  "RBC": {
+    "cik": "1324948",
+    "name": "RBC Bearings INC"
+  },
+  "RBCBEARINGS": {
+    "cik": "1324948",
+    "name": "RBC Bearings INC"
+  },
+  "GME": {
+    "cik": "1326380",
+    "name": "GameStop Corp."
+  },
+  "GAMESTOP": {
+    "cik": "1326380",
+    "name": "GameStop Corp."
+  },
+  "PAG": {
+    "cik": "1019849",
+    "name": "PENSKE AUTOMOTIVE GROUP, INC."
+  },
+  "PENSKEAUTOMOTIVEGROUP": {
+    "cik": "1019849",
+    "name": "PENSKE AUTOMOTIVE GROUP, INC."
+  },
+  "MP": {
+    "cik": "1801368",
+    "name": "MP Materials Corp. / DE"
+  },
+  "MPMATERIALS": {
+    "cik": "1801368",
+    "name": "MP Materials Corp. / DE"
+  },
+  "BLD": {
+    "cik": "1633931",
+    "name": "TopBuild Corp"
+  },
+  "TOPBUILD": {
+    "cik": "1633931",
+    "name": "TopBuild Corp"
+  },
+  "SJM": {
+    "cik": "091419",
+    "name": "J M SMUCKER Co"
+  },
+  "JMSMUCKER": {
+    "cik": "091419",
+    "name": "J M SMUCKER Co"
+  },
+  "RNR": {
+    "cik": "913144",
+    "name": "RENAISSANCERE HOLDINGS LTD"
+  },
+  "RENAISSANCEREHOLDINGS": {
+    "cik": "913144",
+    "name": "RENAISSANCERE HOLDINGS LTD"
+  },
+  "HTHT": {
+    "cik": "1483994",
+    "name": "H World Group Ltd"
+  },
+  "HWORLDGROUP": {
+    "cik": "1483994",
+    "name": "H World Group Ltd"
+  },
+  "JKHY": {
+    "cik": "779152",
+    "name": "JACK HENRY & ASSOCIATES INC"
+  },
+  "JACKHENRY&ASSOCIATES": {
+    "cik": "779152",
+    "name": "JACK HENRY & ASSOCIATES INC"
+  },
+  "AFG": {
+    "cik": "1042046",
+    "name": "AMERICAN FINANCIAL GROUP INC"
+  },
+  "AMERICANFINANCIALGROUP": {
+    "cik": "1042046",
+    "name": "AMERICAN FINANCIAL GROUP INC"
+  },
+  "NCLH": {
+    "cik": "1513761",
+    "name": "Norwegian Cruise Line Holdings Ltd."
+  },
+  "NORWEGIANCRUISELINEHOLDINGS": {
+    "cik": "1513761",
+    "name": "Norwegian Cruise Line Holdings Ltd."
+  },
+  "UHS": {
+    "cik": "352915",
+    "name": "UNIVERSAL HEALTH SERVICES INC"
+  },
+  "UNIVERSALHEALTHSERVICES": {
+    "cik": "352915",
+    "name": "UNIVERSAL HEALTH SERVICES INC"
+  },
+  "SF": {
+    "cik": "720672",
+    "name": "STIFEL FINANCIAL CORP"
+  },
+  "STIFELFINANCIAL": {
+    "cik": "720672",
+    "name": "STIFEL FINANCIAL CORP"
+  },
+  "HIMS": {
+    "cik": "1773751",
+    "name": "Hims & Hers Health, Inc."
+  },
+  "HIMS&HERSHEALTH": {
+    "cik": "1773751",
+    "name": "Hims & Hers Health, Inc."
+  },
+  "CPT": {
+    "cik": "906345",
+    "name": "CAMDEN PROPERTY TRUST"
+  },
+  "CAMDENPROPERTYTRUST": {
+    "cik": "906345",
+    "name": "CAMDEN PROPERTY TRUST"
+  },
+  "GL": {
+    "cik": "320335",
+    "name": "GLOBE LIFE INC."
+  },
+  "GLOBELIFE": {
+    "cik": "320335",
+    "name": "GLOBE LIFE INC."
+  },
+  "DSEEY": {
+    "cik": "1481045",
+    "name": "Daiwa Securities Group Inc."
+  },
+  "DAIWASECURITIESGROUP": {
+    "cik": "1481045",
+    "name": "Daiwa Securities Group Inc."
+  },
+  "TXRH": {
+    "cik": "1289460",
+    "name": "Texas Roadhouse, Inc."
+  },
+  "TEXASROADHOUSE": {
+    "cik": "1289460",
+    "name": "Texas Roadhouse, Inc."
+  },
+  "JHX": {
+    "cik": "1159152",
+    "name": "James Hardie Industries plc"
+  },
+  "JAMESHARDIEINDUSTRIESPLC": {
+    "cik": "1159152",
+    "name": "James Hardie Industries plc"
+  },
+  "FHN": {
+    "cik": "036966",
+    "name": "FIRST HORIZON CORP"
+  },
+  "FIRSTHORIZON": {
+    "cik": "036966",
+    "name": "FIRST HORIZON CORP"
+  },
+  "SCI": {
+    "cik": "089089",
+    "name": "SERVICE CORP INTERNATIONAL"
+  },
+  "SERVICE": {
+    "cik": "089089",
+    "name": "SERVICE CORP INTERNATIONAL"
+  },
+  "BZ": {
+    "cik": "1842827",
+    "name": "Kanzhun Ltd"
+  },
+  "KANZHUN": {
+    "cik": "1842827",
+    "name": "Kanzhun Ltd"
+  },
+  "MBLY": {
+    "cik": "1910139",
+    "name": "Mobileye Global Inc."
+  },
+  "MOBILEYEGLOBAL": {
+    "cik": "1910139",
+    "name": "Mobileye Global Inc."
+  },
+  "LKNCY": {
+    "cik": "1767582",
+    "name": "Luckin Coffee Inc."
+  },
+  "LUCKINCOFFEE": {
+    "cik": "1767582",
+    "name": "Luckin Coffee Inc."
+  },
+  "BILI": {
+    "cik": "1723690",
+    "name": "Bilibili Inc."
+  },
+  "BILIBILI": {
+    "cik": "1723690",
+    "name": "Bilibili Inc."
+  },
+  "AUR": {
+    "cik": "1828108",
+    "name": "Aurora Innovation, Inc."
+  },
+  "AURORAINNOVATION": {
+    "cik": "1828108",
+    "name": "Aurora Innovation, Inc."
+  },
+  "NCLTY": {
+    "cik": "1801729",
+    "name": "Nitori Holdings Co., Ltd."
+  },
+  "NITORIHOLDINGSCO": {
+    "cik": "1801729",
+    "name": "Nitori Holdings Co., Ltd."
+  },
+  "DRS": {
+    "cik": "1833756",
+    "name": "Leonardo DRS, Inc."
+  },
+  "LEONARDODRS": {
+    "cik": "1833756",
+    "name": "Leonardo DRS, Inc."
+  },
+  "SWK": {
+    "cik": "093556",
+    "name": "STANLEY BLACK & DECKER, INC."
+  },
+  "STANLEYBLACK&DECKER": {
+    "cik": "093556",
+    "name": "STANLEY BLACK & DECKER, INC."
+  },
+  "CCK": {
+    "cik": "1219601",
+    "name": "CROWN HOLDINGS, INC."
+  },
+  "CROWNHOLDINGS": {
+    "cik": "1219601",
+    "name": "CROWN HOLDINGS, INC."
+  },
+  "WLK": {
+    "cik": "1262823",
+    "name": "WESTLAKE CORP"
+  },
+  "WESTLAKE": {
+    "cik": "1262823",
+    "name": "WESTLAKE CORP"
+  },
+  "BZLFY": {
+    "cik": "1072397",
+    "name": "BUNZL PLC"
+  },
+  "BUNZLPLC": {
+    "cik": "1072397",
+    "name": "BUNZL PLC"
+  },
+  "GTM": {
+    "cik": "1794515",
+    "name": "ZoomInfo Technologies Inc."
+  },
+  "ZOOMINFOTECHNOLOGIES": {
+    "cik": "1794515",
+    "name": "ZoomInfo Technologies Inc."
+  },
+  "WMS": {
+    "cik": "1604028",
+    "name": "ADVANCED DRAINAGE SYSTEMS, INC."
+  },
+  "ADVANCEDDRAINAGESYSTEMS": {
+    "cik": "1604028",
+    "name": "ADVANCED DRAINAGE SYSTEMS, INC."
+  },
+  "ATI": {
+    "cik": "1018963",
+    "name": "ATI INC"
+  },
+  "AKAM": {
+    "cik": "1086222",
+    "name": "AKAMAI TECHNOLOGIES INC"
+  },
+  "AKAMAITECHNOLOGIES": {
+    "cik": "1086222",
+    "name": "AKAMAI TECHNOLOGIES INC"
+  },
+  "MLI": {
+    "cik": "089439",
+    "name": "MUELLER INDUSTRIES INC"
+  },
+  "MUELLERINDUSTRIES": {
+    "cik": "089439",
+    "name": "MUELLER INDUSTRIES INC"
+  },
+  "DAY": {
+    "cik": "1725057",
+    "name": "Dayforce, Inc."
+  },
+  "DAYFORCE": {
+    "cik": "1725057",
+    "name": "Dayforce, Inc."
+  },
+  "OVV": {
+    "cik": "1792580",
+    "name": "Ovintiv Inc."
+  },
+  "OVINTIV": {
+    "cik": "1792580",
+    "name": "Ovintiv Inc."
+  },
+  "WTRG": {
+    "cik": "078128",
+    "name": "Essential Utilities, Inc."
+  },
+  "ESSENTIALUTILITIES": {
+    "cik": "078128",
+    "name": "Essential Utilities, Inc."
+  },
+  "CACI": {
+    "cik": "016058",
+    "name": "CACI INTERNATIONAL INC /DE/"
+  },
+  "CACIINTERNATIONAL": {
+    "cik": "016058",
+    "name": "CACI INTERNATIONAL INC /DE/"
+  },
+  "SEIC": {
+    "cik": "350894",
+    "name": "SEI INVESTMENTS CO"
+  },
+  "SEIINVESTMENTS": {
+    "cik": "350894",
+    "name": "SEI INVESTMENTS CO"
+  },
+  "SWKS": {
+    "cik": "004127",
+    "name": "SKYWORKS SOLUTIONS, INC."
+  },
+  "SKYWORKSSOLUTIONS": {
+    "cik": "004127",
+    "name": "SKYWORKS SOLUTIONS, INC."
+  },
+  "GNRC": {
+    "cik": "1474735",
+    "name": "GENERAC HOLDINGS INC."
+  },
+  "GENERACHOLDINGS": {
+    "cik": "1474735",
+    "name": "GENERAC HOLDINGS INC."
+  },
+  "PCOR": {
+    "cik": "1611052",
+    "name": "PROCORE TECHNOLOGIES, INC."
+  },
+  "PROCORETECHNOLOGIES": {
+    "cik": "1611052",
+    "name": "PROCORE TECHNOLOGIES, INC."
+  },
+  "LINE": {
+    "cik": "1868159",
+    "name": "Lineage, Inc."
+  },
+  "LINEAGE": {
+    "cik": "1868159",
+    "name": "Lineage, Inc."
+  },
+  "MOS": {
+    "cik": "1285785",
+    "name": "MOSAIC CO"
+  },
+  "MOSAIC": {
+    "cik": "1285785",
+    "name": "MOSAIC CO"
+  },
+  "HII": {
+    "cik": "1501585",
+    "name": "HUNTINGTON INGALLS INDUSTRIES, INC."
+  },
+  "HUNTINGTONINGALLSINDUSTRIES": {
+    "cik": "1501585",
+    "name": "HUNTINGTON INGALLS INDUSTRIES, INC."
+  },
+  "PR": {
+    "cik": "1658566",
+    "name": "Permian Resources Corp"
+  },
+  "PERMIANRESOURCES": {
+    "cik": "1658566",
+    "name": "Permian Resources Corp"
+  },
+  "AGNC": {
+    "cik": "1423689",
+    "name": "AGNC Investment Corp."
+  },
+  "AGNCINVESTMENT": {
+    "cik": "1423689",
+    "name": "AGNC Investment Corp."
+  },
+  "DTM": {
+    "cik": "1842022",
+    "name": "DT Midstream, Inc."
+  },
+  "DTMIDSTREAM": {
+    "cik": "1842022",
+    "name": "DT Midstream, Inc."
+  },
+  "REXR": {
+    "cik": "1571283",
+    "name": "Rexford Industrial Realty, Inc."
+  },
+  "REXFORDINDUSTRIALREALTY": {
+    "cik": "1571283",
+    "name": "Rexford Industrial Realty, Inc."
+  },
+  "WCC": {
+    "cik": "929008",
+    "name": "WESCO INTERNATIONAL INC"
+  },
+  "WESCOINTERNATIONAL": {
+    "cik": "929008",
+    "name": "WESCO INTERNATIONAL INC"
+  },
+  "DLAKY": {
+    "cik": "1049724",
+    "name": "DEUTSCHE LUFTHANSA A G /FI"
+  },
+  "DEUTSCHELUFTHANSAAG/FI": {
+    "cik": "1049724",
+    "name": "DEUTSCHE LUFTHANSA A G /FI"
+  },
+  "EXEL": {
+    "cik": "939767",
+    "name": "EXELIXIS, INC."
+  },
+  "EXELIXIS": {
+    "cik": "939767",
+    "name": "EXELIXIS, INC."
+  },
+  "CR": {
+    "cik": "1944013",
+    "name": "Crane Co"
+  },
+  "CRANE": {
+    "cik": "1944013",
+    "name": "Crane Co"
+  },
+  "RDEIY": {
+    "cik": "1438654",
+    "name": "Red Electrica Corporacion SA/ADR"
+  },
+  "REDELECTRICACORPORACIONSA/ADR": {
+    "cik": "1438654",
+    "name": "Red Electrica Corporacion SA/ADR"
+  },
+  "MORN": {
+    "cik": "1289419",
+    "name": "Morningstar, Inc."
+  },
+  "MORNINGSTAR": {
+    "cik": "1289419",
+    "name": "Morningstar, Inc."
+  },
+  "ERJ": {
+    "cik": "1355444",
+    "name": "EMBRAER S.A."
+  },
+  "EMBRAERSA": {
+    "cik": "1355444",
+    "name": "EMBRAER S.A."
+  },
+  "HAS": {
+    "cik": "046080",
+    "name": "HASBRO, INC."
+  },
+  "HASBRO": {
+    "cik": "046080",
+    "name": "HASBRO, INC."
+  },
+  "CDE": {
+    "cik": "215466",
+    "name": "Coeur Mining, Inc."
+  },
+  "COEURMINING": {
+    "cik": "215466",
+    "name": "Coeur Mining, Inc."
+  },
+  "AYI": {
+    "cik": "1144215",
+    "name": "ACUITY INC. (DE)"
+  },
+  "ACUITY": {
+    "cik": "1144215",
+    "name": "ACUITY INC. (DE)"
+  },
+  "PNDRY": {
+    "cik": "1505880",
+    "name": "Pandora A/S / ADR"
+  },
+  "PANDORAA/S/ADR": {
+    "cik": "1505880",
+    "name": "Pandora A/S / ADR"
+  },
+  "AIZ": {
+    "cik": "1267238",
+    "name": "ASSURANT, INC."
+  },
+  "ASSURANT": {
+    "cik": "1267238",
+    "name": "ASSURANT, INC."
+  },
+  "BMRN": {
+    "cik": "1048477",
+    "name": "BIOMARIN PHARMACEUTICAL INC"
+  },
+  "BIOMARINPHARMACEUTICAL": {
+    "cik": "1048477",
+    "name": "BIOMARIN PHARMACEUTICAL INC"
+  },
+  "SSB": {
+    "cik": "764038",
+    "name": "SouthState Bank Corp"
+  },
+  "SOUTHSTATEBANK": {
+    "cik": "764038",
+    "name": "SouthState Bank Corp"
+  },
+  "ACI": {
+    "cik": "1646972",
+    "name": "Albertsons Companies, Inc."
+  },
+  "ALBERTSONSCOMPANIES": {
+    "cik": "1646972",
+    "name": "Albertsons Companies, Inc."
+  },
+  "AOS": {
+    "cik": "091142",
+    "name": "SMITH A O CORP"
+  },
+  "SMITHAO": {
+    "cik": "091142",
+    "name": "SMITH A O CORP"
+  },
+  "WBS": {
+    "cik": "801337",
+    "name": "WEBSTER FINANCIAL CORP"
+  },
+  "WEBSTERFINANCIAL": {
+    "cik": "801337",
+    "name": "WEBSTER FINANCIAL CORP"
+  },
+  "PNW": {
+    "cik": "764622",
+    "name": "PINNACLE WEST CAPITAL CORP"
+  },
+  "PINNACLEWESTCAPITAL": {
+    "cik": "764622",
+    "name": "PINNACLE WEST CAPITAL CORP"
+  },
+  "PEN": {
+    "cik": "1321732",
+    "name": "Penumbra Inc"
+  },
+  "PENUMBRA": {
+    "cik": "1321732",
+    "name": "Penumbra Inc"
+  },
+  "CRRFY": {
+    "cik": "1078642",
+    "name": "CARREFOUR SA"
+  },
+  "CARREFOURSA": {
+    "cik": "1078642",
+    "name": "CARREFOUR SA"
+  },
+  "COKE": {
+    "cik": "317540",
+    "name": "Coca-Cola Consolidated, Inc."
+  },
+  "COCA-COLACONSOLIDATED": {
+    "cik": "317540",
+    "name": "Coca-Cola Consolidated, Inc."
+  },
+  "ASR": {
+    "cik": "1123452",
+    "name": "SOUTHEAST AIRPORT GROUP"
+  },
+  "SOUTHEASTAIRPORTGROUP": {
+    "cik": "1123452",
+    "name": "SOUTHEAST AIRPORT GROUP"
+  },
+  "FRHC": {
+    "cik": "924805",
+    "name": "Freedom Holding Corp."
+  },
+  "FREEDOMHOLDING": {
+    "cik": "924805",
+    "name": "Freedom Holding Corp."
+  },
+  "NXT": {
+    "cik": "1852131",
+    "name": "Nextracker Inc."
+  },
+  "NEXTRACKER": {
+    "cik": "1852131",
+    "name": "Nextracker Inc."
+  },
+  "AR": {
+    "cik": "1433270",
+    "name": "ANTERO RESOURCES Corp"
+  },
+  "ANTERORESOURCES": {
+    "cik": "1433270",
+    "name": "ANTERO RESOURCES Corp"
+  },
+  "BPYPP": {
+    "cik": "1545772",
+    "name": "Brookfield Property Partners L.P."
+  },
+  "BROOKFIELDPROPERTYPARTNERSLP": {
+    "cik": "1545772",
+    "name": "Brookfield Property Partners L.P."
+  },
+  "PPC": {
+    "cik": "802481",
+    "name": "PILGRIMS PRIDE CORP"
+  },
+  "PILGRIMSPRIDE": {
+    "cik": "802481",
+    "name": "PILGRIMS PRIDE CORP"
+  },
+  "MNDY": {
+    "cik": "1845338",
+    "name": "monday.com Ltd."
+  },
+  "MONDAYCOM": {
+    "cik": "1845338",
+    "name": "monday.com Ltd."
+  },
+  "W": {
+    "cik": "1616707",
+    "name": "Wayfair Inc."
+  },
+  "WAYFAIR": {
+    "cik": "1616707",
+    "name": "Wayfair Inc."
+  },
+  "EXAS": {
+    "cik": "1124140",
+    "name": "EXACT SCIENCES CORP"
+  },
+  "EXACTSCIENCES": {
+    "cik": "1124140",
+    "name": "EXACT SCIENCES CORP"
+  },
+  "TIMB": {
+    "cik": "1826168",
+    "name": "TIM S.A."
+  },
+  "TIMSA": {
+    "cik": "1826168",
+    "name": "TIM S.A."
+  },
+  "CPB": {
+    "cik": "016732",
+    "name": "CAMPBELL'S Co"
+  },
+  "CAMPBELL'S": {
+    "cik": "016732",
+    "name": "CAMPBELL'S Co"
+  },
+  "KNSL": {
+    "cik": "1669162",
+    "name": "Kinsale Capital Group, Inc."
+  },
+  "KINSALECAPITALGROUP": {
+    "cik": "1669162",
+    "name": "Kinsale Capital Group, Inc."
+  },
+  "UUGRY": {
+    "cik": "1440130",
+    "name": "United Utilities Group plc"
+  },
+  "UNITEDUTILITIESGROUPPLC": {
+    "cik": "1440130",
+    "name": "United Utilities Group plc"
+  },
+  "KAIKY": {
+    "cik": "1447126",
+    "name": "Kawasaki Kisen Kaisha Ltd"
+  },
+  "KAWASAKIKISENKAISHA": {
+    "cik": "1447126",
+    "name": "Kawasaki Kisen Kaisha Ltd"
+  },
+  "PEGA": {
+    "cik": "1013857",
+    "name": "PEGASYSTEMS INC"
+  },
+  "PEGASYSTEMS": {
+    "cik": "1013857",
+    "name": "PEGASYSTEMS INC"
+  },
+  "AIT": {
+    "cik": "109563",
+    "name": "APPLIED INDUSTRIAL TECHNOLOGIES INC"
+  },
+  "APPLIEDINDUSTRIALTECHNOLOGIES": {
+    "cik": "109563",
+    "name": "APPLIED INDUSTRIAL TECHNOLOGIES INC"
+  },
+  "IREN": {
+    "cik": "1878848",
+    "name": "IREN Ltd"
+  },
+  "TAP": {
+    "cik": "024545",
+    "name": "MOLSON COORS BEVERAGE CO"
+  },
+  "MOLSONCOORSBEVERAGE": {
+    "cik": "024545",
+    "name": "MOLSON COORS BEVERAGE CO"
+  },
+  "APPF": {
+    "cik": "1433195",
+    "name": "APPFOLIO INC"
+  },
+  "APPFOLIO": {
+    "cik": "1433195",
+    "name": "APPFOLIO INC"
+  },
+  "KVYO": {
+    "cik": "1835830",
+    "name": "Klaviyo, Inc."
+  },
+  "KLAVIYO": {
+    "cik": "1835830",
+    "name": "Klaviyo, Inc."
+  },
+  "ARMK": {
+    "cik": "1584509",
+    "name": "Aramark"
+  },
+  "ARAMARK": {
+    "cik": "1584509",
+    "name": "Aramark"
+  },
+  "DINO": {
+    "cik": "1915657",
+    "name": "HF Sinclair Corp"
+  },
+  "HFSINCLAIR": {
+    "cik": "1915657",
+    "name": "HF Sinclair Corp"
+  },
+  "IVZ": {
+    "cik": "914208",
+    "name": "Invesco Ltd."
+  },
+  "INVESCO": {
+    "cik": "914208",
+    "name": "Invesco Ltd."
+  },
+  "BBIO": {
+    "cik": "1743881",
+    "name": "BridgeBio Pharma, Inc."
+  },
+  "BRIDGEBIOPHARMA": {
+    "cik": "1743881",
+    "name": "BridgeBio Pharma, Inc."
+  },
+  "CSXXY": {
+    "cik": "1541309",
+    "name": "carsales.com Limited/ADR"
+  },
+  "CARSALESCOMLIMITED/ADR": {
+    "cik": "1541309",
+    "name": "carsales.com Limited/ADR"
+  },
+  "QGEN": {
+    "cik": "1015820",
+    "name": "QIAGEN N.V."
+  },
+  "QIAGENNV": {
+    "cik": "1015820",
+    "name": "QIAGEN N.V."
+  },
+  "WAL": {
+    "cik": "1212545",
+    "name": "WESTERN ALLIANCE BANCORPORATION"
+  },
+  "WESTERNALLIANCEBANCORPORATION": {
+    "cik": "1212545",
+    "name": "WESTERN ALLIANCE BANCORPORATION"
+  },
+  "CNM": {
+    "cik": "1856525",
+    "name": "Core & Main, Inc."
+  },
+  "CORE&MAIN": {
+    "cik": "1856525",
+    "name": "Core & Main, Inc."
+  },
+  "IONS": {
+    "cik": "874015",
+    "name": "IONIS PHARMACEUTICALS INC"
+  },
+  "IONISPHARMACEUTICALS": {
+    "cik": "874015",
+    "name": "IONIS PHARMACEUTICALS INC"
+  },
+  "UHAL": {
+    "cik": "004457",
+    "name": "U-Haul Holding Co /NV/"
+  },
+  "U-HAULHOLDING": {
+    "cik": "004457",
+    "name": "U-Haul Holding Co /NV/"
+  },
+  "MTSI": {
+    "cik": "1493594",
+    "name": "MACOM Technology Solutions Holdings, Inc."
+  },
+  "MACOMTECHNOLOGYSOLUTIONSHOLDINGS": {
+    "cik": "1493594",
+    "name": "MACOM Technology Solutions Holdings, Inc."
+  },
+  "BROS": {
+    "cik": "1866581",
+    "name": "Dutch Bros Inc."
+  },
+  "DUTCHBROS": {
+    "cik": "1866581",
+    "name": "Dutch Bros Inc."
+  },
+  "ORI": {
+    "cik": "074260",
+    "name": "OLD REPUBLIC INTERNATIONAL CORP"
+  },
+  "OLDREPUBLICINTERNATIONAL": {
+    "cik": "074260",
+    "name": "OLD REPUBLIC INTERNATIONAL CORP"
+  },
+  "UWMC": {
+    "cik": "1783398",
+    "name": "UWM Holdings Corp"
+  },
+  "UWMHOLDINGS": {
+    "cik": "1783398",
+    "name": "UWM Holdings Corp"
+  },
+  "BMNR": {
+    "cik": "1829311",
+    "name": "BITMINE IMMERSION TECHNOLOGIES, INC."
+  },
+  "BITMINEIMMERSIONTECHNOLOGIES": {
+    "cik": "1829311",
+    "name": "BITMINE IMMERSION TECHNOLOGIES, INC."
+  },
+  "MRNA": {
+    "cik": "1682852",
+    "name": "Moderna, Inc."
+  },
+  "MODERNA": {
+    "cik": "1682852",
+    "name": "Moderna, Inc."
+  },
+  "FND": {
+    "cik": "1507079",
+    "name": "Floor & Decor Holdings, Inc."
+  },
+  "FLOOR&DECORHOLDINGS": {
+    "cik": "1507079",
+    "name": "Floor & Decor Holdings, Inc."
+  },
+  "IPG": {
+    "cik": "051644",
+    "name": "INTERPUBLIC GROUP OF COMPANIES, INC."
+  },
+  "INTERPUBLICGROUPOFCOMPANIES": {
+    "cik": "051644",
+    "name": "INTERPUBLIC GROUP OF COMPANIES, INC."
+  },
+  "KT": {
+    "cik": "892450",
+    "name": "KT CORP"
+  },
+  "MGM": {
+    "cik": "789570",
+    "name": "MGM Resorts International"
+  },
+  "MGMRESORTSINTERNATIONAL": {
+    "cik": "789570",
+    "name": "MGM Resorts International"
+  },
+  "RVTY": {
+    "cik": "031791",
+    "name": "REVVITY, INC."
+  },
+  "REVVITY": {
+    "cik": "031791",
+    "name": "REVVITY, INC."
+  },
+  "ROIV": {
+    "cik": "1635088",
+    "name": "Roivant Sciences Ltd."
+  },
+  "ROIVANTSCIENCES": {
+    "cik": "1635088",
+    "name": "Roivant Sciences Ltd."
+  },
+  "ALV": {
+    "cik": "1034670",
+    "name": "AUTOLIV INC"
+  },
+  "AUTOLIV": {
+    "cik": "1034670",
+    "name": "AUTOLIV INC"
+  },
+  "TTEK": {
+    "cik": "831641",
+    "name": "TETRA TECH INC"
+  },
+  "TETRATECH": {
+    "cik": "831641",
+    "name": "TETRA TECH INC"
+  },
+  "MOH": {
+    "cik": "1179929",
+    "name": "MOLINA HEALTHCARE, INC."
+  },
+  "MOLINAHEALTHCARE": {
+    "cik": "1179929",
+    "name": "MOLINA HEALTHCARE, INC."
+  },
+  "PUGBY": {
+    "cik": "2029472",
+    "name": "Puig Brands S.A./ADR"
+  },
+  "PUIGBRANDSSA/ADR": {
+    "cik": "2029472",
+    "name": "Puig Brands S.A./ADR"
+  },
+  "ALGN": {
+    "cik": "1097149",
+    "name": "ALIGN TECHNOLOGY INC"
+  },
+  "ALIGNTECHNOLOGY": {
+    "cik": "1097149",
+    "name": "ALIGN TECHNOLOGY INC"
+  },
+  "ALB": {
+    "cik": "915913",
+    "name": "ALBEMARLE CORP"
+  },
+  "ALBEMARLE": {
+    "cik": "915913",
+    "name": "ALBEMARLE CORP"
+  },
+  "MDGL": {
+    "cik": "1157601",
+    "name": "MADRIGAL PHARMACEUTICALS, INC."
+  },
+  "MADRIGALPHARMACEUTICALS": {
+    "cik": "1157601",
+    "name": "MADRIGAL PHARMACEUTICALS, INC."
+  },
+  "NYT": {
+    "cik": "071691",
+    "name": "NEW YORK TIMES CO"
+  },
+  "NEWYORKTIMES": {
+    "cik": "071691",
+    "name": "NEW YORK TIMES CO"
+  },
+  "ENSG": {
+    "cik": "1125376",
+    "name": "ENSIGN GROUP, INC"
+  },
+  "ENSIGNGROUP": {
+    "cik": "1125376",
+    "name": "ENSIGN GROUP, INC"
+  },
+  "CAI": {
+    "cik": "2019410",
+    "name": "Caris Life Sciences, Inc."
+  },
+  "CARISLIFESCIENCES": {
+    "cik": "2019410",
+    "name": "Caris Life Sciences, Inc."
+  },
+  "HMY": {
+    "cik": "1023514",
+    "name": "HARMONY GOLD MINING CO LTD"
+  },
+  "HARMONYGOLDMINING": {
+    "cik": "1023514",
+    "name": "HARMONY GOLD MINING CO LTD"
+  },
+  "TTAN": {
+    "cik": "1638826",
+    "name": "ServiceTitan, Inc."
+  },
+  "SERVICETITAN": {
+    "cik": "1638826",
+    "name": "ServiceTitan, Inc."
+  },
+  "BWA": {
+    "cik": "908255",
+    "name": "BORGWARNER INC"
+  },
+  "BORGWARNER": {
+    "cik": "908255",
+    "name": "BORGWARNER INC"
+  },
+  "XP": {
+    "cik": "1787425",
+    "name": "XP Inc."
+  },
+  "DCI": {
+    "cik": "029644",
+    "name": "DONALDSON Co INC"
+  },
+  "DONALDSON": {
+    "cik": "029644",
+    "name": "DONALDSON Co INC"
+  },
+  "CUBE": {
+    "cik": "1298675",
+    "name": "CubeSmart"
+  },
+  "CUBESMART": {
+    "cik": "1298675",
+    "name": "CubeSmart"
+  },
+  "FYBR": {
+    "cik": "020520",
+    "name": "Frontier Communications Parent, Inc."
+  },
+  "FRONTIERCOMMUNICATIONSPARENT": {
+    "cik": "020520",
+    "name": "Frontier Communications Parent, Inc."
+  },
+  "DDS": {
+    "cik": "028917",
+    "name": "DILLARD'S, INC."
+  },
+  "DILLARD'S": {
+    "cik": "028917",
+    "name": "DILLARD'S, INC."
+  },
+  "OTEX": {
+    "cik": "1002638",
+    "name": "OPEN TEXT CORP"
+  },
+  "OPENTEXT": {
+    "cik": "1002638",
+    "name": "OPEN TEXT CORP"
+  },
+  "DVA": {
+    "cik": "927066",
+    "name": "DAVITA INC."
+  },
+  "DAVITA": {
+    "cik": "927066",
+    "name": "DAVITA INC."
+  },
+  "RMBS": {
+    "cik": "917273",
+    "name": "RAMBUS INC"
+  },
+  "RAMBUS": {
+    "cik": "917273",
+    "name": "RAMBUS INC"
+  },
+  "ELAN": {
+    "cik": "1739104",
+    "name": "Elanco Animal Health Inc"
+  },
+  "ELANCOANIMALHEALTH": {
+    "cik": "1739104",
+    "name": "Elanco Animal Health Inc"
+  },
+  "WTS": {
+    "cik": "795403",
+    "name": "WATTS WATER TECHNOLOGIES INC"
+  },
+  "WATTSWATERTECHNOLOGIES": {
+    "cik": "795403",
+    "name": "WATTS WATER TECHNOLOGIES INC"
+  }
+}

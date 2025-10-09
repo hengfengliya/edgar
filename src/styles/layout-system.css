@@ -1,0 +1,264 @@
+/*
+统一布局系统 - 参考 Crunchbase 中心栅格设计
+解决页面整体留白、模块呼吸感和字体层级问题
+*/
+
+/* =================================================================
+   1. 统一容器系统 - 中心栅格布局
+   ================================================================= */
+
+/* 全局页面容器 */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* 英雄区域容器覆盖 */
+.hero-section .hero-content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+/* 热门股票区域统一容器 */
+.popular-stocks .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* SEO内容区域统一容器 */
+.seo-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* =================================================================
+   2. 模块呼吸感 - 垂直间距系统
+   ================================================================= */
+
+/* 主要模块间距 */
+.hero-section {
+  margin-bottom: 120px !important;
+}
+
+.popular-stocks {
+  margin: 120px 0 !important;
+  padding: 4rem 0 !important;
+}
+
+.seo-content {
+  margin: 120px 0 !important;
+  padding: 4rem 0 !important;
+}
+
+/* 内部卡片间距优化 */
+.stocks-grid {
+  gap: 1.5rem !important;
+}
+
+/* =================================================================
+   3. 字体与层级系统
+   ================================================================= */
+
+/* H1 标题优化 */
+.hero-section .main-title {
+  font-size: 2.25rem !important; /* 36px */
+  font-weight: 700 !important;
+  color: #1a1d29 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.025em !important;
+  margin-bottom: 1rem !important;
+}
+
+/* 副标题优化 */
+.hero-section .subtitle {
+  font-size: 1.25rem !important; /* 20px */
+  font-weight: 500 !important;
+  color: #4a4a4a !important;
+  line-height: 1.5 !important;
+  margin-bottom: 3rem !important;
+}
+
+/* 搜索区域标题优化 */
+.hero-section .search-header h3 {
+  font-size: 1.5rem !important; /* 24px */
+  font-weight: 600 !important;
+  color: #1a1d29 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.hero-section .search-header p {
+  font-size: 1rem !important; /* 16px */
+  font-weight: 400 !important;
+  color: #6c757d !important;
+  line-height: 1.6 !important;
+}
+
+/* 热门股票区域字体 */
+.popular-stocks .section-title {
+  font-size: 1.875rem !important; /* 30px */
+  font-weight: 600 !important;
+  color: #1a1d29 !important;
+  margin-bottom: 0.75rem !important;
+  text-align: center;
+}
+
+.popular-stocks .section-description {
+  font-size: 1rem !important; /* 16px */
+  font-weight: 400 !important;
+  color: #6c757d !important;
+  margin-bottom: 3rem !important;
+  text-align: center;
+}
+
+/* 股票卡片字体 */
+.stock-item .ticker {
+  font-size: 1rem !important; /* 16px */
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  font-family: 'Monaco', 'Menlo', monospace !important;
+}
+
+.stock-item .company-name {
+  font-size: 0.8125rem !important; /* 13px */
+  font-weight: 400 !important;
+  color: #64748b !important;
+  line-height: 1.4 !important;
+}
+
+/* =================================================================
+   4. 响应式布局优化
+   ================================================================= */
+
+@media (max-width: 1024px) {
+  .page-container,
+  .hero-section .hero-content,
+  .popular-stocks .container,
+  .seo-content {
+    max-width: 100% !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+
+  /* 模块间距调整 */
+  .hero-section,
+  .popular-stocks,
+  .seo-content {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+  }
+
+  /* 字体缩放 */
+  .hero-section .main-title {
+    font-size: 2rem !important; /* 32px */
+  }
+
+  .popular-stocks .section-title {
+    font-size: 1.625rem !important; /* 26px */
+  }
+}
+
+@media (max-width: 768px) {
+  .page-container,
+  .hero-section .hero-content,
+  .popular-stocks .container,
+  .seo-content {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  /* 模块间距调整 */
+  .hero-section,
+  .popular-stocks,
+  .seo-content {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+  }
+
+  .popular-stocks,
+  .seo-content {
+    padding: 3rem 0 !important;
+  }
+
+  /* 字体缩放 */
+  .hero-section .main-title {
+    font-size: 1.75rem !important; /* 28px */
+  }
+
+  .hero-section .subtitle {
+    font-size: 1.125rem !important; /* 18px */
+  }
+
+  .popular-stocks .section-title {
+    font-size: 1.5rem !important; /* 24px */
+  }
+}
+
+@media (max-width: 576px) {
+  .page-container,
+  .hero-section .hero-content,
+  .popular-stocks .container,
+  .seo-content {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  /* 模块间距调整 */
+  .hero-section,
+  .popular-stocks,
+  .seo-content {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .popular-stocks,
+  .seo-content {
+    padding: 2.5rem 0 !important;
+  }
+
+  /* 字体缩放 */
+  .hero-section .main-title {
+    font-size: 1.5rem !important; /* 24px */
+  }
+
+  .hero-section .subtitle {
+    font-size: 1rem !important; /* 16px */
+  }
+
+  .popular-stocks .section-title {
+    font-size: 1.25rem !important; /* 20px */
+  }
+
+  .hero-data-section .data-card__value {
+    font-size: 1.5rem !important; /* 24px */
+  }
+}
+
+/* =================================================================
+   5. 视觉增强
+   ================================================================= */
+
+/* 统一的阴影系统 */
+.stock-item {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.stock-item:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 统一的边框系统 */
+.stock-item {
+  border: 1px solid #f3f4f6 !important;
+  border-radius: 12px !important;
+}
+
+.stock-item:hover {
+  border-color: #e5e7eb !important;
+}

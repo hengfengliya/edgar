@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "created": "2025-09-26T02:47:19.864Z",
+  "originalFile": "complete-cik-database.json",
+  "totalEntries": 933032,
+  "totalChunks": 3,
+  "chunks": [
+    {
+      "file": "cik-db-part00.json",
+      "entries": 453622,
+      "size": 36775197
+    },
+    {
+      "file": "cik-db-part01.json",
+      "entries": 453622,
+      "size": 36365229
+    },
+    {
+      "file": "cik-db-part02.json",
+      "entries": 25788,
+      "size": 1972965
+    }
+  ]
+}

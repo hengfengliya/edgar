@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 首页 - US Stocks SEC EDGAR检索主页 -->
+  <url>
+    <loc>https://usstocks.top/</loc>
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 搜索页面 - SEC EDGAR搜索功能 -->
+  <url>
+    <loc>https://usstocks.top/search</loc>
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 关于页面 - 平台介绍 -->
+  <url>
+    <loc>https://usstocks.top/about</loc>
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
