@@ -9,13 +9,13 @@ const axios = require('axios');
 const path = require('path');
 require('dotenv').config();
 
-// 引用完整SEC公司数据库
-const { SECCompanyDatabase } = require('../data/companies-enhanced.cjs');
+// 引用精简版SEC公司数据库（10.75MB核心数据，适合Vercel部署）
+const { compactDatabase: companyDatabase } = require('../data/companies-compact.cjs');
 const { getCompanyCount } = require('../data/companies.cjs'); // 保留统计函数
 
-// 初始化完整数据库
-const companyDatabase = new SECCompanyDatabase();
-companyDatabase.loadDatabase();
+// 在服务启动时预热核心数据库，避免首次请求时才加载文件
+companyDatabase.getStats();
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -154,8 +154,8 @@ app.get('/api/companies/search', rateLimitMiddleware, async (req, res) => {
 
         const searchTerm = q.trim();
 
-        // 使用完整数据库搜索
-        const results = companyDatabase.searchCompanies(searchTerm, 10);
+        // 使用精简核心数据库进行搜索
+        const results = companyDatabase.searchCompanies(searchTerm, { limit: 10 });
 
         // 转换为API期望的格式
         const companies = results.map(company => ({
@@ -171,7 +171,7 @@ app.get('/api/companies/search', rateLimitMiddleware, async (req, res) => {
                 success: true,
                 data: [],
                 count: 0,
-                message: `未找到 "${q}" 的匹配公司。数据库包含88万+家公司，请尝试其他关键词搜索。`
+                message: `未找到 "${q}" 的匹配公司。核心数据库覆盖约7,890家公司，请尝试调整关键词。`
             });
         }
 

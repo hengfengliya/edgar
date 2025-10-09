@@ -3,28 +3,28 @@
  */
 
 const axios = require('axios');
-// 引用完整SEC公司数据库 - 与本地环境保持一致
-const { SECCompanyDatabase } = require('../data/companies-enhanced.cjs');
+// 引用精简版SEC公司数据库（10.75MB核心数据，适合Vercel部署）
+const { compactDatabase: companyDatabase } = require('../data/companies-compact.cjs');
 
 // SEC EDGAR API配置
 const SEC_DATA_URL = 'https://data.sec.gov';
 const USER_AGENT = process.env.SEC_USER_AGENT || 'SEC EDGAR Research Tool tellmeheifengli@gmail.com';
 
-// 初始化完整数据库实例 - 与本地环境保持一致
-const companyDatabase = new SECCompanyDatabase();
+// 在函数初始化阶段预热核心数据库，避免首个请求时再去加载文件
+companyDatabase.getStats();
 
 /**
- * 搜索公司 - 使用完整88万+公司数据库
+ * 搜索公司 - 使用精简核心数据库（10.75MB）
  */
 const searchCompanies = (query) => {
-    console.log('搜索公司 (完整版):', query);
+    console.log('搜索公司 (精简数据库):', query);
 
-    // 使用与本地服务器相同的调用方式
-    const results = companyDatabase.searchCompanies(query, 10);
+    // 使用精简数据库进行搜索，限制前10条以保持响应速度
+    const results = companyDatabase.searchCompanies(query, { limit: 10 });
 
     return results.map(result => ({
         cik: result.cik,
-        ticker: result.ticker,
+        ticker: result.ticker || '',
         title: result.name
     }));
 };
@@ -365,7 +365,7 @@ module.exports = async (req, res) => {
                     success: true,
                     data: [],
                     count: 0,
-                    message: `未找到 "${query}" 的匹配公司。数据库包含88万+家公司，请尝试其他关键词搜索。`
+                    message: `未找到 "${query}" 的匹配公司。核心数据库覆盖约7,890家公司，请尝试调整关键词。`
                 });
             }
 
@@ -496,7 +496,7 @@ module.exports = async (req, res) => {
         // 默认响应
         return res.status(200).json({
             success: true,
-            message: 'SEC EDGAR API代理服务正在运行 (完整版88万+公司)',
+            message: 'SEC EDGAR API代理服务正在运行（核心数据库约7,890家公司）',
             available_endpoints: [
                 '/api/companies/search?q=公司名称',
                 '/api/companies/stats',
